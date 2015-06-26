@@ -1,0 +1,622 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body,
+html,
+.ui-widget,
+.ui-widget button {
+  font-family: Verdana,sans-serif;
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#content {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#ol_map {
+  background-color: #cccccc;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.ui-widget {
+  z-index: 1002;
+}
+
+#sidebar {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 0 solid gray;
+  float: right;
+  height: auto;
+  position: relative;
+  width: 350px;
+  z-index: 1001;
+}
+
+#sidebar_toggle {
+  background: url("../images/toggle_sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border-left: 0 solid #bbb;
+  cursor: pointer;
+  height: 100%;
+  width: 10px;
+  display: table-cell;
+  width: 10px;
+}
+
+.sidebar-open #sidebar_toggle {
+  background-position: 100% 50% !important;
+}
+
+.sidebar-closed #sidebar_toggle {
+  background-position: 0 50% !important;
+}
+
+#sidebar-content {
+  padding: 10px 2px;
+  display: table-cell;
+}
+
+#sidebar-content .headline {
+  color: #d81920;
+  font-size: 250%;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#layerswitcher .ui-buttonset {
+  margin-right: 0;
+}
+
+#layerswitcher label {
+  margin: 0;
+  width: 50%;
+}
+
+#widgets {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+  width: 333px;
+}
+
+#standortsuche {
+  position: relative;
+}
+
+div.search {
+  font-size: 13px;
+  width: 265px;
+}
+
+form select {
+  margin-bottom: 15px;
+  max-width: 99%;
+  min-width: 99%;
+  width: 99%;
+}
+
+input#searchtext {
+  background-color: #eeeeee;
+  border: 2px solid #006cb7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 2px 4px 15px 1px #cccccc inset;
+  font-family: "Verdana",sans-serif;
+  height: 25px;
+  margin: 5px auto 0;
+  outline: medium none;
+  padding-left: 4px;
+  width: 264px;
+}
+
+#standortsuche .input_wrapper {
+  border: 1px solid #ddd;
+  display: inline-block;
+  margin-right: -1px;
+}
+
+#standortsuche #standort {
+  border: 1px solid #fff;
+  padding: 0.4em 0.1em;
+  width: 100px;
+}
+
+div.results {
+  background-color: #eeeeee;
+  border-bottom: 2px solid #006cb7;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 2px solid #006cb7;
+  border-right: 2px solid #006cb7;
+  display: none;
+  float: left;
+  text-align: left;
+  width: 264px;
+}
+
+div.result-element {
+  cursor: pointer;
+  line-height: 23px;
+}
+
+div.result-element a {
+  color: #006cb7;
+  text-decoration: none;
+}
+
+div.result-element span {
+  color: #bbbbbb;
+  float: right;
+  font-size: 9px;
+  padding-right: 6px;
+}
+
+#melden ol {
+  list-style: outside none none;
+  margin: 0;
+}
+
+#melden ol a {
+  text-decoration: none;
+}
+
+#melden ol a img {
+  border: medium none;
+  height: 43px;
+  margin-right: 0.3em;
+  vertical-align: middle;
+  width: 36px;
+}
+
+form#meldung label, #meldung_abuse label {
+  display: block;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 0.3em;
+}
+
+#meldung label, #meldung_abuse label {
+  width: 300px;
+}
+
+#meldung_edit form input,
+#meldung_edit form textarea {
+  margin-bottom: 15px;
+  max-width: 98%;
+  min-width: 98%;
+  width: 98%;
+}
+
+#meldung_show #meldung_details_show {
+  float: right;
+}
+
+form .help {
+  color: #333;
+  font-size: 0.7em;
+}
+
+#beobachtungsflaechen button {
+  margin-bottom: 0.5em;
+  width: 90%;
+}
+
+#mapicons ol div {
+  height: 24px;
+  line-height: 24px;
+}
+
+#mapicons label {
+  font-size: 90%;
+  font-weight: normal;
+  width: 100%;
+}
+
+#mapicons input {
+  margin-right: 0.3em;
+  vertical-align: middle;
+}
+
+#mapicons img {
+  float: right;
+  height: 22px;
+  margin-left: 5px;
+  padding: 0;
+  vertical-align: middle;
+  width: 22px;
+}
+
+#mapicons #ideen12 {
+  margin-top: 1em;
+}
+
+#mapicons div {
+  margin-top: 0.5em;
+}
+
+#mapicons #generalisiert {
+  margin-top: 1em;
+}
+
+#sonderseiten a {
+  margin-bottom: 0.5em;
+  width: 90%;
+}
+
+#back_to_start {
+  margin-top: 1px;
+  width: 100%;
+}
+
+#rss-abo {
+  font-size: 0.8em;
+  overflow: hidden;
+}
+
+#rss-abo label {
+  margin-left: 2px;
+}
+
+#rss-abo label.all {
+  font-style: italic;
+  font-weight: bold;
+}
+
+div.scroll-checkbox {
+  border-bottom: 1px solid #999999;
+  margin-bottom: 6px;
+}
+
+.ol-scale-line {
+  background-color: transparent;
+}
+
+.ol-scale-line-inner {
+  color: #000000;
+  border-color: #000000;
+  border-width: medium 2px 2px;
+}
+
+.ol-attribution.ol-collapsed ul {
+  display: block;
+  max-width: 100%;
+}
+
+.ol-attribution.ol-collapsed ul li:first-child {
+  display: none;
+}
+
+.ol-attribution button {
+  display: none;
+}
+
+.ui-accordion .ui-accordion-header {
+  cursor: pointer;
+  margin-top: 1px;
+  position: relative;
+}
+
+.ui-accordion .ui-accordion-content {
+  border-top: 0 none;
+  display: none;
+  margin-bottom: 2px;
+  margin-top: -2px;
+  overflow: auto;
+  padding: 1em 2.2em;
+  position: relative;
+  top: 1px;
+}
+
+.ui-button .ui-button-text {
+  line-height: 1.4;
+}
+
+.ui-corner-all {
+  border-radius: 6px;
+}
+
+.ui-corner-left {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.ui-corner-right {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.ui-corner-top {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: Verdana,sans-serif;
+  font-size: 1em;
+}
+
+.ui-widget-header {
+  background: url("../images/ui-bg_flat_0_006cb7_40x100.png") repeat-x scroll 50% 50% #006cb7;
+  border: 1px solid #164194;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header {
+  background: url("../images/ui-bg_highlight-hard_50_006cb7_1x100.png") repeat-x scroll 50% 50% #f6f6f6;
+  border: 1px solid #164194;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  background: url("../images/ui-bg_flat_0_006cb7_40x100.png") repeat-x scroll 50% 50% #006cb7;
+  border: 1px solid #164194;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  background: none repeat scroll 0 0 transparent;
+  border: 0 none;
+  margin: -10px 0 0;
+  padding: 1px;
+  position: absolute;
+  right: 0.3em;
+  top: 50%;
+}
+
+.ui-dialog-buttonpane {
+  padding: 0.3em 0.4em 0.5em !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+  background-image: none;
+  border-width: 0;
+  margin: 0.5em 0 0;
+  padding: 0.3em 1em 0.5em 0.4em;
+  text-align: center;
+}
+
+.ui-dialog .ui-button .ui-button-text {
+  display: block;
+  line-height: 1.4;
+}
+.ui-dialog .ui-button-text {
+  font-size: 12px !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  width: 100%;
+}
+
+.ui-dialog-buttonpane button {
+  margin: 0.5em 0.2em;
+  width: 48%;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+  cursor: pointer;
+  margin: 0.5em 0.4em 0.5em 0;
+}
+
+.ui-state-active,
+.ui-state-default.ui-state-active.ui-state-hover {
+  background: url("../images/ui-bg_inset-hard_50_d81920_1x100.png") repeat-x scroll 50% 50% #d81920;
+  border: 1px solid #941616;
+  color: #ffffff;
+}
+
+.ui-widget-content,
+.ui-state-default.ui-state-hover {
+  border: 1px solid #999999;
+  background: #eee url("../images/ui-bg_highlight-soft_100_eeeeee_1x100.png") 50% top repeat-x;
+  color: #006cb7;
+}
+
+.ui-dialog-titlebar .ui-dialog-titlebar-close .ui-icon,
+.ui-state-hover.ui-state-active .ui-icon,
+.ui-state-default .ui-icon,
+.ui-widget-content .ui-icon {
+  background-image: url("../images/ui-icons_ffffff_256x240.png");
+}
+
+.ui-dialog-titlebar .ui-dialog-titlebar-close.ui-state-hover .ui-icon {
+  background-image: url("../images/ui-icons_006cb7_256x240.png");
+}
+
+.ui-state-hover .ui-icon {
+  background-image: url("../images/ui-icons_228ef1_256x240.png");
+}
+
+.ui-widget-content {
+  color: #000000;
+}
+
+.ui-widget-overlay {
+  background: url("../images/ui-bg_flat_0_eeeeee_40x100.png") repeat-x scroll 50% 50% #eeeeee;
+  opacity: 0.8;
+}
+
+.ol-overlaycontainer .ui-button {
+  font-size: 12px;
+}
+
+.ol-overlaycontainer .popover {
+  border-radius: 22px;
+  padding: 16px;
+}
+
+.ol-overlaycontainer .popover-title {
+  background-color: transparent;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  min-width: 11em;
+  border: none;
+}
+
+.ol-overlaycontainer .popover-content {
+  padding: 0;
+}
+
+.ol-overlaycontainer .popover-content .buttons {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ol-overlaycontainer .popover-content .buttons a#details.ui-button {
+  margin-right: 3px;
+}
+
+#spinner {
+  margin: 1em;
+  text-align: center;
+}
+
+.popover {
+  z-index: 1000;
+}
+
+#supporters {
+  float: right;
+  width: 30%;
+  display: none;
+  text-align: center;
+}
+
+#supporters .meldung_unterstuetzer {
+  display: block!important;
+  margin: 0 auto;
+}
+
+.teaser #supporters {
+  display: block;
+}
+
+#meldung_show {
+  font-weight: bold;
+}
+
+#meldung_show .meldung_unterstuetzer {
+  font-weight: bold;
+  display: inline-block;
+  width: 2em;
+  text-align: center;
+  background: #50C80F;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+}
+
+#meldung_show.problem .meldung_unterstuetzer{
+  background: #F5E123;
+}
+
+#meldung_show.idee .meldung_unterstuetzer.unter-schwellenwert {
+  background: #FF3700;
+}
+
+#meldung_show label,
+#meldung_show input {
+  display: block;
+  width: 100%;
+}
+
+#meldung_details_recorder {
+  position: relative;
+  top: 2px;
+}
+
+#meldung_details_icon {
+  height: 22px;
+  margin-right: 0.75em;
+  vertical-align: middle;
+  width: 22px;
+}
+
+#meldung_show #meldung_details_show {
+  float: right !important;
+  margin-right: 15px !important;
+}
+
+form#meldung label,
+#meldung_abuse label,
+#meldung_lobhinweisekritik label {
+  display: block;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 0.3em;
+}
+
+#meldung_actions button {
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 1em;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 0.1em;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.meldung_eintrag {
+  font-weight: normal;
+  padding-bottom: 12px;
+}
+
+.meldung_eintrag-nicht-vorhanden {
+  font-weight: normal;
+  padding-bottom: 12px;
+}
+
+.meldung-foto {
+  padding-bottom: 12px;
+}
+
+a.directlink, 
+a.directlink:hover {
+  font-size: 80%;
+  padding-left: 5px;
+  text-decoration: underline;
+}
+
+#tooltip {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 0.8em;
+  padding: 1px 3px;
+  position: absolute;
+  z-index: 2000;
+}
