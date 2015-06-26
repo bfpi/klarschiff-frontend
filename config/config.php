@@ -4,7 +4,7 @@ require_once 'urls.php';
 return array(
   'database' => include('database.php'),
   'labels' => array(
-    'sidebar_headline' => 'Klarschiff-DEMO',
+    'sidebar_headline' => '<img id="logopc" src="' . FRONTEND_URL . 'images/klarschiff_logo_328px.png" alt="Klarschiff.HRO"/>',
     'errors' => array(
       'db_unavailable' => 'Die Datenbank ist nicht erreichbar!',
       'ausserhalb_des_bereichs' => 'Die neue Meldung befindet sich außerhalb Rostocks.',
