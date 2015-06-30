@@ -24,7 +24,9 @@ function init_map() {
           feature.get("features").forEach(function(f) {
             if (f.get("id") == map.advice_id_) {
               map.advice_id_ = null;
-              showMeldung(f);
+              setTimeout(function() {
+                showMeldung(f);
+              }, 200);
               map.getView().setZoom(12);
               map.getView().setCenter(f.getGeometry().getCoordinates());
 	            return;
