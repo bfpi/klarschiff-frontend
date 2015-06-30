@@ -69,7 +69,7 @@ var OLLayerFactory = function() {
     });
     if (def.enableClustering) {
       source = new ol.source.Cluster({
-        distance: 40,
+        distance: def.clusterDistance,
         source: Object.create(source)
       });
     }
