@@ -3,6 +3,7 @@ function init_map() {
 
   map = new ol.Map({
     target: 'ol_map',
+    interactions: ol.interaction.defaults({ doubleClickZoom: false }),
     view: new ol.View({
       projection: projection_25833,
       center: mapCenterStart,
@@ -104,5 +105,12 @@ function addControls(map) {
         return;
       }
     })
+  });
+  
+  $(map.getViewport()).on("dblclick", function(evt) {
+    layer = getLayerByTitle("DrawBeobachtungsflaeche");
+    if(!layer.getVisible()) {
+      map.getView().setZoom(parseInt(map.getView().getZoom() + 1));
+    }
   });
 }
