@@ -46,12 +46,7 @@ var OLLayerFactory = function() {
           'FORMAT': def.format,
           'VERSION': def.version,
           'SRS': def.projection
-        },
-        attributions: [
-          new ol.Attribution({
-            html: def.attribution_text
-          })
-        ]
+        }
       }),
       visible: def.default_layer,
       displayInLayerSwitcher: def.displayInLayerSwitcher
