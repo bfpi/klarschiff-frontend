@@ -53,6 +53,9 @@ function addControls(map) {
   map.addControl(scaleLine);
 
   $(map.getViewport()).on("mousemove", function(evt) {
+    if(getLayerByTitle("DrawBeobachtungsflaeche").getVisible()) {
+      return true;
+    }
     var pixel = map.getEventPixel(evt.originalEvent);
     var feature = map.forEachFeatureAtPixel(
       pixel, function(feature, layer) { return feature; }
