@@ -131,6 +131,7 @@ var ol_config = {
       url: "<?php echo MELDUNGEN_WFS_URL; ?>",
       default_layer: true,
       enableClustering: true,
+      clusterDistance: 40,
       style: meldungenStyles,
       eventHandlers: {
 	      change: function(evt) {
