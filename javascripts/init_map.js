@@ -5,10 +5,11 @@ function init_map() {
     target: 'ol_map',
     interactions: ol.interaction.defaults({ doubleClickZoom: false }),
     view: new ol.View({
-      projection: projection_25833,
       center: mapCenterStart,
-      zoom: zoom,
-      maxZoom: maxZoom
+      extent: extent,
+      projection: projection_25833,
+      resolutions: resolutions,
+      zoom: zoom
     })
   });
 
@@ -92,7 +93,7 @@ function addControls(map) {
         if (features.length == 1) {
           // Single feature -> show
           showMeldung(features[0]);
-        } else if (map.getView().getZoom() == maxZoom) {
+        } else if (map.getView().getZoom() == (resolutions.length - 1)) {
           // Clustered features, max zoom -> show with recorder
           var dlg = showMeldung(features[0]);
           enhanceDialogForCluster(dlg, features, 0);
