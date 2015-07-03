@@ -22,14 +22,15 @@ function meldungenStyles(features) {
   size = features.get("features").length;
   if (size == 1) {
     feature = features.get("features")[0];
+    highlight = false;
+    if ($('#meldung_show').length > 0) {
+      if (feature.get('id') == $('#meldung_show').data('feature-id')) {
+        highlight = true;
+      }
+    }
+
     features.setStyle(new ol.style.Style({
-      image: new ol.style.Icon(({
-        anchorXUnits: 'pixels',
-        anchorYUnits: 'pixels',
-        anchor: [8, 84],
-        src: "images/icons/" + feature.get("vorgangstyp") + "_" + feature.get("status") + ".png",
-        scale: 0.5
-      }))
+      image: meldungIcon(feature, highlight)
     }));
   } else {
     features.setStyle(new ol.style.Style({
@@ -49,6 +50,36 @@ function meldungenStyles(features) {
       })
     }));
   }
+}
+
+function meldungIcon(feature, highlight) {
+  if (highlight) {
+    return new ol.style.Icon(({
+      anchorXUnits: 'pixels',
+      anchorYUnits: 'pixels',
+      anchor: [28, 102],
+      src: "images/icons/" + feature.get("vorgangstyp") + "_" + feature.get("status") + "_s.png",
+      scale: 0.5
+    }));
+  } else {
+    return new ol.style.Icon(({
+      anchorXUnits: 'pixels',
+      anchorYUnits: 'pixels',
+      anchor: [8, 84],
+      src: "images/icons/" + feature.get("vorgangstyp") + "_" + feature.get("status") + ".png",
+      scale: 0.5
+    }));
+  }
+}
+
+function reloadMeldungenIcons(layer_config) {
+  map.removeLayer(getLayerByTitle("Meldungen"));
+  var layerFactory = new OLLayerFactory();
+  if (!layer_config) {
+    layer_config = Object.create(ol_config.layers['Meldungen']);
+  }
+  map.addLayer(layerFactory.createVectorLayer(layer_config, projection_25833));
+
 }
 
 function moveMapToShowFeature(feature, dlg) {

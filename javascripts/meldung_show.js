@@ -26,6 +26,7 @@ function showMeldung(olFeature) {
   var dlg = $('<div></div>')
           .data('oWidth', 500)
           .attr('id', 'meldung_show')
+          .attr('data-feature-id', feature.get('id'))
           .dialog({
     autoOpen: false,
     width: 500,
@@ -111,6 +112,8 @@ function enhanceDialogForCluster(dlg, features, currentIndex) {
  * @returns null
  */
 function onMeldungShowClose(event) {
+  reloadMeldungenIcons(null);
+
   // Dialog leeren
   $('#meldung_show').parent().remove();
 }
