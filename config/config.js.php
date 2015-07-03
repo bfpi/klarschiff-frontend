@@ -3,10 +3,14 @@
 $config = include('config.php');
 ?>
 
-var zoom = 5;
-var maxZoom = 16;
+var zoom = 1;
 var lonLat_center = [12.15000, 54.13500];
 var mv_bbox_25833 = [206885, 5890624, 460857, 6060841];
+var extent = [271264, 5938535, 356804, 6017573]
+var resolutions = [28.2222222222, 22.9305555556,
+  17.6388888889, 12.3472222222, 8.8194444444, 7.0555555556, 5.2916666667,
+  3.5277777778, 2.6458333333, 1.7638888889, 0.8819444444, 0.3527777778,
+  0.1763888889];
 
 var problemMeldungenMoeglich = true;
 var ideeMeldungenMoeglich = true;
@@ -89,12 +93,15 @@ ol_styles = {
 var ol_config = {
   "layers": {
     "Stadtplan": {
-      type: "TileWMS",
+      type: "TileWMTS",
       title: "Stadtplan",
-      url: "http://geo.sv.rostock.de/geodienste/stadtplan/ows?",
+      url: "http://geo.sv.rostock.de/geodienste/stadtplan/wmts/stadtplan_wmts/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
       visibility: true,
-      version: "1.1.1",
-      layers: "stadtplan",
+      layers: "stadtplan_wmts",
+      tileGridOrigin: [200000, 6075000],
+      matrixSet: "grid_25833_wmts",
+      matrixIds: [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+      requestEncoding: "REST",
       projection: "EPSG:25833",
       format: "image/png",
       attribution_text: 'Kartenbild © Hansestadt Rostock (<a href="http://creativecommons.org/licenses/by/3.0/deed.de" target="_blank" style="color:#006CB7;text-decoration:none;">CC BY 3.0</a>) | Kartendaten © <a href="http://www.openstreetmap.org/" target="_blank" style="color:#006CB7;text-decoration:none;">OpenStreetMap</a> (<a href="http://opendatacommons.org/licenses/odbl/" target="_blank" style="color:#006CB7;text-decoration:none;">ODbL</a>) und <a href="https://geo.sv.rostock.de/uvgb.html" target="_blank" style="color:#006CB7;text-decoration:none;">uVGB-MV</a>',
@@ -102,12 +109,15 @@ var ol_config = {
       displayInLayerSwitcher: true
     },
     Luftbild: {
-      type: "TileWMS",
+      type: "TileWMTS",
       title: "Luftbild",
-      url: "http://geo.sv.rostock.de/geodienste/luftbild/ows?",
+      url: "http://geo.sv.rostock.de/geodienste/luftbild/wmts/luftbild_wmts/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
       visibility: true,
-      version: "1.1.1",
       layers: "luftbild",
+      tileGridOrigin: [200000, 6075000],
+      matrixSet: "epsg_25833_wmts",
+      matrixIds: [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+      requestEncoding: "REST",
       projection: "EPSG:25833",
       format: "image/png",
       attribution_text: "© GeoBasis-DE/M-V",
