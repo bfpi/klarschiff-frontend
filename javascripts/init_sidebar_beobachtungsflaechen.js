@@ -111,7 +111,9 @@ function beobachtungsflaecheStartNeueFlaeche() {
   });
 
   drawBeobachtungsflaeche.on('drawend', function(evt) {
-    $("#flaeche_apply").click();
+    setTimeout(function() {
+      $("#flaeche_apply").click();
+    }, 0);
     map.removeInteraction(drawBeobachtungsflaeche);
     $("#" + map.getTarget()).css("cursor", "auto");
   }, this);
