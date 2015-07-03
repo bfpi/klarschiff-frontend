@@ -101,7 +101,7 @@ function fitViewportToBBox(bboxArray) {
       if (bboxArray[0] == bboxArray[2]) {
         // PUNKT
         view.setCenter([parseFloat(bboxArray[0]), parseFloat(bboxArray[1])]);
-        view.setZoom(16);
+        view.setZoom(12);
       } else {
         // POLYGON
         for (i = 0; i < bboxArray.length; i++) {
