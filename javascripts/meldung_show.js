@@ -156,7 +156,7 @@ function meldungSupportDialog() {
   var showDlg = $('#meldung_show');
   var id = $('input[name="id"]').val();
   var email = $('input[name="meldung_actions_email"]').val();
-  showDlg.dialog('close');
+  showDlg.parent().hide();
 
   var dlg = $('<div></div>')
           .attr("id", 'meldung_support')
@@ -168,7 +168,7 @@ function meldungSupportDialog() {
       "unterstützen": meldungSupportSubmit,
       "abbrechen": function() {
         $(this).remove();
-        showDlg.dialog('open');
+        showDlg.parent().show();
       }
     },
     close: function(evt, ui) {
@@ -188,7 +188,7 @@ function meldungAbuseDialog() {
   var showDlg = $('#meldung_show');
   var id = $('input[name="id"]').val();
   var email = $('input[name="meldung_actions_email"]').val();
-  showDlg.dialog('close');
+  showDlg.parent().hide();
 
   var dlg = $('<div></div>')
           .attr("id", 'meldung_abuse')
@@ -200,7 +200,7 @@ function meldungAbuseDialog() {
       "melden": meldungAbuseSubmit,
       "abbrechen": function() {
         $(this).remove();
-        showDlg.dialog('open');
+        showDlg.parent().show();
       }
     },
     close: function(evt, ui) {
@@ -223,7 +223,7 @@ function meldungLobHinweiseKritikDialog() {
   var id = $('input[name="id"]').val();
   var email = $('input[name="meldung_actions_email"]').val();
   var zustaendigkeit = $('input[name="zustaendigkeit"]').val();
-  showDlg.dialog('close');
+  showDlg.parent().hide();
 
   var dlg = $('<div></div>')
           .attr("id", 'meldung_lobhinweisekritik')
@@ -235,7 +235,7 @@ function meldungLobHinweiseKritikDialog() {
       "senden": meldungLobHinweiseKritikSubmit,
       "abbrechen": function() {
         $(this).remove();
-        showDlg.dialog('open');
+        showDlg.parent().show();
       }
     },
     close: function(evt, ui) {
