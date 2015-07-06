@@ -208,13 +208,13 @@ div.results {
   font-size: 13px;
   position: absolute;
   text-align: left;
-  width: 304px;
+  width: 303px;
   z-index: 1;
 }
 
 div.result-element {
-  line-height: 23px;
   cursor: pointer;
+  line-height: 23px;
 }
 
 div.result-element:hover {
@@ -222,10 +222,10 @@ div.result-element:hover {
 }
 
 div.result-element span {
-  float: right;
-  padding-right: 6px;
   color: #cccccc;
+  float: right;
   font-size: 9px;
+  padding-right: 6px;
 }
 
 div.result-element:hover span {

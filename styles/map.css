@@ -115,17 +115,19 @@ form select {
 }
 
 input#searchtext {
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-box-shadow: inset 2px 4px 15px 1px #cccccc;
   background-color: #eeeeee;
-  border: 2px solid #006cb7;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  box-shadow: 2px 4px 15px 1px #cccccc inset;
-  font-family: "Verdana",sans-serif;
-  height: 25px;
-  margin: 5px auto 0;
-  outline: medium none;
-  padding-left: 4px;
-  width: 264px;
+  border: 2px solid #ffa200;
+  box-shadow: inset 2px 4px 15px 1px #cccccc;
+  font-size: 13px;
+  height: 36px;
+  outline: none;
+  padding-left: 5px;
+  width: 100%;
 }
 
 #standortsuche .input_wrapper {
@@ -141,16 +143,20 @@ input#searchtext {
 }
 
 div.results {
-  background-color: #eeeeee;
-  border-bottom: 2px solid #006cb7;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  background-color: #ffffff;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  border-left: 2px solid #006cb7;
-  border-right: 2px solid #006cb7;
+  border-bottom: 2px solid #ffa200;
+  border-left: 2px solid #ffa200;
+  border-right: 2px solid #ffa200;
   display: none;
-  float: left;
+  font-size: 13px;
+  position: absolute;
   text-align: left;
-  width: 264px;
+  width: 265px;
+  z-index: 1;
 }
 
 div.result-element {
@@ -158,16 +164,28 @@ div.result-element {
   line-height: 23px;
 }
 
+div.result-element:hover {
+  background-color: #eeeeee;
+}
+
+div.result-element span {
+  color: #cccccc;
+  float: right;
+  font-size: 9px;
+  padding-right: 6px;
+}
+
+div.result-element:hover span {
+  color: #888888;
+}
+
 div.result-element a {
   color: #006cb7;
   text-decoration: none;
 }
 
-div.result-element span {
-  color: #bbbbbb;
-  float: right;
-  font-size: 9px;
-  padding-right: 6px;
+div.result-element a:hover {
+  color: #d81920;
 }
 
 #melden ol {
