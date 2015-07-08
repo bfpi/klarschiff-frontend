@@ -107,7 +107,7 @@ function fitViewportToBBox(bboxArray) {
         for (i = 0; i < bboxArray.length; i++) {
           bboxArray[i] = parseFloat(bboxArray[i]);
         }
-        view.fitExtent(bboxArray, map.getSize());
+        view.fit(bboxArray, map.getSize());
       }
     }
     return false;
@@ -117,7 +117,7 @@ function fitViewportToBBox(bboxArray) {
   }
 }
 
-function checkBrowser(name) {  
+function checkBrowser(name) {
   var agent = navigator.userAgent.toLowerCase();  
   if (agent.indexOf(name.toLowerCase()) > -1) {  
     return true;  

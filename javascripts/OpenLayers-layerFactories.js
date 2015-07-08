@@ -62,8 +62,8 @@ var OLLayerFactory = function() {
    */
   this.createVectorLayer = function(def, projection) {
     var source;
-    source = new ol.source.GeoJSON({
-      projection: projection,
+    source = new ol.source.Vector({
+      format: new ol.format.GeoJSON(),
       url: def.url
     });
     if (def.enableClustering) {

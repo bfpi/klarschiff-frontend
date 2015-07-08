@@ -45,8 +45,11 @@ function onNeueMeldung(event) {
 
   targetLayer.getSource().addFeature(feature);
 
-  var featureOverlay = new ol.FeatureOverlay({
+  var newFeature = new ol.layer.Vector({
     map: map,
+    source: new ol.source.Vector({
+      features: new ol.Collection(),
+    }),
     style: iconStyle
   });
 
@@ -65,18 +68,18 @@ function onNeueMeldung(event) {
 
     if (feature == undefined) {
       if (highlight) {
-        featureOverlay.removeFeature(highlight);
+        newFeature.getSource().removeFeature(highlight);
         highlight = null;
       }
     } else {
       if (feature !== highlight) {
         highlight = feature;
-        featureOverlay.addFeature(highlight);
+        newFeature.getSource().addFeature(highlight);
       }
     }
   };
 
-  $(map.getViewport()).on('mousemove', function(evt) {
+  map.on('pointermove', function(evt) {
     displayFeatureInfo(map.getEventPixel(evt.originalEvent));
   });
 

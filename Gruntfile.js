@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     min: "<%= grunt.config('env') === 'production' ? '.min' : '' %>",
     versions: {
       bootstrap: '3.3.1',
-      ol: 'v3.1.1',
+      ol: 'v3.7.0',
       jq: '1.11.2',
       jqui: '1.11.2',
       proj4: '2.3.3',
