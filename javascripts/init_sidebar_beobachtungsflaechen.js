@@ -110,11 +110,13 @@ function beobachtungsflaecheStartNeueFlaeche() {
     style: ol_styles.beobachtungsflaeche
   });
 
-  drawBeobachtungsflaeche.on('drawend',
-          function(evt) {
-            map.removeInteraction(drawBeobachtungsflaeche);
-            $("#" + map.getTarget()).css("cursor", "auto");
-          }, this);
+  drawBeobachtungsflaeche.on('drawend', function(evt) {
+    setTimeout(function() {
+      $("#flaeche_apply").click();
+    }, 0);
+    map.removeInteraction(drawBeobachtungsflaeche);
+    $("#" + map.getTarget()).css("cursor", "auto");
+  }, this);
 
   map.addInteraction(drawBeobachtungsflaeche);
 

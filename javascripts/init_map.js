@@ -3,11 +3,13 @@ function init_map() {
 
   map = new ol.Map({
     target: 'ol_map',
+    interactions: ol.interaction.defaults({ doubleClickZoom: false }),
     view: new ol.View({
-      projection: projection_25833,
       center: mapCenterStart,
-      zoom: zoom,
-      maxZoom: maxZoom
+      extent: extent,
+      projection: projection_25833,
+      resolutions: resolutions,
+      zoom: zoom
     })
   });
 
@@ -24,7 +26,9 @@ function init_map() {
           feature.get("features").forEach(function(f) {
             if (f.get("id") == map.advice_id_) {
               map.advice_id_ = null;
-              showMeldung(f);
+              setTimeout(function() {
+                showMeldung(f);
+              }, 200);
               map.getView().setZoom(12);
               map.getView().setCenter(f.getGeometry().getCoordinates());
 	            return;
@@ -50,6 +54,9 @@ function addControls(map) {
   map.addControl(scaleLine);
 
   $(map.getViewport()).on("mousemove", function(evt) {
+    if(getLayerByTitle("DrawBeobachtungsflaeche").getVisible()) {
+      return true;
+    }
     var pixel = map.getEventPixel(evt.originalEvent);
     var feature = map.forEachFeatureAtPixel(
       pixel, function(feature, layer) { return feature; }
@@ -86,7 +93,7 @@ function addControls(map) {
         if (features.length == 1) {
           // Single feature -> show
           showMeldung(features[0]);
-        } else if (map.getView().getZoom() == maxZoom) {
+        } else if (map.getView().getZoom() == (resolutions.length - 1)) {
           // Clustered features, max zoom -> show with recorder
           var dlg = showMeldung(features[0]);
           enhanceDialogForCluster(dlg, features, 0);
@@ -102,5 +109,12 @@ function addControls(map) {
         return;
       }
     })
+  });
+  
+  $(map.getViewport()).on("dblclick", function(evt) {
+    layer = getLayerByTitle("DrawBeobachtungsflaeche");
+    if(!layer.getVisible()) {
+      map.getView().setZoom(parseInt(map.getView().getZoom() + 1));
+    }
   });
 }

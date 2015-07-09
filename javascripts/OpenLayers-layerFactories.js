@@ -5,21 +5,25 @@
 var OLLayerFactory = function() {
 
   /**
-   * Erzeugt einen gekachelten WMS-Layer.
+   * Erzeugt einen gekachelten WMTS-Layer.
    */
-  this.createTileWMSLayer = function(def, projection) {
+  this.createTileWMTSLayer = function(def, projection) {
     var layer = new ol.layer.Tile({
       title: def.title,
       extent: def.extent,
       projection: projection,
-      source: new ol.source.TileWMS({
+      source: new ol.source.WMTS({
+        projection: def.projection,
         url: def.url,
-        params: {
-          'LAYERS': def.layers,
-          'FORMAT': def.format,
-          'VERSION': def.version,
-          'SRS': def.projection
-        },
+        layer: def.layers,
+        matrixSet: def.matrixSet,
+        format: def.format,
+        requestEncoding: def.requestEncoding,
+        tileGrid: new ol.tilegrid.WMTS({
+          origin: def.tileGridOrigin,
+          resolutions: resolutions,
+          matrixIds: def.matrixIds
+        }),
         attributions: [
           new ol.Attribution({
             html: def.attribution_text
@@ -46,12 +50,7 @@ var OLLayerFactory = function() {
           'FORMAT': def.format,
           'VERSION': def.version,
           'SRS': def.projection
-        },
-        attributions: [
-          new ol.Attribution({
-            html: def.attribution_text
-          })
-        ]
+        }
       }),
       visible: def.default_layer,
       displayInLayerSwitcher: def.displayInLayerSwitcher
@@ -69,7 +68,7 @@ var OLLayerFactory = function() {
     });
     if (def.enableClustering) {
       source = new ol.source.Cluster({
-        distance: 40,
+        distance: def.clusterDistance,
         source: Object.create(source)
       });
     }
