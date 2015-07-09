@@ -18,5 +18,8 @@ $solrConf = array(
     'port' => 8080,
     'path' => 'solr',
     'core' => 'klarschiff',
-    'version' => 4
+    'version' => 4,
+    'params' => array(
+      'rows' => 5
+    )
 );
