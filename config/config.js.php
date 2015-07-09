@@ -3,17 +3,17 @@
 $config = include('config.php');
 ?>
 
-var zoom = 1;
-var lonLat_center = [12.15000, 54.13500];
-var mv_bbox_25833 = [206885, 5890624, 460857, 6060841];
-var extent = [271264, 5938535, 356804, 6017573]
+var zoom = 4;
+var lonLat_center = [13.409414, 54.089276];
+var mv_bbox_25833 = [380000, 5980000, 410000, 6010000];
+var extent = [380000, 5980000, 410000, 6010000]
 var resolutions = [28.2222222222, 22.9305555556,
   17.6388888889, 12.3472222222, 8.8194444444, 7.0555555556, 5.2916666667,
   3.5277777778, 2.6458333333, 1.7638888889, 0.8819444444, 0.3527777778,
   0.1763888889];
 
 var problemMeldungenMoeglich = true;
-var ideeMeldungenMoeglich = true;
+var ideeMeldungenMoeglich = false;
 
 var unterstuetzer_schwellenwert = <?php echo $config['thresholds']['supporter']; ?>;
 
@@ -104,7 +104,7 @@ var ol_config = {
       requestEncoding: "REST",
       projection: "EPSG:25833",
       format: "image/png",
-      attribution_text: 'Kartenbild © Hansestadt Rostock (<a href="http://creativecommons.org/licenses/by/3.0/deed.de" target="_blank" style="color:#006CB7;text-decoration:none;">CC BY 3.0</a>) | Kartendaten © <a href="http://www.openstreetmap.org/" target="_blank" style="color:#006CB7;text-decoration:none;">OpenStreetMap</a> (<a href="http://opendatacommons.org/licenses/odbl/" target="_blank" style="color:#006CB7;text-decoration:none;">ODbL</a>) und <a href="https://geo.sv.rostock.de/uvgb.html" target="_blank" style="color:#006CB7;text-decoration:none;">uVGB-MV</a>',
+      attribution_text: 'Kartenbild © Universitäts- und Hansestadt Greifswald (<a href="http://creativecommons.org/licenses/by/3.0/deed.de" target="_blank" style="color:#006CB7;text-decoration:none;">CC BY 3.0</a>) | Kartendaten © <a href="http://www.openstreetmap.org/" target="_blank" style="color:#006CB7;text-decoration:none;">OpenStreetMap</a> (<a href="http://opendatacommons.org/licenses/odbl/" target="_blank" style="color:#006CB7;text-decoration:none;">ODbL</a>) und <a href="https://geo.sv.rostock.de/uvgb.html" target="_blank" style="color:#006CB7;text-decoration:none;">uVGB-MV</a>',
       default_layer: true,
       displayInLayerSwitcher: true
     },
@@ -124,17 +124,17 @@ var ol_config = {
       default_layer: false,
       displayInLayerSwitcher: true
     },
-    "POI": {
-      type: "ImageWMS",
-      url: "http://geo.sv.rostock.de/geodienste/klarschiff_poi/ows?",
-      version: "1.1.1",
-      layers: "abfallbehaelter,ampeln,beleuchtung,brunnen,denkmale,hundetoiletten,recyclingcontainer,sitzgelegenheiten,sperrmuelltermine",
-      projection: "EPSG:25833",
-      format: "image/png",
-      default_layer: true,
-      minScale: 1100,
-      singleTile: true
-    },
+//    "POI": {
+//      type: "ImageWMS",
+//      url: "http://geo.sv.rostock.de/geodienste/klarschiff_poi/ows?",
+//      version: "1.1.1",
+//      layers: "abfallbehaelter,ampeln,beleuchtung,brunnen,denkmale,hundetoiletten,recyclingcontainer,sitzgelegenheiten,sperrmuelltermine",
+//      projection: "EPSG:25833",
+//      format: "image/png",
+//      default_layer: true,
+//      minScale: 1100,
+//      singleTile: true
+//    },
     "Meldungen": {
       title: "Meldungen",
       type: "Vector",

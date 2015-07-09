@@ -16,8 +16,8 @@ echo "<br/>connect ok";
 /* * *********************************************************************
  * O R T S T E I L    S E A R C H
  * ********************************************************************* */
-$sql = "SELECT ot.id AS id,ot.stadtteil_name AS stadtteil_name,box2d(ot.geom) AS bbox"
-  . ",st_dimension(ot.geom) AS dimension FROM " . SCHEMA . ".standortsuche ot WHERE ot.stadtteil_name IS NOT NULL;";
+$sql = "SELECT ot.id AS id,ot.name AS ortsteilname,box2d(ot.geom) AS bbox"
+  . ",st_dimension(ot.geom) AS dimension FROM " . SCHEMA . ".ortsteil ot;";
 $result = pg_query($conn, $sql);
 $num = 0;
 while ($row = pg_fetch_assoc($result)) {
@@ -31,25 +31,25 @@ while ($row = pg_fetch_assoc($result)) {
     $row["geom"] = $row["bbox"];
   }
   $search->updateIndex(
-    $row["stadtteil_name"],
+    $row["ortsteilname"],
     array(
       "type" => "Ortsteil",
-      "stadtteil_name" => $row["stadtteil_name"],
+      "ortsteilname" => $row["ortsteilname"],
       "geom" => $row["geom"]
     )
   );
   $num++;
 }
 
-echo "<br/><br/>Tables :" . SCHEMA . "standortsuche";
+echo "<br/><br/>Tables :" . SCHEMA . ".ortsteil<->" . SCHEMA . ".ort";
 echo "<br/>Rows all :" . pg_num_rows($result);
 echo "<br/>Rows accepted :" . $num;
 echo "<br/>Last error : " . pg_last_error();
 /* * *********************************************************************
  * S T R A S S E    S E A R C H
  * ********************************************************************* */
-$sql = "SELECT s.id AS id, s.strasse_name AS strasse_name"
-  . ",box2d(s.geom) AS bbox, st_dimension(s.geom) AS dimension FROM " . SCHEMA . ".standortsuche s WHERE s.strasse_name IS NOT NULL";
+$sql = "SELECT s.id AS id, s.name AS strassenname"
+  . ",box2d(s.geom) AS bbox, st_dimension(s.geom) AS dimension FROM " . SCHEMA . ".strasse s";
 $result = pg_query($conn, $sql);
 $num = 0;
 while ($row = pg_fetch_assoc($result)) {
@@ -63,26 +63,28 @@ while ($row = pg_fetch_assoc($result)) {
     $row["geom"] = $row["bbox"];
   }
   $search->updateIndex(
-    $row["strasse_name"],
+    $row["strassenname"],
     array(
       "type" => "Straße",
-      "strasse_name" => $row["strasse_name"],
+      "strassenname" => $row["strassenname"],
       "geom" => $row["geom"]
     )
   );
   $num++;
 }
 
-echo "<br/><br/>Tables :" . SCHEMA . ".standortsuche";
+echo "<br/><br/>Tables :" . SCHEMA . ".strasse<->" . SCHEMA . ".ort<->" . SCHEMA . ".ortsteil";
 echo "<br/>Rows all :" . pg_num_rows($result);
 echo "<br/>Rows accepted :" . $num;
 echo "<br/>Last error : " . pg_last_error();
 /* * *********************************************************************
  * A D R E S S E    S E A R C H
  * ********************************************************************* */
-$sql = "SELECT a.id, a.strasse AS strasse, a.hausnummer, a.hausnummerzusatz"
+$sql = "SELECT a.id, s.name AS strassenname, a.hausnummer, a.hausnummerzusatz"
   . ",box2d(a.geom) AS bbox, st_dimension(a.geom) AS dimension"
-  . " FROM " . SCHEMA . ".standortsuche a WHERE a.hausnummer IS NOT NULL";
+  . " FROM " . SCHEMA . ".adresse a "
+  . " INNER JOIN " . SCHEMA . ".strasse s ON s.id = a.strasse_id"
+  . " ORDER BY a.id";
 $result = pg_query($conn, $sql);
 $num = 0;
 while ($row = pg_fetch_assoc($result)) {
@@ -96,10 +98,10 @@ while ($row = pg_fetch_assoc($result)) {
     $row["geom"] = $row["bbox"];
   }
   $search->updateIndex(
-    $row["strasse"] . " " . $row["hausnummer"] . " " . $row["hausnummerzusatz"],
+    $row["strassenname"] . " " . $row["hausnummer"] . " " . $row["hausnummerzusatz"],
     array(
       "type" => "Adresse",
-      "strasse" => $row["strasse"],
+      "strassenname" => $row["strassenname"],
       "hausnummer" => $row["hausnummer"],
       "hausnummerzusatz" => $row["hausnummerzusatz"],
       "geom" => $row["geom"]
@@ -108,7 +110,7 @@ while ($row = pg_fetch_assoc($result)) {
   $num++;
 }
 
-echo "<br/><br/>Tables :" . SCHEMA . ".standortsuche";
+echo "<br/><br/>Tables :" . SCHEMA . ".address<->" . SCHEMA . ".ort<->" . SCHEMA . ".ortsteil";
 echo "<br/>Rows all :" . pg_num_rows($result);
 echo "<br/>Rows accepted :" . $num;
 echo "<br/>Last error : " . pg_last_error();

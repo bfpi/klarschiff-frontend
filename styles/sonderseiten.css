@@ -1,68 +1,68 @@
 body {
-    margin:0 auto;
-    margin-bottom:15px;
-    background-color:#FFFFFF;
-    color:#000000;
-    font-family:'Verdana',sans-serif;
-    text-align:center;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Verdana',sans-serif;
+  margin-bottom: 15px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 div#main {
-    width:1000px;
-    margin:0 auto;
-    margin-top:15px;
-    margin-bottom:15px;
-    font-size:110%;
+  font-size: 110%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin: 0 auto;
+  width: 1000px;
 }
 
 div.headline {
-    margin-top:15px;
-    color:#D81920;
-    font-weight:bold;
+  color: #D81920;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
 div.content {
-    margin-top:10px;
-    font-size:80%;
+  font-size: 80%;
+  margin-top: 10px;
 }
 
 div.content_columns{
-    width:500px;
-    margin:0 auto;
-    margin-top:10px;
-    font-size:80%;
+  font-size: 80%;
+  margin-top: 10px;
+  margin: 0 auto;
+  width: 500px;
 }
 
 div.subheadline {
-    color:#006CB7;
-    font-weight:bold;
+  color: #006CB7;
+  font-weight: bold;
 }
 
 div.column {
-    width:50%;
-    float:left;
-    margin-bottom:10px;
+  float: left;
+  margin-bottom: 10px;
+  width: 50%;
 }
 
-div#subsidy{
-    clear:both;
+div#subsidy {
+  clear: both;
+  margin-top: 15px;
 }
 
 div#subsidy_logo {
-    height:150px;
-    width:129px;
-    margin:0 auto;
-    margin-bottom:5px;
-    background-image:url(../images/logo_eu-fonds.png);
-    background-repeat:no-repeat;
-    background-position:center;
-    cursor:pointer;
+  background-image: url(/pc/images/logo_eu-fonds.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 150px;
+  margin: 0 auto 5px auto;
+  width: 129px;
 }
 
 div.section {
-    margin-top:5px;
-    font-weight:bold;
-    clear:both;
+  clear: both;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
 div.centered {
@@ -70,152 +70,127 @@ div.centered {
 }
 
 div.justified {
-    text-align:justify;
+  text-align: justify;
 }
 
 div.justified_margin_top {
-    margin:0 auto;
-    margin-top:5px;
-    text-align:justify;
+  margin: 5px auto 0 auto;
+  text-align: justify;
 }
 
 div.annotation {
-    margin-top:5px;
-    font-size:60%;
+  font-size: 60%;
+  margin-top: 5px;
 }
 
 div.screenshot_container {
-    width:650px;
-    margin:0 auto;
-    margin-top:5px;
+  margin: 5px auto 0 auto;
+  width: 650px;
 }
 
 div.screenshot_container_large {
-    width:1000px;
-    margin:0 auto;
-    margin-top:5px;
+  margin: 5px auto 0 auto;
+  width: 1000px;
 }
 
 div.screenshot_container_separator {
-    clear:both;
+  clear: both;
 }
 
 div.screenshot_left {
-    height:200px;
-    width:300px;
-    float:left;
-    border-style:dashed;
-    border-width:1px;
-    border-color:#006CB7;
+  border: 1px dashed #006CB7;
+  float: left;
+  height: 200px;
+  width: 300px;
+
 }
 
 div.screenshot_right {
-    height:200px;
-    width:300px;
-    float:right;
-    border-style:dashed;
-    border-width:1px;
-    border-color:#006CB7;
+  border: 1px dashed #006CB7;
+  float: right;
+  height: 200px;
+  width: 300px;
 }
 
 div.screenshot_center {
-    height:200px;
-    width:300px;
-    margin:0 auto;
-    border-style:dashed;
-    border-width:1px;
-    border-color:#006CB7;
+  border: 1px dashed #006CB7;
+  height: 200px;
+  margin: 0 auto;
+  width: 300px;
 }
 
 div.screenshot_center_large {
-    height:400px;
-    width:650px;
-    margin:0 auto;
-    border-style:dashed;
-    border-width:1px;
-    border-color:#006CB7;
+  border: 1px dashed #006CB7;
+  height: 400px;
+  margin: 0 auto;
+  width: 650px;
 }
 
 div.screenshot_fill {
-    height:200px;
-    width:300px;
-    margin:0 auto;
+  height: 200px;
+  margin: 0 auto;
+  width: 300px;
 }
 
 div.screenshot_left_annotation {
-    width:300px;
-    float:left;
-    margin-bottom:5px;
-    text-align:justify;
+  float: left;
+  margin-bottom: 5px;
+  text-align: justify;
+  width: 300px;
 }
 
 div.screenshot_right_annotation {
-    width:300px;
-    float:right;
-    margin-bottom:5px;
-    text-align:justify;
-}
-
-div.screenshot_center_annotation {
-    width:300px;
-    margin:0 auto;
-    margin-bottom:5px;
+  float: right;
+  margin-bottom: 5px;
+  text-align: justify;
+  width: 300px;
 }
 
 div.screenshot_center_large_annotation {
-    width:650px;
-    margin:0 auto;
-    margin-bottom:5px;
+  margin: 0 auto 5px auto;
+  width: 650px;
 }
 
+div.screenshot_center_annotation,
 div.screenshot_fill_annotation {
-    width:300px;
-    margin:0 auto;
-    margin-bottom:5px;
+  margin: 0 auto 5px auto;
+  width: 300px;
 }
 
 a {
-    color:#006CB7;
-    text-decoration:none;
+  color: #006CB7;
+  text-decoration: none;
 }
 
 a:hover {
-    color:#D81920;
-    text-decoration:none;
+  color: #D81920;
+  text-decoration: none;
 }
 
-a.subheadline_anchor {
-    color:#006CB7;
-    text-decoration:none;
-}
-
+a.subheadline_anchor,
 a.subheadline_anchor:hover {
-    color:#006CB7;
-    text-decoration:none;
+  color: #006CB7;
+  text-decoration: none;
 }
 
-a.section_anchor {
-    color:#000000;
-    text-decoration:none;
-}
-
+a.section_anchor,
 a.section_anchor:hover {
-    color:#000000;
-    text-decoration:none;
+  color: #000000;
+  text-decoration: none;
 }
 
 a.section_ref {
-    font-size:80%;
+  font-size: 80%;
 }
 
 span.bold {
-    font-weight:bold;
+  font-weight: bold;
 }
 
 span.italic {
-    font-style:italic;
+  font-style: italic;
 }
 
 span.small {
-    font-size:60%;
+  font-size: 60%;
 }

@@ -482,9 +482,9 @@ function getKategorien(parent, typ) {
     }
   }
   kategorien.sort(function(a, b) {
-     return a.name.localeCompare(b.name);
-   });
-   kategorien.unshift({ id: 0, name: "auswählen…" });
+    return a.name.localeCompare(b.name);
+  });
+  kategorien.unshift({ id: 0, name: "auswählen…" });
   return kategorien;
 }
 

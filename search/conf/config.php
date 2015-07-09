@@ -10,14 +10,14 @@ define("SCHEMA","public");
 # ORT
 define("URL", "map.php");
 # DEFAULT ORT - zur Begrenzung der Suche
-# define("ORT","Rostock");
+# define("ORT","Greifswald");
 
 # SOLR
 $solrConf = array(
-    'host' => 'localhost',
+    'host' => 'klarschiff-test-hgw',
     'port' => 8080,
     'path' => 'solr',
-    'core' => 'klarschiff',
+    'core' => 'klarschiff_hgw',
     'version' => 4,
     'params' => array(
       'rows' => 5

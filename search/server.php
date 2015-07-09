@@ -42,15 +42,15 @@ foreach ($result->documents as $doc) {
   }
 
   if ($type === "ort") {
-    $title = $data['ort_name'];
+    $title = $data['ortsname'];
   } elseif ($type === "ortsteil") {
-    $title = $data['stadtteil_name'];
+    $title = $data['ortsteilname'];
   } elseif ($type === "straße") {
-    $title = $data['strasse_name'];
+    $title = $data['strassenname'];
   } elseif ($type === "adresse") {
-    $title = $data["strasse"] . " " . $data["hausnummer"] . " " . $data["hausnummerzusatz"];
+    $title = $data["strassenname"] . " " . $data["hausnummer"] . " " . $data["hausnummerzusatz"];
   } elseif ($type === "poi") {
-    $title = $data['poi_titel'];
+    $title = $data['title'];
   } else {
     $title = "";
   }

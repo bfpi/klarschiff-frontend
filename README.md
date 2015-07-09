@@ -7,13 +7,12 @@ Das Desktop-Frontend für *Klarschiff,* einer Onlineplattform zum Melden und Bea
 *   [**OpenLayers 3**](http://openlayers.org): JavaScript-Mapping-Framework
 *   [**Proj4js**](https://github.com/proj4js/proj4js): JavaScript-Bibliothek zur Transfomation von Koordinaten
 
-## Installation
-
-### Voraussetzungen
+## Voraussetzungen
 
 Zur Installation werden [**Node.js**](http://nodejs.org) >= 0.10 und [npm](https://www.npmjs.com) benötigt. Letzteres wird in der Regel durch die Installation von [Node.js](http://nodejs.org) bereitgestellt.
+Eine Installationsanleitung für Debian basierte Systeme ist hier zu finden: https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#debian-and-ubuntu-based-linux-distributions
 
-### Installation
+## Installation
 
 1.  Anwendung aus dem Git-Repository klonen:
 
@@ -34,3 +33,12 @@ Zur Installation werden [**Node.js**](http://nodejs.org) >= 0.10 und [npm](https
 1.  referenzierte Bibliotheken installieren und einrichten via [**Grunt**](http://gruntjs.com):
 
         grunt install
+
+1. Die Tasks sind für zwei Umgebungen vorbereitet: 
+    1. `development`: (Standardkonfiguration), die JavaScripte werden nur zusammengefasst, nicht komprimiert und es gibt einen Wachtdog, der bei Änderungen an den Quelldateien automatisch neue Builds für die Referenz in der Seite erstellt.
+    2. `production`: Konfiguration via `GRUNT_ENV=production` (ggf. in der `/etc/environment`). Die Scripte werden für eine bessere Performance zusätzlich komprimiert an den Browser ausgeliefert. Ein automatisierter Watchdienst ist bisher nicht konfiguriert.
+  
+  1. Für beide Umgebungen wird der Standard-Tasks wie folgt aufgerufen:
+  
+          grunt
+
