@@ -22,14 +22,15 @@ function meldungenStyles(features) {
   size = features.get("features").length;
   if (size == 1) {
     feature = features.get("features")[0];
+    highlight = false;
+    if ($('#meldung_show').length > 0) {
+      if (feature.get('id') == $('#meldung_show').data('feature-id')) {
+        highlight = true;
+      }
+    }
+
     features.setStyle(new ol.style.Style({
-      image: new ol.style.Icon(({
-        anchorXUnits: 'pixels',
-        anchorYUnits: 'pixels',
-        anchor: [8, 84],
-        src: "images/icons/" + feature.get("vorgangstyp") + "_" + feature.get("status") + ".png",
-        scale: 0.5
-      }))
+      image: meldungIcon(feature, highlight)
     }));
   } else {
     features.setStyle(new ol.style.Style({
@@ -51,6 +52,36 @@ function meldungenStyles(features) {
   }
 }
 
+function meldungIcon(feature, highlight) {
+  if (highlight) {
+    return new ol.style.Icon(({
+      anchorXUnits: 'pixels',
+      anchorYUnits: 'pixels',
+      anchor: [28, 102],
+      src: "images/icons/" + feature.get("vorgangstyp") + "_" + feature.get("status") + "_s.png",
+      scale: 0.5
+    }));
+  } else {
+    return new ol.style.Icon(({
+      anchorXUnits: 'pixels',
+      anchorYUnits: 'pixels',
+      anchor: [8, 84],
+      src: "images/icons/" + feature.get("vorgangstyp") + "_" + feature.get("status") + ".png",
+      scale: 0.5
+    }));
+  }
+}
+
+function reloadMeldungenIcons(layer_config) {
+  map.removeLayer(getLayerByTitle("Meldungen"));
+  var layerFactory = new OLLayerFactory();
+  if (!layer_config) {
+    layer_config = Object.create(ol_config.layers['Meldungen']);
+  }
+  map.addLayer(layerFactory.createVectorLayer(layer_config, projection_25833));
+
+}
+
 function moveMapToShowFeature(feature, dlg) {
   featureOffset = map.getPixelFromCoordinate(feature.getGeometry().getCoordinates());
 
@@ -70,13 +101,13 @@ function fitViewportToBBox(bboxArray) {
       if (bboxArray[0] == bboxArray[2]) {
         // PUNKT
         view.setCenter([parseFloat(bboxArray[0]), parseFloat(bboxArray[1])]);
-        view.setZoom(16);
+        view.setZoom(12);
       } else {
         // POLYGON
         for (i = 0; i < bboxArray.length; i++) {
           bboxArray[i] = parseFloat(bboxArray[i]);
         }
-        view.fitExtent(bboxArray, map.getSize());
+        view.fit(bboxArray, map.getSize());
       }
     }
     return false;
@@ -86,7 +117,7 @@ function fitViewportToBBox(bboxArray) {
   }
 }
 
-function checkBrowser(name) {  
+function checkBrowser(name) {
   var agent = navigator.userAgent.toLowerCase();  
   if (agent.indexOf(name.toLowerCase()) > -1) {  
     return true;  

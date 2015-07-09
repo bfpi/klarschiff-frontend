@@ -17,9 +17,12 @@ function beobachtungsflaecheStartSelect() {
   $("#flaeche_apply").unbind("click").click(beobachtungsflaecheSelect);
 
   layer.setVisible(true);
-  beobachtungsflaechenOverlay = new ol.FeatureOverlay({
+  beobachtungsflaechenOverlay = new ol.layer.Vector({
     map: map,
-    style: ol_styles.beobachtungsflaeche_hover
+    source: new ol.source.Vector({
+      features: new ol.Collection(),
+    }),
+    style: ol_styles.beobachtungsflaeche_hover,
   });
 
   map.on('click', waehleStadtteil);
@@ -33,7 +36,7 @@ function beobachtungsflaecheStartSelect() {
 }
 
 function beobachtungsflaecheSelect() {
-  features = beobachtungsflaechenOverlay.getFeatures().getArray();
+  features = beobachtungsflaechenOverlay.getSource().getFeatures();
   var ids = "";
   for (var i = 0; i < features.length; i++) {
     if (i > 0) {
@@ -53,7 +56,7 @@ function beobachtungsflaecheStopSelect() {
   var layer = getLayerByTitle("SketchBeobachtungsflaeche");
 
   layer.setVisible(false);
-  beobachtungsflaechenOverlay.getFeatures().clear();
+  beobachtungsflaechenOverlay.getSource().clear();
   map.un('click', waehleStadtteil);
 }
 
@@ -63,17 +66,18 @@ function waehleStadtteil(elem) {
     return feature;
   });
 
+  var overlaySource = beobachtungsflaechenOverlay.getSource();
   var isCurrent = false;
-  beobachtungsflaechenOverlay.getFeatures().forEach(function(feature) {
+  overlaySource.getFeatures().forEach(function(feature) {
     if (newFeature == feature) {
       isCurrent = true;
     }
   });
 
   if (isCurrent) {
-    beobachtungsflaechenOverlay.removeFeature(newFeature);
+    overlaySource.removeFeature(newFeature);
   } else if (newFeature) {
-    beobachtungsflaechenOverlay.addFeature(newFeature);
+    overlaySource.addFeature(newFeature);
   }
 }
 
@@ -110,11 +114,13 @@ function beobachtungsflaecheStartNeueFlaeche() {
     style: ol_styles.beobachtungsflaeche
   });
 
-  drawBeobachtungsflaeche.on('drawend',
-          function(evt) {
-            map.removeInteraction(drawBeobachtungsflaeche);
-            $("#" + map.getTarget()).css("cursor", "auto");
-          }, this);
+  drawBeobachtungsflaeche.on('drawend', function(evt) {
+    setTimeout(function() {
+      $("#flaeche_apply").click();
+    }, 0);
+    map.removeInteraction(drawBeobachtungsflaeche);
+    $("#" + map.getTarget()).css("cursor", "auto");
+  }, this);
 
   map.addInteraction(drawBeobachtungsflaeche);
 

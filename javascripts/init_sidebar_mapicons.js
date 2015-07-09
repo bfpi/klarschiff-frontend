@@ -78,10 +78,6 @@ function buildFilter() {
     }
   })
 
-  var layer = getLayerByTitle("Meldungen");
-  map.removeLayer(layer);
-
-  var layerFactory = new OLLayerFactory();
   layer_config = Object.create(ol_config.layers['Meldungen']);
   if (condition.length > 1) {
     layer_config.url += "&Filter=<Filter>" + "<Or>" + condition.join("") + "</Or>" + "</Filter>"
@@ -89,5 +85,5 @@ function buildFilter() {
   else if (condition.length == 1) {
     layer_config.url += "&Filter=<Filter>" + condition.join("") + "</Filter>"
   }
-  map.addLayer(layerFactory.createVectorLayer(layer_config, projection_25833));
+  reloadMeldungenIcons(layer_config)
 }
