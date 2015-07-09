@@ -25,7 +25,8 @@ function eyeCatcher() {
     target: 'map',
     view: new ol.View({
       projection: projection_25833,
-      zoom: 6
+      resolutions: resolutions,
+      zoom: 9
     }),
     controls: [],
     interactions: []

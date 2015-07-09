@@ -53,7 +53,7 @@ function addControls(map) {
   var scaleLine = new ol.control.ScaleLine();
   map.addControl(scaleLine);
 
-  $(map.getViewport()).on("mousemove", function(evt) {
+  map.on('pointermove', function(evt) {
     if(getLayerByTitle("DrawBeobachtungsflaeche").getVisible()) {
       return true;
     }
