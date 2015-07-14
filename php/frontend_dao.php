@@ -66,7 +66,7 @@ class FrontendDAO {
     $result = array();
     if ($row = pg_fetch_assoc(
       pg_query_params($this->conn, "SELECT g.ideen, g.ideen_kategorien, g.probleme, "
-        . "g.probleme_kategorien, ST_AsGML(g.the_geom) AS wkt "
+        . "g.probleme_kategorien, ST_AsGML(3, g.the_geom) AS wkt "
         . "FROM klarschiff.klarschiff_geo_rss g "
         . "WHERE md5(g.id::varchar) = $1", array($id)))) {
       $result = $row;
