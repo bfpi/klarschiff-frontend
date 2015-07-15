@@ -4,7 +4,7 @@ $config = include('config.php');
 ?>
 
 var zoom = 4;
-var lonLat_center = [13.409414, 54.089276];
+var lonLat_center = [11.41, 53.64];
 var mv_bbox_25833 = [380000, 5980000, 410000, 6010000];
 var extent = [380000, 5980000, 410000, 6010000]
 var resolutions = [28.2222222222, 22.9305555556,
@@ -104,7 +104,7 @@ var ol_config = {
       requestEncoding: "REST",
       projection: "EPSG:25833",
       format: "image/png",
-      attribution_text: 'Kartenbild © Universitäts- und Hansestadt Greifswald (<a href="http://creativecommons.org/licenses/by/3.0/deed.de" target="_blank" style="color:#006CB7;text-decoration:none;">CC BY 3.0</a>) | Kartendaten © <a href="http://www.openstreetmap.org/" target="_blank" style="color:#006CB7;text-decoration:none;">OpenStreetMap</a> (<a href="http://opendatacommons.org/licenses/odbl/" target="_blank" style="color:#006CB7;text-decoration:none;">ODbL</a>) und <a href="https://geo.sv.rostock.de/uvgb.html" target="_blank" style="color:#006CB7;text-decoration:none;">uVGB-MV</a>',
+      attribution_text: 'Kartenbild ©Landeshauptstadt Schwerin (<a href="http://creativecommons.org/licenses/by/3.0/deed.de" target="_blank" style="color:#006CB7;text-decoration:none;">CC BY 3.0</a>) | Kartendaten © <a href="http://www.openstreetmap.org/" target="_blank" style="color:#006CB7;text-decoration:none;">OpenStreetMap</a> (<a href="http://opendatacommons.org/licenses/odbl/" target="_blank" style="color:#006CB7;text-decoration:none;">ODbL</a>) und <a href="https://geo.sv.rostock.de/uvgb.html" target="_blank" style="color:#006CB7;text-decoration:none;">uVGB-MV</a>',
       default_layer: true,
       displayInLayerSwitcher: true
     },

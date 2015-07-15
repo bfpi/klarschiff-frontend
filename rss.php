@@ -11,7 +11,7 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
     <link><?php echo FRONTEND_URL; ?></link>
     <description>Meldungen im Bürgerbeteiligungsportal Klarschiff</description>
     <language>de-de</language>
-    <copyright>Universitäts- und Hansestadt Greifswald</copyright>
+    <copyright>Ladeshauptstadt Schwerin</copyright>
     <image>
     <url><?php echo FRONTEND_URL, 'images/rss.png'; ?></url>
     <title>Klarschiff: Meldungen</title>
