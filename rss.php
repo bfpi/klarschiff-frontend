@@ -20,59 +20,24 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
     <?php
     $frontend = new FrontendDAO();
     foreach ($frontend->rss() as $rss) {
-      $title = "#" . $rss['id'] . " " . ucfirst($rss['typ']) . " (" . $rss['hauptkategorie'] . " – " . $rss['unterkategorie'] . ")";
-      $status = preg_replace('/([A-Z])/', ' $0', $rss['status']);
-
-      if ($rss['betreff_vorhanden'] == 't' && $rss['betreff_freigegeben'] == 't' && $rss['betreff'] != '') {
-        $betreff = $rss['betreff'];
-      } else if ($status == 'offen' && $rss['betreff_vorhanden'] == 't' && $rss['betreff_freigegeben'] == 'f') {
-        $betreff = "<i>redaktionelle Prüfung ausstehend</i>";
-      } else if ($status != 'offen' && $rss['betreff_vorhanden'] == 't' && $rss['betreff_freigegeben'] == 'f') {
-        $betreff = "<i>redaktionell nicht freigegeben</i>";
-      } else {
-        $betreff = "<i>nicht vorhanden</i>";
-      }
-
-      if ($rss['details_vorhanden'] == 't' && $rss['details_freigegeben'] == 't' && $rss['details'] != '') {
-        $details = $rss['details'];
-      } else if ($status == 'offen' && $rss['details_vorhanden'] == 't' && $rss['details_freigegeben'] == 'f') {
-        $details = "<i>redaktionelle Prüfung ausstehend</i>";
-      } else if ($status != 'offen' && $rss['details_vorhanden'] == 't' && $rss['details_freigegeben'] == 'f') {
-        $details = "<i>redaktionell nicht freigegeben</i>";
-      } else {
-        $details = "<i>nicht vorhanden</i>";
-      }
-      if ($rss['foto_vorhanden'] == 't' && $rss['foto_freigegeben'] == 't') {
-        $foto = "<br/><img src='" . BASE_URL . "fotos/" . $rss['foto_thumb'] . "' alt='" . $rss['foto_thumb'] . "'>";
-      } else if ($status == 'offen' && $rss['foto_vorhanden'] == 't' && $rss['foto_freigegeben'] == 'f') {
-        $foto = "<i>redaktionelle Prüfung ausstehend</i>";
-      } else if ($status != 'offen' && $rss['foto_vorhanden'] == 't' && $rss['foto_freigegeben'] == 'f') {
-        $foto = "<i>redaktionell nicht freigegeben</i>";
-      } else {
-        $foto = "<i>nicht vorhanden</i>";
-      }
-
-      $bemerkung = $rss['bemerkung'] != '' ? $rss['bemerkung'] : "<i>nicht vorhanden</i>";
-      $unterstuetzungen = $rss['unterstuetzungen'] > 0 ? $rss['unterstuetzungen'] : "<i>bisher keine</i>";
-      $link = htmlentities(strip_tags(MAP_URL . "?advice=" . $rss['id']), ENT_QUOTES);
-      $date = date('D, d M Y H:i:s O', strtotime($rss['datum']));
+      $link = htmlentities(strip_tags(MAP_URL . "?advice=" . $rss['meldung']), ENT_QUOTES);
       ?>
       <item>
-        <title><?php echo $title; ?></title>
+        <title><?php echo "#", $rss['meldung'], " ", $rss['typ'], " (", $rss['hauptkategorie'], " – ", $rss['unterkategorie'], ")"; ?></title>
         <description>
           <![CDATA[
-          <b>Status:</b> <?php echo $status; ?><br/>
-          <b>Unterstützungen:</b> <?php echo $unterstuetzungen; ?><br/>
-          <b>Betreff:</b> <?php echo $betreff; ?><br/>
-          <b>Details:</b> <?php echo $details; ?><br/>
-          <b>Foto:</b> <?php echo $foto; ?><br/>
-          <b>Info der Verwaltung:</b> <?php echo $bemerkung; ?><br/>
-          <a href="<?php echo $link; ?>" target="_blank">Meldung in Klarschiff ansehen</a>
+          <b>Status:</b> <?php echo $rss['status']; ?><br/>
+          <b>Unterstützungen:</b> <?php echo $rss['unterstuetzungen']; ?><br/>
+          <b>Betreff:</b> <?php echo $rss['betreff']; ?><br/>
+          <b>Details:</b> <?php echo $rss['details']; ?><br/>
+          <b>Foto:</b> <?php echo $rss['foto']; ?><br/>
+          <b>Info der Verwaltung:</b> <?php echo $rss['info_der_verwaltung']; ?><br/>
+          <a href="<?php echo $link; ?>" target="_blank">Meldung in Klarschiff.HRO ansehen</a>
           ]]>
         </description>
         <link><?php echo $link; ?></link>
         <guid><?php echo $link; ?></guid>
-        <pubDate><?php echo $date; ?></pubDate>
+        <pubDate><?php echo $rss['datum']; ?></pubDate>
         <georss:point><?php echo $rss['y'], " ", $rss['x']; ?></georss:point>
       </item>
       <?php

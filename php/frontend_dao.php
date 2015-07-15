@@ -76,19 +76,9 @@ class FrontendDAO {
 
   function rss() {
     return pg_fetch_all(
-      pg_query($this->conn, "SELECT v.id, v.datum::timestamp, v.vorgangstyp AS typ, "
-        . "v.status, hk.name AS hauptkategorie, uk.name AS unterkategorie, "
-        . "v.betreff_vorhanden, v.betreff_freigegeben, v.titel AS betreff, "
-        . "v.details_vorhanden, v.details_freigegeben, v.details, v.foto_vorhanden, "
-        . "v.foto_freigegeben, v.foto_thumb, v.bemerkung, wfs.unterstuetzer AS unterstuetzungen, "
-        . "ST_X(ST_Transform(v.the_geom,4326)) AS x, "
-        . "ST_Y(ST_Transform(v.the_geom,4326)) AS y "
-        . "FROM klarschiff.klarschiff_vorgang v, klarschiff.klarschiff_kategorie uk, "
-        . "klarschiff.klarschiff_kategorie hk, klarschiff.klarschiff_wfs wfs "
-        . "WHERE v.archiviert IS NOT TRUE "
-        . "AND v.status IN ('offen', 'inBearbeitung', 'wirdNichtBearbeitet', 'abgeschlossen') "
-        . "AND v.kategorieid = uk.id AND uk.parent = hk.id AND v.id = wfs.id "
-        . "ORDER BY v.datum DESC"));
+      pg_query($this->conn, "SELECT meldung, datum, typ, status, hauptkategorie, unterkategorie, "
+        . "betreff, details, foto, info_der_verwaltung, unterstuetzungen, x, y "
+        . "FROM klarschiff.klarschiff_wfs_georss"));
   }
 
   function city_boundary() {

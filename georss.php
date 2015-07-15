@@ -19,7 +19,7 @@ if ($id != "" && count($data = $frontend->rss_data($id))) {
   $PROB_KAT = "";
 
   if ($data["ideen"] == "t") {
-    $wfs_filter .= "<PropertyIsEqualTo><PropertyName>vorgangstyp</PropertyName><Literal>idee</Literal></PropertyIsEqualTo>";
+    $wfs_filter .= "<PropertyIsEqualTo><PropertyName>typ</PropertyName><Literal>Idee</Literal></PropertyIsEqualTo>";
 
     $ideen_kategorien = explode(",", $data["ideen_kategorien"]);
     if (count($ideen_kategorien) >= 2) {
@@ -27,7 +27,7 @@ if ($id != "" && count($data = $frontend->rss_data($id))) {
     }
     foreach ($ideen_kategorien AS $ideeKategorie) {
       if ($ideeKategorie != "") {
-        $IDEE_KAT .= "<PropertyIsEqualTo><PropertyName>hauptkategorieid</PropertyName><Literal>" . $ideeKategorie . "</Literal></PropertyIsEqualTo>";
+        $IDEE_KAT .= "<PropertyIsEqualTo><PropertyName>hauptkategorie_id</PropertyName><Literal>" . $ideeKategorie . "</Literal></PropertyIsEqualTo>";
       }
     }
     if (count($ideen_kategorien) >= 2) {
@@ -50,25 +50,25 @@ if ($id != "" && count($data = $frontend->rss_data($id))) {
     }
     foreach ($probleme_kategorien AS $problemKategorie) {
       if ($problemKategorie != "") {
-        $PROB_KAT .= "<PropertyIsEqualTo><PropertyName>hauptkategorieid</PropertyName><Literal>" . $problemKategorie . "</Literal></PropertyIsEqualTo>";
+        $PROB_KAT .= "<PropertyIsEqualTo><PropertyName>hauptkategorie_id</PropertyName><Literal>" . $problemKategorie . "</Literal></PropertyIsEqualTo>";
       }
     }
     if (count($probleme_kategorien) >= 2) {
         $PROB_KAT .= "</Or>";
     }
 
+    $prob_kat_filter = "<PropertyIsEqualTo><PropertyName>typ</PropertyName><Literal>Problem</Literal></PropertyIsEqualTo>";
     if ($PROB_KAT != "") {
-      $wfs_filter .= "<And><PropertyIsEqualTo><PropertyName>vorgangstyp</PropertyName><Literal>problem</Literal></PropertyIsEqualTo>" . $PROB_KAT . "</And>";
-    } else {
-      $wfs_filter .= "<PropertyIsEqualTo><PropertyName>vorgangstyp</PropertyName><Literal>problem</Literal></PropertyIsEqualTo>";
+      $prob_kat_filter = "<And>" . $prob_kat_filter . $PROB_KAT . "</And>";
     }
+    $wfs_filter .= $prob_kat_filter;
 
     if ($data["ideen"] == "t") {
       $wfs_filter .= "</Or>";
     }
   }
 
-  $geom_filter = "<Within><PropertyName>the_geom</PropertyName>" . $data["wkt"] . "</Within>";
+  $geom_filter = "<Within><PropertyName>geometrie</PropertyName>" . $data["wkt"] . "</Within>";
 
   if (empty($wfs_filter)) {
     $wfs_filter = $geom_filter;
