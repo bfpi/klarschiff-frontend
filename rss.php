@@ -6,15 +6,15 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
 ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss">
   <channel>
-    <title>Klarschiff.HRO: Meldungen</title>
+    <title>Klarschiff: Meldungen</title>
     <atom:link href="<?php echo FRONTEND_URL, 'rss.php'; ?>" rel="self" type="application/rss+xml" />
     <link><?php echo FRONTEND_URL; ?></link>
-    <description>Meldungen im Bürgerbeteiligungsportal Klarschiff.HRO der Hansestadt Rostock</description>
+    <description>Meldungen im Bürgerbeteiligungsportal Klarschiff</description>
     <language>de-de</language>
     <copyright>Hansestadt Rostock</copyright>
     <image>
     <url><?php echo FRONTEND_URL, 'images/rss.png'; ?></url>
-    <title>Klarschiff.HRO: Meldungen</title>
+    <title>Klarschiff: Meldungen</title>
     <link><?php echo FRONTEND_URL; ?></link>
     </image>
     <?php

@@ -47,13 +47,16 @@ div.container {
 }
 
 div#header {
-  height:200px;
-  width:100%;
-  margin:0 auto;
-  margin-bottom:40px;
-  background-image:url(../images/banner.png);
-  background-repeat:no-repeat;
-  background-position:center;
+  height: 52px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ffcd05;
+  color: #d81920;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 52px;
+  text-align: center;
+  margin: 10px auto;
 }
 
 div#menu {
