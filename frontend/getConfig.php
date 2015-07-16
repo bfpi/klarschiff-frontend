@@ -1,10 +1,11 @@
 <?php
 
-$config = include('config.php');
+$config = include(dirname(__FILE__) . "/../config/config.php");
 $database = include(dirname(__FILE__) . "/../config/database.php");
 
-$connectionString = sprintf("host=%s dbname=%s user=%s password=%s", 
-  $database['frontend']['host'], $database['frontend']['dbname'], 
+$connectionString = sprintf("host=%s port=%s dbname=%s user=%s password=%s",
+  $database['frontend']['host'], $database['frontend']['port'],
+  $database['frontend']['dbname'],
   $database['frontend']['user'], $database['frontend']['password']);
 $connection = pg_connect($connectionString);
 
