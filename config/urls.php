@@ -11,4 +11,4 @@ $wfs_query = BASE_URL . "geodienste/klarschiff/wfs?service=WFS&version=1.0.0&req
 
 define("MELDUNGEN_WFS_URL", $wfs_query . "&typeName=hro-support.klarschiff.meldungen&outputFormat=GeoJSON");
 define("STADTTEILE_WFS_URL", $wfs_query . "&typeName=hro-support.klarschiff.ortsteile&outputFormat=GeoJSON");
-define("GEORSS_URL", $geoserver_base . "&typeName=hro-support.klarschiff.meldungen_beobachtungsflaechen&outputFormat=GeoRSS&srsName=EPSG:4326");
+define("GEORSS_URL", $wfs_query . "&typeName=hro-support.klarschiff.meldungen_beobachtungsflaechen&outputFormat=GeoRSS&srsName=EPSG:4326");
