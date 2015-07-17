@@ -25,12 +25,13 @@ function eyeCatcher() {
     target: 'map',
     view: new ol.View({
       projection: projection_25833,
-      zoom: 6
+      resolutions: resolutions,
+      zoom: 9
     }),
     controls: [],
     interactions: []
   });
-  map.getView().setCenter(ol.proj.transform([12.14000, 54.08800], 'EPSG:4326', projection_25833));
+  map.getView().setCenter(ol.proj.transform(lonLat_center, 'EPSG:4326', projection_25833));
 
   var layerFactory = new OLLayerFactory();
   var base = layerFactory.createLayer(ol_config.layers['Stadtplan'], projection_25833);
