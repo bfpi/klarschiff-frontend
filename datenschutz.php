@@ -5,6 +5,7 @@
     <meta name="keywords" content="Portal,Bürgerbeteiligung,Karte,Probleme,Ideen,Verwaltung" />
     <meta name="description" content="Melden Sie via Karte Probleme und Ideen im öffentlichen Raum, die dann von einer kommunalen Verwaltung bearbeitet werden." />
     <meta name="author" content="Landeshauptstadt Schwerin" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <title>Klarschiff – Portal zur Bürgerbeteiligung – Datenschutz</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/icons/favicon.ico" />
     <link rel="stylesheet" type="text/css" media="all" href="libs/bootstrap.min.css" />
@@ -14,8 +15,8 @@
     <script type="text/javascript" src="javascripts/build/index.js"></script>
   </head>
   <body>
-    <div class="container">
-      <?php include("header.inc.php"); ?>
+    <?php include("header.inc.php"); ?>
+    <div id="content" class="container">
       <h1>Datenschutz</h1>
       <h2>Nutzung des vorliegenden Angebotes der Landeshauptstadt Schwerin</h2>
       <p class="justified">

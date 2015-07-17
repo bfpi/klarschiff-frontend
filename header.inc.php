@@ -2,10 +2,8 @@
 require_once 'config/urls.php';
 $config = include('config/config.php');
 ?>
-<div id="header" class="row clearfix">
-  <img id="headerimage" src="images/header.png" height="120" width="998" alt="Klarschiff.SN" />
-</div>
-<div id="menu" class="row">
+<div id="header"></div>
+<div id="menu" class="container row">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header pull-left">

@@ -3,8 +3,8 @@
 $config = include('config.php');
 ?>
 
-var zoom = 4;
-var lonLat_center = [11.41, 53.64];
+var zoom = 2;
+var lonLat_center = [11.44210, 53.61698];
 var mv_bbox_25833 = [380000, 5980000, 410000, 6010000];
 var extent = [232000, 5923000, 295000, 5974300]
 var resolutions = [28.2222222222, 22.9305555556,

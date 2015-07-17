@@ -5,6 +5,7 @@
     <meta name="keywords" content="Portal,Bürgerbeteiligung,Karte,Probleme,Ideen,Verwaltung" />
     <meta name="description" content="Melden Sie via Karte Probleme und Ideen im öffentlichen Raum, die dann von einer kommunalen Verwaltung bearbeitet werden." />
     <meta name="author" content="Landeshauptstadt Schwerin" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <title>Klarschiff – Portal zur Bürgerbeteiligung – Impressum</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/icons/favicon.ico" />
     <link rel="stylesheet" type="text/css" media="all" href="libs/bootstrap.min.css" />
@@ -14,8 +15,8 @@
     <script type="text/javascript" src="javascripts/build/index.js"></script>
   </head>
   <body>
-    <div class="container">
-      <?php include("header.inc.php"); ?>
+    <?php include("header.inc.php"); ?>
+    <div id="content" class="container">
       <h1>Impressum</h1>
 
       <h2>Herausgeberin</h2>
@@ -34,7 +35,7 @@
           Übermittlung elektronischer Nachrichten und Dokumente,
           insbesondere für vertrauliche  und personenbezogene Daten empfohlen)
       </p>
-      <h2>Inhaltliche Verantwortung gemäß § 7 TMG:</h2>
+      <h2>Inhaltliche Verantwortung gemäß § 7 Abs. 1 Telemediengesetz</h2>
       <p>
         <h3>Pressesprecherin</h3>
         Michaela Christen<br/>
@@ -65,12 +66,12 @@
         Telefax: +49-3841-758-1211<br/>
         E-Mail: <a href="mailto:info@bfpi.de">info@bfpi.de</a><br/>
       </p>
-      <a href="http://www.europa-mv.de/cms2/Europamv_prod/Europamv/de/eufoerderinstrumente/Europaeische_Fonds_in_Mecklenburg-Vorpommern/index.jsp"><img src="/pc/images/logo_eu-fonds.png"/></a></br/>
+      <a href="http://www.europa-mv.de/cms2/Europamv_prod/Europamv/de/eufoerderinstrumente/Europaeische_Fonds_in_Mecklenburg-Vorpommern/index.jsp" target="_blank"><img src="/pc/images/logo_eu-fonds.png"/></a></br/>
       <small>Dieses Projekt wurde gefördert durch die Europäische Union und das Land Mecklenburg-Vorpommern.</small>
 
       <h2>Lizenzbestimmungen</h2>
       <p>
-        Klarschiff ist unter der Freien-Software-Lizenz <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License</a> auf <a href="https://github.com/bfpi/klarschiff-frontend2" target="_blank">GitHub</a> veröffentlicht.
+        Klarschiff ist unter der Freien-Software-Lizenz <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License</a> auf <a href="https://github.com/bfpi/klarschiff-frontend" target="_blank">GitHub</a> veröffentlicht.
       </p>
 
       <h2>Haftung für angebotene Inhalte</h2>

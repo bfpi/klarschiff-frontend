@@ -21,8 +21,8 @@ $config = include 'config/config.php';
     <script type="text/javascript" src="javascripts/build/index.js"></script>
   </head>
   <body>
-    <div class="container">
-      <?php include("header.inc.php"); ?>
+    <?php include("header.inc.php"); ?>
+    <div id="content" class="container">
       <div id="eye-catcher" class="row">
         <div class="overlay guide">
           <h3><span class="italic">Klarschiff.SN</span> – Bürgerbeteiligung</h3>

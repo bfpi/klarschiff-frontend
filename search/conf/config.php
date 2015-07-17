@@ -7,10 +7,7 @@ define("USER","standortsuche");
 define("PASS","standortsuche");
 define("SCHEMA","public");
 
-# ORT
 define("URL", "map.php");
-# DEFAULT ORT - zur Begrenzung der Suche
-# define("ORT","Schwerin");
 
 # SOLR
 $solrConf = array(

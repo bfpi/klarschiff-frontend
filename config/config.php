@@ -24,20 +24,20 @@ return array(
       'label' => 'Startseite',
       'url' => BASE_URL
     ),
-      array(
-        'label' => 'Hilfe',
+    array(
+      'label' => 'Hilfe',
       'url' => FRONTEND_URL . 'hilfe.php'
-      ),
-      array(
-        'label' => 'Datenschutz',
+    ),
+    array(
+      'label' => 'Datenschutz',
       'url' => FRONTEND_URL . 'datenschutz.php'
-      ),
-      array(
-        'label' => 'Impressum',
+    ),
+    array(
+      'label' => 'Impressum',
       'url' => FRONTEND_URL . 'impressum.php'
-      ),
-      array(
-        'label' => 'Nutzungsbedingungen',
+    ),
+    array(
+      'label' => 'Nutzungsbedingungen',
       'url' => FRONTEND_URL . 'nutzungsbedingungen.php'
     )
   )

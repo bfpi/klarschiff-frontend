@@ -5,6 +5,7 @@
     <meta name="keywords" content="Portal,Bürgerbeteiligung,Karte,Probleme,Ideen,Verwaltung" />
     <meta name="description" content="Melden Sie via Karte Probleme und Ideen im öffentlichen Raum, die dann von einer kommunalen Verwaltung bearbeitet werden." />
     <meta name="author" content="Landeshauptstadt Schwerin" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <title>Klarschiff – Portal zur Bürgerbeteiligung – Nutzungsbedingungen</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/icons/favicon.ico" />
     <link rel="stylesheet" type="text/css" media="all" href="libs/bootstrap.min.css" />
@@ -14,8 +15,8 @@
     <script type="text/javascript" src="javascripts/build/index.js"></script>
   </head>
   <body>
-    <div class="container">
-      <?php include("header.inc.php"); ?>
+    <?php include("header.inc.php"); ?>
+    <div id="content" class="container">
       <h1>Nutzungsbedingungen</h1>
 
       <h2>Nutzung des vorliegenden Angebotes der Landeshauptstadt Schwerin</h2>
@@ -65,7 +66,7 @@
 
       <h2>Nutzung der Daten der unteren Vermessungs- und Geoinformationsbehörden Mecklenburg-Vorpommerns</h2>
       <p class="justified">
-        Die Daten der <a href="http://www.laiv-mv.de/land-mv/LAiV_prod/LAiV/AfGVK/_aufsicht-vermstellen/Verz_Vermessungs-Geoinformationsbehoerden.jsp" target="_blank">unteren Vermessungs- und Geoinformationsbehörden Mecklenburg-Vorpommerns</a> (uVGB-MV), die von der Landeshauptstadt Schwerin angebotenen Inhalten zugrundeliegen, sind durch das Landesgesetz über das amtliche Geoinformations- und Vermessungswesen (GeoVermG M-V) und das Bundesgesetz über Urheberrecht und verwandte Schutzrechte (UrhG) in den jeweils geltenden Fassungen geschützt. Eine Nutzungserlaubnis liegt der Landeshauptstadt Schwerin vor. Der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © uVGB-MV.
+        Die Daten der <a href="http://www.laiv-mv.de/land-mv/LAiV_prod/LAiV/AfGVK/Aufsicht/Verz_Vermessungs-Geoinformationsbehoerden.jsp" target="_blank">unteren Vermessungs- und Geoinformationsbehörden Mecklenburg-Vorpommerns</a> (uVGB-MV), die von der Landeshauptstadt Schwerin angebotenen Inhalten zugrundeliegen, sind durch das Landesgesetz über das amtliche Geoinformations- und Vermessungswesen (GeoVermG M-V) und das Bundesgesetz über Urheberrecht und verwandte Schutzrechte (UrhG) in den jeweils geltenden Fassungen geschützt. Eine Nutzungserlaubnis liegt der Landeshauptstadt Schwerin vor. Der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © uVGB-MV.
       </p>
 
       <h2>Dokumentation der Erzeugung des Stadtplans</h2>
