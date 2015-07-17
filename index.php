@@ -10,7 +10,7 @@ $config = include 'config/config.php';
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Portal,Bürgerbeteiligung,Karte,Probleme,Ideen,Verwaltung" />
     <meta name="description" content="Melden Sie via Karte Probleme und Ideen im öffentlichen Raum, die dann von einer kommunalen Verwaltung bearbeitet werden." />
-    <meta name="author" content="Hansestadt Greifswald" />
+    <meta name="author" content="Universitäts- und Hansestadt Greifswald" />
     <title>Klarschiff – Portal zur Bürgerbeteiligung</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/icons/favicon.ico" />
     <link rel="alternate" type="application/atom+xml" title="Klarschiff: Meldungen" href="rss.php" />
@@ -21,33 +21,8 @@ $config = include 'config/config.php';
     <script type="text/javascript" src="javascripts/build/index.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div id="header" class="row clearfix">
-        <img id="headerimage" src="images/headerimage.jpg" height="120" width="430" alt="Blick auf die Voluten am Rathausgiebel Foto: HNM">
-        <img id="sloganimage" src="images/sloganimage-uhgw.jpg" alt="Schriftzug Universitäts- und Hansestadt Greifswald">
-        <img id="klarschifflogo" src="images/klarschiff_logo_328px.png" alt="Logo Klarschiff-HGW">
-      </div>
-      <div id="menu" class="row">
-        <nav class="navbar navbar-default" role="navigation">
-          <div class="container-fluid">
-            <div class="navbar-header pull-left">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <img alt="Brand" src="images/klarschiff.png">
-              </button>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a href="<?php echo MAP_URL; ?>">Karte</a></li>
-                <?php
-                foreach ($config['links']['help_and_impressing'] as $link) {
-                  echo '<li><a href="', $link['url'], '" target="_blank">', $link['label'], '</a></li>';
-                }
-                ?>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+    <?php include("header.inc.php"); ?>
+    <div id="content" class="container">
       <div id="eye-catcher" class="row">
         <div class="overlay guide">
           <h3><span class="italic">Klarschiff.HGW</span> – Bürgerbeteiligung</h3>
@@ -63,14 +38,12 @@ $config = include 'config/config.php';
           </p>
         </div>
         <div class="overlay news">
-          <span class="bold">Achtung!</span>
+          <span class="bold">Neuigkeiten</span>
           <p>
-            Da es sich bei der vorliegenden Anwendung lediglich um eine <span class="bold">Demo</span>
-            zu Anschauungs- und Testzwecken handelt, werden eingehende Meldungen naturgemäß <span class="bold">nicht</span>
-            als reale Fälle angesehen und von der Stadtverwaltung auch <span class="bold">nicht</span> als solche bearbeitet.
+            <span class="bold">Klarschiff Greifwald</span> ist seit dem 02.03.2015 in Betrieb.
           </p>
         </div>
-        <div id="map" title="Karte aufrufen"></div>
+        <div id="map" title="Karte aufrufen…"></div>
       </div>
       <div id="main" class="row">
         <div id="statistics" class="col-md-4">
