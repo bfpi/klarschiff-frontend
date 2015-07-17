@@ -47,7 +47,8 @@ function meldungenStyles(features) {
         fill: new ol.style.Fill({
           color: '#000000'
         })
-      })
+      }),
+      zIndex: Infinity
     }));
   }
 }
