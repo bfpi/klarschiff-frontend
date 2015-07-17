@@ -4,16 +4,18 @@ html {
 
 body {
   font-family: Verdana,sans-serif;
-  font-size: 100.1%;
   height: 100%;
   margin: 0;
 }
 
 h1 {
-  font-size: 13px;
+  color: #D81920;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 h2 {
+  color: #006CB7;
   font-size: 16px;
   font-weight: bold;
   margin: 5px 0 10px;
@@ -33,6 +35,10 @@ h3 {
   font-weight: bold;
 }
 
+.justified {
+  text-align: justify;
+}
+
 .important {
   color: #d81920;
   font-weight: bold;
@@ -47,16 +53,10 @@ div.container {
 }
 
 div#header {
-  height: 52px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #ffcd05;
-  color: #d81920;
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 52px;
-  text-align: center;
-  margin: 10px auto;
+  background: url("../images/header.png") center no-repeat;
+  height: 200px;
+  margin-bottom: 40px;
+  width: 100%;
 }
 
 div#menu {
@@ -317,4 +317,59 @@ a:hover {
 
 .ui-corner-all {
   border-radius: 6px;
+}
+
+p.screenshot {
+  clear: both;
+  margin: 5px auto 0;
+  width: 650px;
+}
+
+p.screenshot.large { 
+  width: 970px;
+}
+
+p.screenshot * {
+  box-sizing: content-box;
+}
+
+p.screenshot span {
+  display: inline-block;
+}
+
+p.screenshot img {
+  border: 1px dashed #006CB7;
+}
+
+p.screenshot span.center,
+p.screenshot span.left,
+p.screenshot span.right {
+  height: 200px;
+  width: 300px;
+}
+
+p.screenshot span.left {
+  float: left;
+}
+
+p.screenshot span.right {
+  float: right;
+}
+
+p.screenshot span.center {
+  margin: 0 auto;
+}
+
+p.screenshot.annotation {
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+p.screenshot.annotation span {
+  height: auto;
+}
+
+p.screenshot.annotation span.center {
+  display: block;
+  text-align: justify;
 }

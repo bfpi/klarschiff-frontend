@@ -1,9 +1,8 @@
 <?php
 
-$base = "http://demo.klarschiff-hro.de";
+$base = "http://support.klarschiff-hro.de";
 define("BASE_URL", $base . "/");
 
-define("ADRESSSUCHE_URL", $base . "http://localhost:8080/solr/select?");
 define("BACKEND_URL", BASE_URL . "backend/");
 define("FRONTEND_URL", BASE_URL . "");
 define("MAP_URL", FRONTEND_URL . "map.php");
