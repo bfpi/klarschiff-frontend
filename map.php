@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="de" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>Klarschiff – Portal zur Bürgerbeteiligung</title>
+    <title>Klarschiff.HRO – Portal zur Bürgerbeteiligung der Hansestadt Rostock</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/icons/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="libs/OpenLayers.min.css" media="all" />

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Portal,Bürgerbeteiligung,Karte,Probleme,Ideen,Verwaltung" />
-    <meta name="description" content="Melden Sie via Karte Probleme und Ideen im öffentlichen Raum, die dann von einer kommunalen Verwaltung bearbeitet werden." />
+    <meta name="keywords" content="Portal,Bürgerbeteiligung,Rostock,Karte,Probleme,Ideen,Verwaltung" />
+    <meta name="description" content="Melden Sie via Karte Probleme und Ideen im öffentlichen Raum, die dann von der Verwaltung bearbeitet werden." />
     <meta name="author" content="Hansestadt Rostock" />
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
-    <title>Klarschiff – Portal zur Bürgerbeteiligung – Datenschutz</title>
+    <title>Klarschiff.HRO – Portal zur Bürgerbeteiligung der Hansestadt Rostock – Datenschutz</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/icons/favicon.ico" />
     <link rel="stylesheet" type="text/css" media="all" href="libs/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="styles/index.css" />

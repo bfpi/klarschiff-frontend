@@ -11,9 +11,9 @@ $config = include 'config/config.php';
     <meta name="keywords" content="Portal,Bürgerbeteiligung,Karte,Probleme,Ideen,Verwaltung" />
     <meta name="description" content="Melden Sie via Karte Probleme und Ideen im öffentlichen Raum, die dann von einer kommunalen Verwaltung bearbeitet werden." />
     <meta name="author" content="Hansestadt Rostock" />
-    <title>Klarschiff – Portal zur Bürgerbeteiligung</title>
+    <title>Klarschiff.HRO – Portal zur Bürgerbeteiligung der Hansestadt Rostock</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico" />
-    <link rel="alternate" type="application/atom+xml" title="Klarschiff: Meldungen" href="rss.php" />
+    <link rel="alternate" type="application/atom+xml" title="Klarschiff.HRO: Meldungen" href="rss.php" />
     <link rel="stylesheet" type="text/css" media="all" href="styles/jquery-ui-1.11.2.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="libs/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="styles/index.css" />
@@ -40,7 +40,10 @@ $config = include 'config/config.php';
         <div class="overlay news">
           <span class="bold">Neuigkeiten</span>
           <p>
-            Da es sich bei der vorliegenden Anwendung lediglich um eine <span class="bold">Demo</span> zu Anschauungs- und Testzwecken handelt, werden eingehende Meldungen naturgemäß <span class="bold">nicht</span> als reale Fälle angesehen und von der Verwaltung auch <span class="bold">nicht</span> als solche bearbeitet.
+            30.03.2015 – Sie finden <span class="italic">Klarschiff.HRO</span> gut? Dann stimmen Sie doch ab beim <a href="https://www.politik.de/ecm-politik/politikde/de/mapconsultation/46838/single/proposal/101/back/grid" target="_blank">Preis für Online-Partizipation 2015</a>!
+          </p>
+          <p>
+            21.01.2015 – Abholtermine für Sperrmüll und E-Schrott werden jetzt auf der Karte angezeigt.
           </p>
         </div>
         <div id="map" title="Karte aufrufen…"></div>
@@ -83,12 +86,12 @@ $config = include 'config/config.php';
         </div>
       </div>
       <div class="row footer">
-        <h3><span class="italic">Klarschiff</span> mobil</h3>
-        Wenn Sie diese Website mit einem Smartphone oder Tablet besuchen, wird automatisch die <a href="<?php echo MOBILE_FRONTEND_URL; ?>" target="_self"><span class="bold">mobile Version</span></a> von <span class="italic">Klarschiff</span> gestartet.
+        <h3><span class="italic">Klarschiff.HRO</span> mobil</h3>
+        Wenn Sie diese Website mit einem Smartphone oder Tablet besuchen, wird automatisch die <a href="<?php echo MOBILE_FRONTEND_URL; ?>" target="_self"><span class="bold">mobile Version</span></a> von <span class="italic">Klarschiff.HRO</span> gestartet.
       </div>
       <div class="row footer">
-        <h3><span class="italic">Klarschiff</span> aus Sicht der Verwaltung</span></h3>
-        Falls Sie daran interessiert sind, wie die „Rückseite“ von <span class="italic">Klarschiff</span> aussieht, also die Verwaltungsanwendung, dann rufen Sie dieses als <a href="<?php echo BACKEND_URL; ?>" target="_self"><span class="bold">Backend</span></a> bezeichnete Anwendung doch einfach auf.
+        <h3><span class="italic">Klarschiff.HRO</span> als „Spielwiese“</span></h3>
+        Falls Sie den Funktionsumfang von <span class="italic">Klarschiff.HRO</span> kennenlernen möchten ohne dabei reale Meldungen an die Stadtverwaltung abzusetzen, so können Sie dies in der <a href="http://demo.klarschiff-hro.de" target="_blank"><span class="bold">Demo-Version</span></a> tun, die wir zu Demonstrations- und Testzwecken eingerichtet haben.
       </div>
     </div>
   </body>
