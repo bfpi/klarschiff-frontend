@@ -10,13 +10,10 @@
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/icons/favicon.ico" />
     <link rel="stylesheet" type="text/css" media="all" href="libs/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="styles/index.css" />
-
-    <script type="text/javascript" src="javascripts/build/libs.js"></script>
-    <script type="text/javascript" src="javascripts/build/index.js"></script>
   </head>
   <body>
     <?php include("header.inc.php"); ?>
-    <div class="container">
+    <div class="container center">
       <h1>Impressum</h1>
 
       <h2>Herausgeberin</h2>
@@ -80,7 +77,7 @@
         Telefax: +49 228 909038-11<br/>
         E-Mail: <a href="mailto:info@wheregroup.com">info@wheregroup.com</a><br/>
       </p>
-      <a href="http://www.europa-mv.de/cms2/Europamv_prod/Europamv/de/eufoerderinstrumente/Europaeische_Fonds_in_Mecklenburg-Vorpommern/index.jsp" target="_blank"><img src="/pc/images/logo_eu-fonds.png"/></a></br/>
+      <a href="http://www.europa-mv.de/cms2/Europamv_prod/Europamv/de/eufoerderinstrumente/Europaeische_Fonds_in_Mecklenburg-Vorpommern/index.jsp" target="_blank"><img src="images/logo_eu-fonds.png"/></a></br/>
       <small>Dieses Projekt wurde gefördert durch die Europäische Union und das Land Mecklenburg-Vorpommern.</small>
 
       <h2>Lizenzbestimmungen</h2>

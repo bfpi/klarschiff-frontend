@@ -25,6 +25,10 @@ return array(
       'url' => BASE_URL
     ),
     array(
+      'label' => 'Karte',
+      'url' => MAP_URL
+    ),
+    array(
       'label' => 'Hilfe',
       'url' => FRONTEND_URL . 'hilfe.php'
     ),
