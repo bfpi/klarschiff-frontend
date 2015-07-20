@@ -21,27 +21,11 @@ $config = include 'config/config.php';
     <script type="text/javascript" src="javascripts/build/index.js"></script>
   </head>
   <body>
-    <div id="header">Klarschiff-DEMO</div>
+    <?php include("header.inc.php"); ?>
     <div class="container">
-      <div id="menu" class="row">
-        <nav class="navbar navbar-default" role="navigation">
-          <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a href="<?php echo MAP_URL; ?>">Karte</a></li>
-                <?php
-                foreach ($config['links']['help_and_impressing'] as $link) {
-                  echo '<li><a href="', $link['url'], '" target="_blank">', $link['label'], '</a></li>';
-                }
-                ?>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
       <div id="eye-catcher" class="row">
         <div class="overlay guide">
-          <h3><span class="italic">Klarschiff</span> – Bürgerbeteiligung</h3>
+          <h3><span class="italic">Klarschiff.HRO</span> – Bürgerbeteiligung</h3>
           <p>
             Rufen Sie die <a href="<?php echo MAP_URL; ?>" target="_self">
               <span class="bold">Karte</span></a> auf <span class="bold">→</span>

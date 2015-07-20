@@ -12,15 +12,15 @@ module.exports = function(grunt) {
     curl: {
       'config-js': {
         dest: 'javascripts/build/config.js',
-        src: 'http://localhost/klarschiff_desktop/config/config.js.php',
+        src: 'http://demo.klarschiff-hro.de/pc/config/config.js.php',
       },
       'jq-ks-spinner-js': {
         dest: 'javascripts/build/jquery.ks.spinner.js',
-        src: 'http://localhost/klarschiff_desktop/javascripts/jquery.ks.spinner.php',
+        src: 'http://demo.klarschiff-hro.de/pc/javascripts/jquery.ks.spinner.php',
       },
       'init-ks-lut-js': {
         dest: 'javascripts/build/init_ks_lut.js',
-        src: 'http://localhost/klarschiff_desktop/javascripts/init_ks_lut.js.php',
+        src: 'http://demo.klarschiff-hro.de/pc/javascripts/init_ks_lut.js.php',
       },
       'ol-css': {
         dest: 'libs/OpenLayers.css',
