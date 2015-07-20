@@ -95,12 +95,15 @@ function beobachtungsflaecheStartNeueFlaeche() {
   showFlaecheCtrlBtns();
   $("#flaeche_cancel").unbind("click").click(beobachtungsflaecheStopNeueFlaeche);
   $("#flaeche_apply").click(function() {
-    layer.getSource().clear();
+    var src = layer.getSource();
     var feature = new ol.Feature({
-      geometry: new ol.geom.Polygon(drawBeobachtungsflaeche.sketchPolygonCoords_)
+      geometry: new ol.geom.Polygon(
+        src.getFeatures()[0].getGeometry().getCoordinates()
+      )
     });
 
-    layer.getSource().addFeature(feature);
+    src.clear();
+    src.addFeature(feature);
 
     beobachtungsflaechenDialog(null, feature);
     beobachtungsflaecheStopNeueFlaeche();

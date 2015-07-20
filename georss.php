@@ -57,26 +57,31 @@ if ($id != "" && count($data = $frontend->rss_data($id))) {
         $PROB_KAT .= "</Or>";
     }
 
+    $prob_kat_filter = "<PropertyIsEqualTo><PropertyName>typ</PropertyName><Literal>Problem</Literal></PropertyIsEqualTo>";
     if ($PROB_KAT != "") {
-      $wfs_filter .= "<And><PropertyIsEqualTo><PropertyName>typ</PropertyName><Literal>Problem</Literal></PropertyIsEqualTo>" . $PROB_KAT . "</And>";
+      $prob_kat_filter = "<And>" . $prob_kat_filter . $PROB_KAT . "</And>";
     }
-    else
-      $wfs_filter .= "<PropertyIsEqualTo><PropertyName>typ</PropertyName><Literal>Problem</Literal></PropertyIsEqualTo>";
+    $wfs_filter .= $prob_kat_filter;
 
     if ($data["ideen"] == "t") {
       $wfs_filter .= "</Or>";
     }
   }
 
-  if (strlen($wfs_filter)) {
-    $wfs_filter = "<And>" . $wfs_filter . "<Within><PropertyName>geometrie</PropertyName>" . $data["wkt"] . "</Within></And>";
+  $geom_filter = "<Within><PropertyName>geometrie</PropertyName>" . $data["wkt"] . "</Within>";
+
+  if (empty($wfs_filter)) {
+    $wfs_filter = $geom_filter;
+  } else {
+    $wfs_filter = "<And>" . $wfs_filter . $geom_filter . "</And>";
   }
 
+  $curl_filter = "Filter=" . urlencode("<Filter xmlns:gml='http://www.opengis.net/gml'>" . $wfs_filter . "</Filter>");
   $ch = curl_init();
   curl_setopt_array($ch, array(
     CURLOPT_URL => GEORSS_URL,
     CURLOPT_POST => true,
-    CURLOPT_POSTFIELDS => "Filter=" . urlencode("<Filter>" . $wfs_filter . "</Filter>"),
+    CURLOPT_POSTFIELDS => $curl_filter,
     CURLOPT_HEADER => false,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_USERAGENT => $_SERVER['HTTP_USER_AGENT']));

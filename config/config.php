@@ -4,6 +4,7 @@ require_once 'urls.php';
 return array(
   'database' => include('database.php'),
   'labels' => array(
+    'name' => 'Klarschiff.HRO',
     'sidebar_headline' => 'Klarschiff-DEMO',
     'errors' => array(
       'db_unavailable' => 'Die Datenbank ist nicht erreichbar!',
@@ -18,24 +19,26 @@ return array(
   'thresholds' => array(
     'supporter' => 20
   ),
-  'links' => array(
-    'help_and_impressing' => array(
-      array(
-        'label' => 'Hilfe',
-        'url' => FRONTEND_URL . 'hilfe.html'
-      ),
-      array(
-        'label' => 'Datenschutz',
-        'url' => FRONTEND_URL . 'datenschutz.html'
-      ),
-      array(
-        'label' => 'Impressum',
-        'url' => FRONTEND_URL . 'impressum.html'
-      ),
-      array(
-        'label' => 'Nutzungsbedingungen',
-        'url' => FRONTEND_URL . 'nutzungsbedingungen.html'
-      )
+  'nav' => array(
+    array(
+      'label' => 'Startseite',
+      'url' => BASE_URL
+    ),
+    array(
+      'label' => 'Hilfe',
+      'url' => FRONTEND_URL . 'hilfe.php'
+    ),
+    array(
+      'label' => 'Datenschutz',
+      'url' => FRONTEND_URL . 'datenschutz.php'
+    ),
+    array(
+      'label' => 'Impressum',
+      'url' => FRONTEND_URL . 'impressum.php'
+    ),
+    array(
+      'label' => 'Nutzungsbedingungen',
+      'url' => FRONTEND_URL . 'nutzungsbedingungen.php'
     )
   )
 );
