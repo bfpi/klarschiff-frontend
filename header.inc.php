@@ -2,7 +2,7 @@
 require_once 'config/urls.php';
 $config = include('config/config.php');
 ?>
-<div id="header">Klarschiff-DEMO</div>
+<div id="header">DEMO</div>
 <div id="menu" class="container row">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
@@ -15,7 +15,12 @@ $config = include('config/config.php');
         <ul class="nav navbar-nav">
           <?php
           foreach ($config['nav'] as $nav) {
-            echo '<li><a href="', $nav['url'], '">', $nav['label'], '</a></li>';
+            if ((preg_match('/\/index.php$/', $_SERVER['SCRIPT_NAME']) && $nav['label'] == 'Startseite') 
+              || (!preg_match('/\/index.php$/', $_SERVER['SCRIPT_NAME']) && $nav['label'] == 'Karte')) {
+              continue;
+            } else {
+              echo '<li><a href="', $nav['url'], '">', $nav['label'], '</a></li>';
+            }
           }
           ?>
         </ul>
