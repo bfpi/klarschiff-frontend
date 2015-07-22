@@ -14,7 +14,7 @@
   <body>
     <?php include("header.inc.php"); ?>
     <div class="container center">
-      <h1>Nutzungsbedingungen des Desktop-Frontends von <span class="italic">Klarschiff</span> im Demobetrieb der Hansestadt Rostock</h1>
+      <h1>Nutzungsbedingungen</h1>
 
       <h2>Nutzung des vorliegenden Angebotes der Hansestadt Rostock</h2>
       <p class="justified">
@@ -28,7 +28,7 @@
       </p>
 
       <h2>Nutzung der Kartenbilder der Hansestadt Rostock</h2>
-      <p>
+      <p class="justified">
         Die von der Hansestadt Rostock angebotenen und in ihrem Eigentum befindlichen Kartenbilder unterliegen der freien Lizenz <a href="http://creativecommons.org/licenses/by/3.0/deed.de" target="_blank">Creative Commons Namensnennung 3.0</a> (CC BY 3.0). Damit ist es gestattet die Kartenbilder zu kopieren, zu verbreiten, öffentlich zugänglich zu machen, Abwandlungen und Bearbeitungen anzufertigen sowie die Kartenbilder kommerziell zu nutzen. Allein der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © Hansestadt Rostock (CC BY 3.0).
       </p>
 

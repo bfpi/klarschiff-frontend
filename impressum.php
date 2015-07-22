@@ -14,7 +14,7 @@
   <body>
     <?php include("header.inc.php"); ?>
     <div class="container center">
-      <h1>Impressum des Desktop-Frontends von <span class="italic">Klarschiff</span> im Demobetrieb der Hansestadt Rostock</h1>
+      <h1>Impressum</h1>
 
       <h2>Herausgeberin</h2>
       <p>

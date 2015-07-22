@@ -48,6 +48,10 @@ h3 {
   font-style: italic;
 }
 
+.left {
+  text-align: left;
+}
+
 div.container {
   width: 1000px !important;
 }
