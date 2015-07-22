@@ -120,9 +120,7 @@
       </p>
       <h3><a name="section03_04"></a>(4) vorhandene Meldungen verstehen</h3>
       <p class="justified">
-        Sie wissen jetzt zum Beispiel, dass ein gelbes Symbol mit Ausrufezeichen ein Problem in Bearbeitung und ein gelb-grünes Symbol mit Glühbirne eine nicht umsetzbare Idee darstellt. Aber wie sind die Zusammenhänge und wann tritt welcher Fall ein?
-        <br/>
-        Folgendes Schema soll Ihnen zum besseren Verständnis den <span class="bold">Weg einer Meldung</span> in <span class="italic">Klarschiff</span> verdeutlichen:
+        Sie wissen jetzt zum Beispiel, dass ein gelbes Symbol mit Ausrufezeichen ein Problem in Bearbeitung und ein gelb-grünes Symbol mit Glühbirne eine nicht umsetzbare Idee darstellt. Aber wie sind die Zusammenhänge und wann tritt welcher Fall ein? Folgendes Schema soll Ihnen zum besseren Verständnis den <span class="bold">Weg einer Meldung</span> in <span class="italic">Klarschiff</span> verdeutlichen:
       </p>
       <p class="screenshot clearfix">
         <img src="images/hilfe_schema.png" alt="weg_einer_meldung" title="Weg einer Meldung in Klarschiff" />
