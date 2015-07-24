@@ -474,7 +474,7 @@ function onMeldungFormClose() {
 function getKategorien(parent, typ) {
   var kategorien = new Array();
   for (var i in ks_lut.kategorie) {
-    if (ks_lut.kategorie[i].parent == parent) {
+    if (ks_lut.kategorie[i].parent == parent && ks_lut.kategorie[i].geloescht != 't') {
       if (parent == undefined && ks_lut.kategorie[i].typ != typ) {
         continue;
       }

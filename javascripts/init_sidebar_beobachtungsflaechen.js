@@ -192,7 +192,7 @@ function beobachtungsflaechenDialog(id, feature, name, geom_string) {
   $.each(["problem", "idee"], function(key, typ) {
     var target = $('div[name="' + typ + '_kategorie"]', dlg);
     $.each(ks_lut.kategorie, function(kategorie_id, kategorie) {
-      if (!kategorie.parent && kategorie.typ == typ) {
+      if (!kategorie.parent && kategorie.typ == typ && kategorie.geloescht != 't') {
         $('<div>').addClass('checkbox')
           .append($('<label>').html(kategorie.name)
             .prepend($('<input>')

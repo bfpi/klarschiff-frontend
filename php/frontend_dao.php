@@ -102,7 +102,7 @@ class FrontendDAO {
 
   function categories() {
     $res = pg_query($this->conn, "SELECT id, name, parent, vorgangstyp AS typ, aufforderung, "
-      . "naehere_beschreibung_notwendig, 0 AS childcount "
+      . "naehere_beschreibung_notwendig, 0 AS childcount, geloescht "
       . "FROM klarschiff.klarschiff_kategorie "
       . "ORDER BY name");
     $categories = array();
