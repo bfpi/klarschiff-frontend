@@ -445,8 +445,8 @@ function meldungFormSubmit() {
     success: function() {
       getLayerByTitle("Meldungen").setSource(new ol.source.Cluster({
         distance: ol_config["layers"]["Meldungen"]["clusterDistance"],
-        source: new ol.source.GeoJSON({
-          projection: projection_25833,
+        source: new ol.source.Vector({
+          format: new ol.format.GeoJSON(),
           url: ol_config["layers"]["Meldungen"]["url"]
         })
       }));
