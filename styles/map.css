@@ -109,9 +109,9 @@ div.search {
 
 form select {
   margin-bottom: 15px;
-  max-width: 99%;
-  min-width: 99%;
-  width: 99%;
+  max-width: 98.5%;
+  min-width: 98.5%;
+  width: 98.5%;
 }
 
 input#searchtext {
@@ -429,7 +429,8 @@ div.scroll-checkbox {
 }
 
 .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
-  width: 100%;
+  width: 96%;
+  margin-right: 2%;
 }
 
 .ui-dialog-buttonpane button {
