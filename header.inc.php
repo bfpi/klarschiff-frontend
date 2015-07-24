@@ -2,7 +2,7 @@
 require_once 'config/urls.php';
 $config = include('config/config.php');
 ?>
-<div id="header">DEMO</div>
+<div id="header">Klarschiff-DEMO</div>
 <div id="menu" class="container row">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
