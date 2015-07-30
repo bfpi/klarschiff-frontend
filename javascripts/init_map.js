@@ -54,7 +54,8 @@ function addControls(map) {
   map.addControl(scaleLine);
 
   map.on('pointermove', function(evt) {
-    if(getLayerByTitle("DrawBeobachtungsflaeche").getVisible()) {
+    if(getLayerByTitle("DrawBeobachtungsflaeche").getVisible() ||
+      getLayerByTitle("SketchBeobachtungsflaeche").getVisible()) {
       return true;
     }
     var pixel = map.getEventPixel(evt.originalEvent);
@@ -87,6 +88,10 @@ function addControls(map) {
   });
 
   map.on("click", function(e) {
+    if(getLayerByTitle("DrawBeobachtungsflaeche").getVisible() ||
+      getLayerByTitle("SketchBeobachtungsflaeche").getVisible()) {
+      return true;
+    }
     map.forEachFeatureAtPixel(e.pixel, function(feature, layer) {
       if (layer && layer.get("title") === "Meldungen") {
         var features = feature.get("features");
