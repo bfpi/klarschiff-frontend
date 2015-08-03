@@ -37,37 +37,37 @@ $conf['meldung_template'] = '
 <p style="margin-left:2%">${unterkategorie}</p>
 
 <h3 style="margin-left:2%;margin-bottom:0.5%">Status</h3>
-<p style="margin-left:2%">{{if status != \'wirdNichtBearbeitet\' && status != \'inBearbeitung\'}}${status}{{/if}}{{if status == \'wirdNichtBearbeitet\'}}wird nicht bearbeitet{{/if}}{{if status == \'inBearbeitung\'}}in Bearbeitung{{/if}} (seit ${datum_statusaenderung}), aktuell bei<br/>${zustaendigkeit}</p>
+<p style="margin-left:2%">{{if status != \'wirdNichtBearbeitet\' && status != \'inBearbeitung\'}}${status}{{/if}}{{if status == \'wirdNichtBearbeitet\'}}wird nicht bearbeitet{{/if}}{{if status == \'inBearbeitung\'}}in Bearbeitung{{/if}} (seit ${datum_statusaenderung}){{if status != \'gemeldet\'}}, aktuell bei<br/>${zustaendigkeit}{{/if}}</p>
 
-{{if betreff_vorhanden == "true" && betreff_freigegeben == "true"}}
+{{if (betreff_vorhanden == "true" || betreff_vorhanden == "t") && (betreff_freigegeben == "true" || betreff_freigegeben == "t")}}
 <h3 style="margin-left:2%;margin-bottom:0.5%">Betreff</h3>
 <p style="margin-left:2%">${titel}</p>
-{{else status == \'offen\' && betreff_vorhanden == "true" && betreff_freigegeben == "false"}}
+{{else status == \'offen\' && (betreff_vorhanden == "true" || betreff_vorhanden == "t") && (betreff_freigegeben == "false" || betreff_freigegeben == "f")}}
 <h3 style="margin-left:2%;margin-bottom:0.5%">Betreff</h3>
 <p style="margin-left:2%;font-style:italic">redaktionelle Prüfung ausstehend</p>
-{{else status != \'offen\' && status != \'gemeldet\' && betreff_vorhanden == "true" && betreff_freigegeben == "false"}}
+{{else status != \'offen\' && status != \'gemeldet\' && (betreff_vorhanden == "true" || betreff_vorhanden == "t") && (betreff_freigegeben == "false" || betreff_freigegeben == "f")}}
 <h3 style="margin-left:2%;margin-bottom:0.5%">Betreff</h3>
 <p style="margin-left:2%;font-style:italic">redaktionell nicht freigegeben</p>
 {{/if}}
 
-{{if details_vorhanden == "true" && details_freigegeben == "true"}}
+{{if (details_vorhanden == "true" || details_vorhanden == "t") && (details_freigegeben == "true" || details_freigegeben == "t")}}
 <h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
 <p style="margin-left:2%">${details}</p>
-{{else status == \'offen\' && details_vorhanden == "true" && details_freigegeben == "false"}}
+{{else status == \'offen\' && (details_vorhanden == "true" || details_vorhanden == "t") && (details_freigegeben == "false" || details_freigegeben == "f")}}
 <h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
 <p style="margin-left:2%;font-style:italic">redaktionelle Prüfung ausstehend</p>
-{{else status != \'offen\' && status != \'gemeldet\' && details_vorhanden == "true" && details_freigegeben == "false"}}
+{{else status != \'offen\' && status != \'gemeldet\' && (details_vorhanden == "true" || details_vorhanden == "t") && (details_freigegeben == "false" || details_freigegeben == "f")}}
 <h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
 <p style="margin-left:2%;font-style:italic">redaktionell nicht freigegeben</p>
 {{/if}}
   
-{{if foto_vorhanden == "true" && foto_freigegeben == "true"}}
+{{if (foto_vorhanden == "true" || foto_vorhanden == "t") && (foto_freigegeben == "true" || foto_freigegeben == "t")}}
 <h3 style="margin-left:2%;margin-bottom:0.5%">Foto</h3>
 <img style="margin-left:2%;margin-right:2%;margin-top:1%" src="${img_url}" />
-{{else status == \'offen\' && foto_vorhanden == "true" && foto_freigegeben == "false"}}
+{{else status == \'offen\' && (foto_vorhanden == "true" || foto_vorhanden == "t") && (foto_freigegeben == "false" || foto_freigegeben == "f")}}
 <h3 style="margin-left:2%;margin-bottom:0.5%">Foto</h3>
 <p style="margin-left:2%;font-style:italic">redaktionelle Prüfung ausstehend</p>
-{{else status != \'offen\' && status != \'gemeldet\' && foto_vorhanden == "true" && foto_freigegeben == "false"}}
+{{else status != \'offen\' && status != \'gemeldet\' && (foto_vorhanden == "true" || foto_vorhanden == "t") && (foto_freigegeben == "false" || foto_freigegeben == "f")}}
 <h3 style="margin-left:2%;margin-bottom:0.5%">Foto</h3>
 <p style="margin-left:2%;font-style:italic">redaktionell nicht freigegeben</p>
 {{/if}}

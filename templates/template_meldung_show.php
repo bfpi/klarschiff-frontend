@@ -10,39 +10,39 @@ Unterkategorie
 <p class="meldung_eintrag">${unterkategorie}</p>
 
 Status
-<p class="meldung_eintrag">${status} (seit ${datum_statusaenderung}), aktuell bei<br/>${zustaendigkeit}</p>
+<p class="meldung_eintrag">${status} (seit ${datum_statusaenderung}){{if status != 'gemeldet'}}, aktuell bei<br/>${zustaendigkeit}{{/if}}</p>
 <div id="meldung_details">
-  {%if betreff_vorhanden == true && betreff_freigegeben == true%}
+  {%if (betreff_vorhanden == true || betreff_vorhanden == 't') && (betreff_freigegeben == true || betreff_freigegeben == 't')%}
   Betreff
   <p class="meldung_eintrag">${titel}</p>
-  {%elif status == 'offen' && betreff_vorhanden == true && betreff_freigegeben == false%}
+  {%elif status == 'offen' && (betreff_vorhanden == true || betreff_vorhanden == 't') && (betreff_freigegeben == false || betreff_freigegeben == 'f')%}
   Betreff
   <p class="meldung_eintrag-nicht-vorhanden">redaktionelle Prüfung ausstehend</p>
-  {%elif status != 'offen' && status != 'gemeldet' && betreff_vorhanden == true && betreff_freigegeben == false%}
+  {%elif status != 'offen' && status != 'gemeldet' && (betreff_vorhanden == true || betreff_vorhanden == 't') && (betreff_freigegeben == false || betreff_freigegeben == 'f')%}
   Betreff
   <p class="meldung_eintrag-nicht-vorhanden">redaktionell nicht freigegeben</p>
   {%/if%}
 
-  {%if details_vorhanden == true && details_freigegeben == true%}
+  {%if (details_vorhanden == true || details_vorhanden == 't') && (details_freigegeben == true || details_freigegeben == 't')%}
   Details
   <p class="meldung_eintrag">${details}</p>
-  {%elif status == 'offen' && details_vorhanden == true && details_freigegeben == false%}
+  {%elif status == 'offen' && (details_vorhanden == true || details_vorhanden == 't') && (details_freigegeben == false || details_freigegeben == 'f')%}
   Details
   <p class="meldung_eintrag-nicht-vorhanden">redaktionelle Prüfung ausstehend</p>
-  {%elif status != 'offen' && status != 'gemeldet' && details_vorhanden == true && details_freigegeben == false%}
+  {%elif status != 'offen' && status != 'gemeldet' && (details_vorhanden == true || details_vorhanden == 't') && (details_freigegeben == false || details_freigegeben == 'f')%}
   Details
   <p class="meldung_eintrag-nicht-vorhanden">redaktionell nicht freigegeben</p>
   {%/if%}
 
-  {%if foto_vorhanden == true && foto_freigegeben == true%}
+  {%if (foto_vorhanden == true || foto_vorhanden == 't') && (foto_freigegeben == true || foto_freigegeben == 't')%}
   Foto
   <div class="meldung-foto">
     <img src="<?php echo BASE_URL; ?>fotos/${foto_normal}" />
   </div>
-  {%elif status == 'offen' && foto_vorhanden == true && foto_freigegeben == false%}
+  {%elif status == 'offen' && (foto_vorhanden == true || foto_vorhanden == 't') && (foto_freigegeben == false || foto_freigegeben == 'f')%}
   Foto
   <p class="meldung_eintrag-nicht-vorhanden">redaktionelle Prüfung ausstehend</p>
-  {%elif status != 'offen' && status != 'gemeldet' && foto_vorhanden == true && foto_freigegeben == false%}
+  {%elif status != 'offen' && status != 'gemeldet' && (foto_vorhanden == true || foto_vorhanden == 't') && (foto_freigegeben == false || foto_freigegeben == 'f')%}
   Foto
   <p class="meldung_eintrag-nicht-vorhanden">redaktionell nicht freigegeben</p>
   {%/if%}
