@@ -10,7 +10,7 @@ Unterkategorie
 <p class="meldung_eintrag">${unterkategorie}</p>
 
 Status
-<p class="meldung_eintrag">${status} (seit ${datum_statusaenderung}){{if status != 'gemeldet'}}, aktuell bei<br/>${zustaendigkeit}{{/if}}</p>
+<p class="meldung_eintrag">${status} (seit ${datum_statusaenderung}){%if status != 'gemeldet' %}, aktuell bei<br/>${zustaendigkeit}{%/if%}</p>
 <div id="meldung_details">
   {%if (betreff_vorhanden == true || betreff_vorhanden == 't') && (betreff_freigegeben == true || betreff_freigegeben == 't')%}
   Betreff
