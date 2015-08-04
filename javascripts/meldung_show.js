@@ -112,7 +112,7 @@ function enhanceDialogForCluster(dlg, features, currentIndex) {
  * @returns null
  */
 function onMeldungShowClose(event) {
-  reloadMeldungenIcons(null);
+  reloadMeldungenIcons();
 
   // Dialog leeren
   $('#meldung_show').parent().remove();
