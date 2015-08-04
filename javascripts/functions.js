@@ -73,16 +73,18 @@ function meldungIcon(feature, highlight) {
   }
 }
 
-function reloadMeldungenIcons(layer_config) {
-  if (!layer_config) {
-    layer_config = Object.create(ol_config.layers['Meldungen']);
+function reloadMeldungenIcons() {
+  var config = ol_config.layers.Meldungen;
+  var vectorSource = getLayerByTitle(config.title).getSource().getSource();
+  vectorSource.getFeatures().forEach(function(feature) {
+    vectorSource.removeFeature(feature);
+  });
+  var url = config.url_with_filter();
+  if (url == null) {
+    return;
   }
-  var vectorSource = getLayerByTitle("Meldungen").getSource().getSource();
-  vectorSource.clear();
-  $.ajax(layer_config.url).done(function(response) {
+  $.ajax(url).done(function(response) {
     vectorSource.addFeatures((new ol.format.GeoJSON()).readFeatures(response));
-  }).always(function() {
-    vectorSource.changed();
   });
 }
 

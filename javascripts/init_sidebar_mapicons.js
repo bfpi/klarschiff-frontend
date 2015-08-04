@@ -38,7 +38,6 @@ function init_mapicons() {
  * der Filterstrategie gesetzt.
  * @returns null
  */
-var filter = null;
 function buildFilter() {
   // Alle angehakten Teilfilter abholen...
   var cbs = $('#mapicons input');
@@ -61,29 +60,25 @@ function buildFilter() {
     }
   });
 
-  condition = [];
+  var condition = [];
   Object.keys(filters).forEach(function(key) {
     var values = jQuery.unique(filters[key]);
-    status_cond = []
+    var statusCond = [];
     if (values.length > 0) {
       values.forEach(function(status) {
-        status_cond.push("<PropertyIsEqualTo><PropertyName>status</PropertyName><Literal>" + status + "</Literal></PropertyIsEqualTo>");
-      })
+        statusCond.push("<PropertyIsEqualTo><PropertyName>status</PropertyName><Literal>"
+          + status + "</Literal></PropertyIsEqualTo>");
+      });
     }
-    if (status_cond.length > 1) {
-      condition.push("<And>" + "<PropertyIsEqualTo><PropertyName>vorgangstyp</PropertyName><Literal>" + key + "</Literal></PropertyIsEqualTo>" + "<Or>" + status_cond.join("") + "</Or>" + "</And>");
-    }
-    else {
-      condition.push("<And>" + "<PropertyIsEqualTo><PropertyName>vorgangstyp</PropertyName><Literal>" + key + "</Literal></PropertyIsEqualTo>" + status_cond.join("") + "</And>");
-    }
-  })
+    condition.push("<And><PropertyIsEqualTo><PropertyName>vorgangstyp</PropertyName><Literal>"
+      + key + "</Literal></PropertyIsEqualTo>"
+      + (statusCond.length > 1 ? "<Or>" + statusCond.join("") + "</Or>" : statusCond[0])
+      + "</And>");
+  });
 
-  layer_config = Object.create(ol_config.layers['Meldungen']);
-  if (condition.length > 1) {
-    layer_config.url += "&Filter=<Filter>" + "<Or>" + condition.join("") + "</Or>" + "</Filter>"
-  }
-  else if (condition.length == 1) {
-    layer_config.url += "&Filter=<Filter>" + condition.join("") + "</Filter>"
-  }
-  reloadMeldungenIcons(layer_config)
+  ol_config.layers.Meldungen.filter = condition.length == 0 ? null :
+    "<Filter>" + (condition.length > 1 ? "<Or>" + condition.join("") + "</Or>" : condition[0])
+    + "</Filter>";
+
+  reloadMeldungenIcons()
 }
