@@ -126,9 +126,9 @@ var ol_config = {
     },
     "POI": {
       type: "ImageWMS",
-      url: "http://geo.sv.rostock.de/geodienste/klarschiff_poi/ows?",
+      url: "http://geo.sv.rostock.de/geodienste/klarschiff-poi/wms?",
       version: "1.1.1",
-      layers: "abfallbehaelter,ampeln,beleuchtung,brunnen,denkmale,hundetoiletten,recyclingcontainer,sitzgelegenheiten,sperrmuelltermine",
+      layers: "hro.klarschiff-poi.abfallbehaelter,hro.klarschiff-poi.ampeln,hro.klarschiff-poi.beleuchtung,hro.klarschiff-poi.brunnen,hro.klarschiff-poi.denkmale,hro.klarschiff-poi.hundetoiletten,hro.klarschiff-poi.recyclingcontainer,hro.klarschiff-poi.sitzgelegenheiten,hro.klarschiff-poi.sperrmuelltermine",
       projection: "EPSG:25833",
       format: "image/png",
       default_layer: true,
