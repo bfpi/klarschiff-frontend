@@ -4,7 +4,7 @@ require_once 'urls.php';
 return array(
   'database' => include('database.php'),
   'labels' => array(
-    'name' => 'Klarschiff.HRO',
+    'name' => 'Klarschiff',
     'sidebar_headline' => 'Klarschiff-DEMO',
     'errors' => array(
       'db_unavailable' => 'Die Datenbank ist nicht erreichbar!',
