@@ -61,9 +61,11 @@
             <div id="mapicons"></div>
             <h3>Hilfe und Impressum</h3>
             <div id="sonderseiten">
-<?php foreach ($config['links']['help_and_impressing'] as $link) { ?>
+<?php foreach ($config['nav'] as $link) {
+    if ($link['sonderseite']) { ?>
               <a href="<?php echo $link['url']  ?>" target="_blank"><?php echo $link['label'] ?></a>
-<?php } ?>
+<?php }
+} ?>
             </div>
           </div>
           <a id="back_to_start" href="<?php echo FRONTEND_URL; ?>">Startseite</a>
