@@ -12,24 +12,13 @@ Unterkategorie
 Status
 <p class="meldung_eintrag">${status} (seit ${datum_statusaenderung}), aktuell bei<br/>${zustaendigkeit}</p>
 <div id="meldung_details">
-  {%if betreff_vorhanden == true && betreff_freigegeben == true%}
-  Betreff
-  <p class="meldung_eintrag">${titel}</p>
-  {%elif status == 'offen' && betreff_vorhanden == true && betreff_freigegeben == false%}
-  Betreff
-  <p class="meldung_eintrag-nicht-vorhanden">redaktionelle Prüfung ausstehend</p>
-  {%elif status != 'offen' && status != 'gemeldet' && betreff_vorhanden == true && betreff_freigegeben == false%}
-  Betreff
-  <p class="meldung_eintrag-nicht-vorhanden">redaktionell nicht freigegeben</p>
-  {%/if%}
-
-  {%if details_vorhanden == true && details_freigegeben == true%}
+  {%if (beschreibung_vorhanden == true || beschreibung_vorhanden == 't') && (beschreibung_freigegeben == true || beschreibung_freigegeben == 't')%}
   Details
-  <p class="meldung_eintrag">${details}</p>
-  {%elif status == 'offen' && details_vorhanden == true && details_freigegeben == false%}
+  <p class="meldung_eintrag">${beschreibung}</p>
+  {%elif status == 'offen' && (beschreibung_vorhanden == true || beschreibung_vorhanden == 't') && (beschreibung_freigegeben == false || beschreibung_freigegeben == 'f')%}
   Details
   <p class="meldung_eintrag-nicht-vorhanden">redaktionelle Prüfung ausstehend</p>
-  {%elif status != 'offen' && status != 'gemeldet' && details_vorhanden == true && details_freigegeben == false%}
+  {%elif status != 'offen' && status != 'gemeldet' && (beschreibung_vorhanden == true || beschreibung_vorhanden == 't') && (beschreibung_freigegeben == false || beschreibung_freigegeben == 'f')%}
   Details
   <p class="meldung_eintrag-nicht-vorhanden">redaktionell nicht freigegeben</p>
   {%/if%}

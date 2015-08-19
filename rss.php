@@ -28,8 +28,7 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
           <![CDATA[
           <b>Status:</b> <?php echo $rss['status']; ?><br/>
           <b>Unterstützungen:</b> <?php echo $rss['unterstuetzungen']; ?><br/>
-          <b>Betreff:</b> <?php echo $rss['betreff']; ?><br/>
-          <b>Details:</b> <?php echo $rss['details']; ?><br/>
+          <b>Beschreibung:</b> <?php echo $rss['beschreibung']; ?><br/>
           <b>Foto:</b> <?php echo $rss['foto']; ?><br/>
           <b>Info der Verwaltung:</b> <?php echo $rss['info_der_verwaltung']; ?><br/>
           <a href="<?php echo $link; ?>" target="_blank">Meldung in Klarschiff.HRO ansehen</a>

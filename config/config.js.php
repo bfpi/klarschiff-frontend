@@ -18,8 +18,7 @@ var ideeMeldungenMoeglich = false;
 
 var unterstuetzer_schwellenwert = <?php echo $config['thresholds']['supporter']; ?>;
 
-var placeholder_betreff = "Bitte geben Sie einen Betreff an.";
-var placeholder_details = "Bitte beschreiben Sie Ihre Meldung genauer.";
+var placeholder_beschreibung = "Bitte beschreiben Sie Ihre Meldung genauer.";
 var placeholder_email = "Bitte geben Sie Ihre E-Mail-Adresse an.";
 var placeholder_begruendung = "Bitte geben Sie eine Begründung an.";
 var placeholder_freitext = "Bitte tragen Sie hier Ihr Lob, Ihre Hinweise oder Ihre Kritik zur Meldung ein.";
@@ -27,8 +26,7 @@ var placeholder_freitext = "Bitte tragen Sie hier Ihr Lob, Ihre Hinweise oder Ih
 //// Variablen mit Fehlertexten
 var hauptkategorieLeer = "Sie müssen eine Hauptkategorie auswählen.";
 var unterkategorieLeer = "Sie müssen eine Unterkategorie auswählen.";
-var betreffLeer = "Sie müssen einen Betreff angeben.";
-var detailsLeer = "Sie müssen Ihre Meldung genauer beschreiben.";
+var beschreibungLeer = "Sie müssen Ihre Meldung genauer beschreiben.";
 var emailFalsch = "Die angegebene E-Mail-Adresse ist syntaktisch falsch. Bitte korrigieren Sie Ihre Eingabe.";
 var emailLeer = "Sie müssen Ihre E-Mail-Adresse angeben.";
 var begruendungLeer = "Sie müssen eine Begründung angeben.";

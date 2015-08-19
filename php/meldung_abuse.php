@@ -11,7 +11,7 @@ include_once(dirname(__FILE__) . "/functions.php");
 $data = array(
   "id" => $_REQUEST["id"],
   "email" => $_REQUEST["email"],
-  "details" => $_REQUEST["details"]
+  "beschreibung" => $_REQUEST["beschreibung"]
 );
 
 /* * ************************************************************************** */
@@ -24,7 +24,7 @@ if ($trashmail_check) {
 
 $backend_data = array(
   "vorgang" => $data["id"],
-  "text" => $data["details"],
+  "text" => $data["beschreibung"],
   "email" => $data["email"]
 );
 

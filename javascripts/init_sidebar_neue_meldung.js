@@ -235,81 +235,15 @@ function openMeldungDialog(feature, targetId) {
           .appendTo($('select[name="unterkategorie"]'));
 
   $('input[name="email"]').attr("placeholder", placeholder_email);
+  //$.Placeholder.init();
+  $('textarea[name="beschreibung"]').attr("placeholder", placeholder_beschreibung);
   $.Placeholder.init();
 
-  $(".betreff-pflicht, .details-pflicht, .pflicht-fussnote").css("visibility", "hidden");
-  $('input[name="betreff"], textarea[name="details"], input[name="email"]').focus(function() {
+  $('textarea[name="beschreibung"], input[name="email"]').focus(function() {
     $(this).css({"color": "#000000"});
   }).blur(function() {
   });
-  $("select[name='unterkategorie']").change(function() {
-    var kategorie_id = $(this).val();
-    var kategorie = ks_lut.kategorie[kategorie_id];
-
-    if (!kategorie) {
-      $(".betreff-pflicht, .details-pflicht, .pflicht-fussnote").css("visibility", "hidden");
-      $('input[name="betreff"]').attr("placeholder", "");
-      if ($('input[name="betreff"]').val() == placeholder_betreff) {
-        $('input[name="betreff"]').val("");
-      }
-
-      $('textarea[name="details"]').attr("placeholder", "");
-      if ($('textarea[name="details"]').val() == placeholder_details) {
-        $('textarea[name="details"]').val("");
-      }
-      $.Placeholder.init();
-      return;
-    }
-
-    if (kategorie.naehere_beschreibung_notwendig) {
-      // unset labels that might have been set by kategorie.auffiorderung
-      // then set them again 
-      switch (kategorie.naehere_beschreibung_notwendig) {
-        case "betreff":
-          $(".details-pflicht").css("visibility", "hidden");
-          $(".betreff-pflicht, .pflicht-fussnote").css("visibility", "visible");
-          $('input[name="betreff"]').attr("placeholder", placeholder_betreff);
-          $('textarea[name="details"]').attr("placeholder", "");
-          if ($('textarea[name="details"]').val() == placeholder_details) {
-            $('textarea[name="details"]').val("");
-          }
-          $.Placeholder.init();
-          break;
-
-        case "details":
-          $(".betreff-pflicht").css("visibility", "hidden");
-          $(".details-pflicht, .pflicht-fussnote").css("visibility", "visible");
-          $('input[name="betreff"]').attr("placeholder", "");
-          if ($('input[name="betreff"]').val() == placeholder_betreff) {
-            $('input[name="betreff"]').val("");
-          }
-          $('textarea[name="details"]').attr("placeholder", placeholder_details);
-          $.Placeholder.init();
-          break;
-
-        case "betreffUndDetails":
-          $(".betreff-pflicht, .details-pflicht, .pflicht-fussnote").css("visibility", "visible");
-          $('input[name="betreff"]').attr("placeholder", placeholder_betreff);
-          $('textarea[name="details"]').attr("placeholder", placeholder_details);
-          $.Placeholder.init();
-          break;
-
-        default:
-          $(".betreff-pflicht, .details-pflicht, .pflicht-fussnote").css("visibility", "hidden");
-          $('input[name="betreff"]').attr("placeholder", "");
-          if ($('input[name="betreff"]').val() == placeholder_betreff) {
-            $('input[name="betreff"]').val("");
-          }
-          $('textarea[name="details"]').attr("placeholder", "");
-          if ($('textarea[name="details"]').val() == placeholder_details) {
-            $('textarea[name="details"]').val("");
-          }
-          $.Placeholder.init();
-
-      }
-    }
-
-  });
+  
   insertOptions("hauptkategorie").change(function(e) {
     insertOptions("unterkategorie", e.currentTarget.value);
     $("select[name='unterkategorie']").change();
@@ -344,8 +278,7 @@ function meldungFormSubmit() {
     point: $('input[name="point"]', dlg).val(),
     hauptkategorie: $('select[name="hauptkategorie"]', dlg).val(),
     unterkategorie: $('select[name="unterkategorie"]', dlg).val(),
-    betreff: $('input[name="betreff"]', dlg).val(),
-    details: $('textarea[name="details"]', dlg).val(),
+    beschreibung: $('textarea[name="beschreibung"]', dlg).val(),
     email: $('input[name="email"]', dlg).val(),
     foto: null
   };
@@ -380,45 +313,12 @@ function meldungFormSubmit() {
     $('input[name="email"]', dlg).removeClass("error");
   }
   if ('undefined' !== typeof ks_lut.kategorie[parseInt(postData.unterkategorie)]) {
-    switch (ks_lut.kategorie[parseInt(postData.unterkategorie)].naehere_beschreibung_notwendig) {
-
-      case "betreff":
-        if (!postData.betreff || postData.betreff === placeholder_betreff) {
-          $('input[name="betreff"]').addClass("error");
-          eingabeFehlerPopup("betreffLeer");
-          return;
-        }
-        else
-          $('input[name="betreff"]').removeClass("error");
-        break;
-
-      case "details":
-        if (!postData.details || postData.details === placeholder_details) {
-          $('textarea[name="details"]').addClass("error");
-          eingabeFehlerPopup("detailsLeer");
-          return;
-        }
-        else
-          $('textarea[name="details"]').removeClass("error");
-        break;
-
-      case "betreffUndDetails":
-        if (!postData.betreff || postData.betreff === placeholder_betreff) {
-          $('input[name="betreff"]').addClass("error");
-          eingabeFehlerPopup("betreffLeer");
-          return;
-        }
-        else
-          $('input[name="betreff"]').removeClass("error");
-        if (!postData.details || postData.details === placeholder_details) {
-          $('textarea[name="details"]').addClass("error");
-          eingabeFehlerPopup("detailsLeer");
-          return;
-        }
-        else
-          $('textarea[name="details"]').removeClass("error");
-        break;
-
+    if (!postData.beschreibung || postData.beschreibung === placeholder_beschreibung) {
+      $('textarea[name="beschreibung"]').addClass("error");
+      eingabeFehlerPopup("beschreibungLeer");
+      return;
+    } else {
+      $('textarea[name="beschreibung"]').removeClass("error");
     }
   }
 
@@ -528,11 +428,8 @@ function eingabeFehlerPopup(eingabeFehlerTyp) {
     case "unterkategorieLeer":
       var eingabeFehlerText = unterkategorieLeer;
       break;
-    case "betreffLeer":
-      var eingabeFehlerText = betreffLeer;
-      break;
-    case "detailsLeer":
-      var eingabeFehlerText = detailsLeer;
+    case "beschreibungLeer":
+      var eingabeFehlerText = beschreibungLeer;
       break;
   }
 

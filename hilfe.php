@@ -163,7 +163,7 @@
         <br/>
         Damit Ihre Verwaltung Ihre Meldung korrekt einordnen kann, müssen Sie im Dialog eine Hauptkategorie (zum Beispiel <span class="italic">Müll/Schmutz)</span> und eine Unterkategorie (zum Beispiel <span class="italic">Sperrmüll)</span> auswählen, die am besten zum Problem oder zur Idee passt. Außerdem müssen Sie Ihre <span class="bold">E-Mail-Adresse angeben,</span> um nach der erfolgreichen Erstellung der neuen Meldung eine automatische E-Mail zu erhalten, in der Sie über einen Link Ihre Meldung nochmals bestätigen müssen. Diese Besonderheit ist notwendig, um den Missbrauch des Portals zu verhindern, mindestens aber zu reduzieren.
         <br/>
-        Die <span class="bold">weiteren Angaben</span> zu Betreff und Details sind bei einigen bestimmten Kategorien verpflichtend (es erscheint dann ein Hinweis), ansonsten aber freiwillig. Über ein <span class="bold">Foto</span> freut sich Ihre Verwaltung natürlich immer, da es die Arbeit erleichtert, aber Sie müssen natürlich keines hochladen.
+        Die <span class="bold">weiteren Angaben</span> zur Beschreibung sind Pflicht. Über ein <span class="bold">Foto</span> freut sich Ihre Verwaltung natürlich immer, da es die Arbeit erleichtert, aber Sie müssen natürlich keines hochladen.
         <br/>
         Und nun, wenn Sie mit allem zufrieden sind, klicken Sie auf den Button <span class="italic">melden</span> und schon ist die neue Meldung online – zunächst erscheint sie grau, später dann rot, wenn Sie sie in der bereits erwähnten automatischen E-Mail nochmals bestätigt haben.
         <br/>

@@ -39,24 +39,13 @@ $conf['meldung_template'] = '
 <h3 style="margin-left:2%;margin-bottom:0.5%">Status</h3>
 <p style="margin-left:2%">{{if status != \'wirdNichtBearbeitet\' && status != \'inBearbeitung\'}}${status}{{/if}}{{if status == \'wirdNichtBearbeitet\'}}wird nicht bearbeitet{{/if}}{{if status == \'inBearbeitung\'}}in Bearbeitung{{/if}} (seit ${datum_statusaenderung}), aktuell bei<br/>${zustaendigkeit}</p>
 
-{{if betreff_vorhanden == "true" && betreff_freigegeben == "true"}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Betreff</h3>
-<p style="margin-left:2%">${titel}</p>
-{{else status == \'offen\' && betreff_vorhanden == "true" && betreff_freigegeben == "false"}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Betreff</h3>
-<p style="margin-left:2%;font-style:italic">redaktionelle Prüfung ausstehend</p>
-{{else status != \'offen\' && status != \'gemeldet\' && betreff_vorhanden == "true" && betreff_freigegeben == "false"}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Betreff</h3>
-<p style="margin-left:2%;font-style:italic">redaktionell nicht freigegeben</p>
-{{/if}}
-
-{{if details_vorhanden == "true" && details_freigegeben == "true"}}
+{{if (beschreibung_vorhanden == "true" || beschreibung_vorhanden == "t") && (beschreibung_freigegeben == "true" || beschreibung_freigegeben == "t")}}
 <h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
-<p style="margin-left:2%">${details}</p>
-{{else status == \'offen\' && details_vorhanden == "true" && details_freigegeben == "false"}}
+<p style="margin-left:2%">${beschreibung}</p>
+{{else status == \'offen\' && (beschreibung_vorhanden == "true" || beschreibung_vorhanden == "t") && (beschreibung_freigegeben == "false" || beschreibung_freigegeben == "f")}}
 <h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
 <p style="margin-left:2%;font-style:italic">redaktionelle Prüfung ausstehend</p>
-{{else status != \'offen\' && status != \'gemeldet\' && details_vorhanden == "true" && details_freigegeben == "false"}}
+{{else status != \'offen\' && status != \'gemeldet\' && (beschreibung_vorhanden == "true" || beschreibung_vorhanden == "t") && (beschreibung_freigegeben == "false" || beschreibung_freigegeben == "f")}}
 <h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
 <p style="margin-left:2%;font-style:italic">redaktionell nicht freigegeben</p>
 {{/if}}
