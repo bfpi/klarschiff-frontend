@@ -12,24 +12,13 @@ Unterkategorie
 Status
 <p class="meldung_eintrag">${status} (seit ${datum_statusaenderung}){%if status != 'gemeldet' %}, aktuell bei<br/>${zustaendigkeit}{%/if%}</p>
 <div id="meldung_details">
-  {%if (betreff_vorhanden == true || betreff_vorhanden == 't') && (betreff_freigegeben == true || betreff_freigegeben == 't')%}
-  Betreff
-  <p class="meldung_eintrag">${titel}</p>
-  {%elif status == 'offen' && (betreff_vorhanden == true || betreff_vorhanden == 't') && (betreff_freigegeben == false || betreff_freigegeben == 'f')%}
-  Betreff
-  <p class="meldung_eintrag-nicht-vorhanden">redaktionelle Prüfung ausstehend</p>
-  {%elif status != 'offen' && status != 'gemeldet' && (betreff_vorhanden == true || betreff_vorhanden == 't') && (betreff_freigegeben == false || betreff_freigegeben == 'f')%}
-  Betreff
-  <p class="meldung_eintrag-nicht-vorhanden">redaktionell nicht freigegeben</p>
-  {%/if%}
-
-  {%if (details_vorhanden == true || details_vorhanden == 't') && (details_freigegeben == true || details_freigegeben == 't')%}
+  {%if (beschreibung_vorhanden == true || beschreibung_vorhanden == 't') && (beschreibung_freigegeben == true || beschreibung_freigegeben == 't')%}
   Details
-  <p class="meldung_eintrag">${details}</p>
-  {%elif status == 'offen' && (details_vorhanden == true || details_vorhanden == 't') && (details_freigegeben == false || details_freigegeben == 'f')%}
+  <p class="meldung_eintrag">${beschreibung}</p>
+  {%elif status == 'offen' && (beschreibung_vorhanden == true || beschreibung_vorhanden == 't') && (beschreibung_freigegeben == false || beschreibung_freigegeben == 'f')%}
   Details
   <p class="meldung_eintrag-nicht-vorhanden">redaktionelle Prüfung ausstehend</p>
-  {%elif status != 'offen' && status != 'gemeldet' && (details_vorhanden == true || details_vorhanden == 't') && (details_freigegeben == false || details_freigegeben == 'f')%}
+  {%elif status != 'offen' && status != 'gemeldet' && (beschreibung_vorhanden == true || beschreibung_vorhanden == 't') && (beschreibung_freigegeben == false || beschreibung_freigegeben == 'f')%}
   Details
   <p class="meldung_eintrag-nicht-vorhanden">redaktionell nicht freigegeben</p>
   {%/if%}
