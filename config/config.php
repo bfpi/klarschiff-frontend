@@ -31,10 +31,6 @@ return array(
       'sonderseite' => false
     ),
     array(
-      'label' => 'Karte',
-      'url' => MAP_URL
-    ),
-    array(
       'label' => 'Hilfe',
       'url' => FRONTEND_URL . 'hilfe.php',
       'sonderseite' => true
