@@ -40,13 +40,13 @@ $conf['meldung_template'] = '
 <p style="margin-left:2%">{{if status != \'wirdNichtBearbeitet\' && status != \'inBearbeitung\'}}${status}{{/if}}{{if status == \'wirdNichtBearbeitet\'}}wird nicht bearbeitet{{/if}}{{if status == \'inBearbeitung\'}}in Bearbeitung{{/if}} (seit ${datum_statusaenderung}){{if status != \'gemeldet\'}}, aktuell bei<br/>${zustaendigkeit}{{/if}}</p>
 
 {{if (beschreibung_vorhanden == "true" || beschreibung_vorhanden == "t") && (beschreibung_freigegeben == "true" || beschreibung_freigegeben == "t")}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
+<h3 style="margin-left:2%;margin-bottom:0.5%">Beschreibung</h3>
 <p style="margin-left:2%">${beschreibung}</p>
 {{else status == \'offen\' && (beschreibung_vorhanden == "true" || beschreibung_vorhanden == "t") && (beschreibung_freigegeben == "false" || beschreibung_freigegeben == "f")}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
+<h3 style="margin-left:2%;margin-bottom:0.5%">Beschreibung</h3>
 <p style="margin-left:2%;font-style:italic">redaktionelle Prüfung ausstehend</p>
 {{else status != \'offen\' && status != \'gemeldet\' && (beschreibung_vorhanden == "true" || beschreibung_vorhanden == "t") && (beschreibung_freigegeben == "false" || beschreibung_freigegeben == "f")}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
+<h3 style="margin-left:2%;margin-bottom:0.5%">Beschreibung</h3>
 <p style="margin-left:2%;font-style:italic">redaktionell nicht freigegeben</p>
 {{/if}}
   

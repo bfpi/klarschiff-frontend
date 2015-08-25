@@ -13,13 +13,13 @@ Status
 <p class="meldung_eintrag">${status} (seit ${datum_statusaenderung}){%if status != 'gemeldet' %}, aktuell bei<br/>${zustaendigkeit}{%/if%}</p>
 <div id="meldung_details">
   {%if (beschreibung_vorhanden == true || beschreibung_vorhanden == 't') && (beschreibung_freigegeben == true || beschreibung_freigegeben == 't')%}
-  Details
+  Beschreibung
   <p class="meldung_eintrag">${beschreibung}</p>
   {%elif status == 'offen' && (beschreibung_vorhanden == true || beschreibung_vorhanden == 't') && (beschreibung_freigegeben == false || beschreibung_freigegeben == 'f')%}
-  Details
+  Beschreibung
   <p class="meldung_eintrag-nicht-vorhanden">redaktionelle Prüfung ausstehend</p>
   {%elif status != 'offen' && status != 'gemeldet' && (beschreibung_vorhanden == true || beschreibung_vorhanden == 't') && (beschreibung_freigegeben == false || beschreibung_freigegeben == 'f')%}
-  Details
+  Beschreibung
   <p class="meldung_eintrag-nicht-vorhanden">redaktionell nicht freigegeben</p>
   {%/if%}
 
