@@ -18,7 +18,7 @@
   </div>
 
   <h4 style="margin-bottom:8px">weitere Angaben</h4>	
-  <label for="beschreibung" style="margin-bottom:3px">Beschreibung*</label>
+  <label for="beschreibung" style="margin-bottom:3px">Beschreibung</label>
   <textarea name="beschreibung">${beschreibung}</textarea>
 
   <label for="foto" style="margin-bottom:3px">Foto <span style="font-style:italic;color:#d81920">(Dateigröße maximal 4 MB!)</span></label>
@@ -26,6 +26,5 @@
   <table id="fotos"></table>
 
   <p class="help"><b>Hinweis:</b> Vor der Veröffentlichung werden eingegebene Texte sowie das Foto redaktionell überprüft.</p>
-  <p class="help">* Pflichtangabe bei dieser Unterkategorie</p>
 
 </form>
