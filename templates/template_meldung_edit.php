@@ -18,17 +18,14 @@
   </div>
 
   <h4 style="margin-bottom:8px">weitere Angaben</h4>	
-  <label for="betreff" style="margin-bottom:3px">Betreff<span class="betreff-pflicht">*</span></label>
-  <input type="text" maxlength="255" name="betreff" value="${betreff}"  />
-
-  <label for="details" style="margin-bottom:3px">Details<span class="details-pflicht">*</span></label>
-  <textarea name="details">${details}</textarea>
+  <label for="beschreibung" style="margin-bottom:3px">Beschreibung*</label>
+  <textarea name="beschreibung">${beschreibung}</textarea>
 
   <label for="foto" style="margin-bottom:3px">Foto <span style="font-style:italic;color:#d81920">(Dateigröße maximal 4 MB!)</span></label>
   <input type="file" name="foto"/>
   <table id="fotos"></table>
 
   <p class="help"><b>Hinweis:</b> Vor der Veröffentlichung werden eingegebene Texte sowie das Foto redaktionell überprüft.</p>
-  <p class="help pflicht-fussnote">* Pflichtangabe bei dieser Unterkategorie</p>
+  <p class="help">* Pflichtangabe bei dieser Unterkategorie</p>
 
 </form>
