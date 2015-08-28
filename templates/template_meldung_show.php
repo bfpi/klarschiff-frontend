@@ -12,6 +12,10 @@ Unterkategorie
 Status
 <p class="meldung_eintrag">${status} (seit ${datum_statusaenderung}){%if status != 'gemeldet' %}, aktuell bei<br/>${zustaendigkeit}{%/if%}</p>
 <div id="meldung_details">
+  {%if bemerkung%}
+  Statusinformation
+  <p class="meldung_eintrag">{%html bemerkung%}</p>
+  {%/if%}
   {%if (beschreibung_vorhanden == true || beschreibung_vorhanden == 't') && (beschreibung_freigegeben == true || beschreibung_freigegeben == 't')%}
   Beschreibung
   <p class="meldung_eintrag">${beschreibung}</p>
@@ -34,10 +38,6 @@ Status
   {%elif status != 'offen' && status != 'gemeldet' && (foto_vorhanden == true || foto_vorhanden == 't') && (foto_freigegeben == false || foto_freigegeben == 'f')%}
   Foto
   <p class="meldung_eintrag-nicht-vorhanden">redaktionell nicht freigegeben</p>
-  {%/if%}
-  {%if bemerkung%}
-  Info der Verwaltung
-  <p class="meldung_eintrag">{%html bemerkung%}</p>
   {%/if%}
 
   <p class="meldung_eintrag">bisher <span class="meldung_unterstuetzer">${unterstuetzer}</span> {%if unterstuetzer != 1%}Unterstützungen{%/if%}{%if unterstuetzer == 1%}Unterstützung{%/if%}{%if vorgangstyp == 'idee'%} (${schwellenwert} nötig){%/if%}</p>
