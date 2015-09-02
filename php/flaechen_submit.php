@@ -38,10 +38,10 @@ if ($data["geom"] != "null" && strlen($data["geom"]) > 0 &&
 }
 
 if ($data["id"] == -1) {
-  // STADTGEBIET
+  // GEBIET
   $data["geom"] = $frontend->city_boundary();
 } else if ($data["id"] != "null" && strlen($data["id"]) > 0) {
-  // STADTTEILE
+  // ORTSTEILE
   $ids = array();
 
   // Überprüfen ob es sich um Zahlen handelt.

@@ -169,7 +169,7 @@ var ol_config = {
     "SketchBeobachtungsflaeche": {
       title: "SketchBeobachtungsflaeche",
       type: "Vector",
-      url: "<?php echo STADTTEILE_WFS_URL; ?>",
+      url: "<?php echo ORTSTEILE_WFS_URL; ?>",
       default_layer: false,
       style: ol_styles.beobachtungsflaeche
     },
