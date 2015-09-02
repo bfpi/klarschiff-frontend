@@ -1,7 +1,7 @@
 var beobachtungsflaechenOverlay;
 var drawBeobachtungsflaeche;
 
-function beobachtungsflaecheStadtgebiet() {
+function beobachtungsflaecheGebiet() {
   hideFlaecheActionBtns();
   beobachtungsflaechenDialog(-1, null, "thematische Eingrenzung", null);
   showFlaecheActionBtns();
@@ -25,7 +25,7 @@ function beobachtungsflaecheStartSelect() {
     style: ol_styles.beobachtungsflaeche_hover,
   });
 
-  map.on('click', waehleStadtteil);
+  map.on('click', waehleOrtsteil);
 
   $(document).bind('keydown.rss', function(event) {
     if (event.keyCode && event.keyCode === $.ui.keyCode.ESCAPE) {
@@ -57,10 +57,10 @@ function beobachtungsflaecheStopSelect() {
 
   layer.setVisible(false);
   beobachtungsflaechenOverlay.getSource().clear();
-  map.un('click', waehleStadtteil);
+  map.un('click', waehleOrtsteil);
 }
 
-function waehleStadtteil(elem) {
+function waehleOrtsteil(elem) {
   pixel = elem.pixel;
   var newFeature = map.forEachFeatureAtPixel(pixel, function(feature, layer) {
     return feature;

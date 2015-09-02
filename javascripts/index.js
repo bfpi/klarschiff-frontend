@@ -56,7 +56,7 @@ function eyeCatcher() {
 function initSearch() {
   KS.Search.init();
 
-  var placeholder = 'Stadtteil, Straße oder Adresse eingeben…';
+  var placeholder = 'Ortsteil, Straße oder Adresse eingeben…';
   var searchField = $("input#searchtext");
   if (checkBrowser('msie')) {
     searchField.attr('value', placeholder);

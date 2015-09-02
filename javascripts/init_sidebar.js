@@ -10,8 +10,8 @@ function init_sidebar() {
   $('#beobachtungsflaechen button').button();
   $('#sonderseiten a').button();
 
-  $('#flaeche_stadtgebiet').click(beobachtungsflaecheStadtgebiet);
-  $('#flaeche_stadtteil').click(beobachtungsflaecheStartSelect);
+  $('#flaeche_gebiet').click(beobachtungsflaecheGebiet);
+  $('#flaeche_ortsteil').click(beobachtungsflaecheStartSelect);
   $('#flaeche_neu').click(beobachtungsflaecheStartNeueFlaeche);
 
   // Accordion bauen

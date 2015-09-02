@@ -194,7 +194,7 @@
       <p class="justified">
         Um über alle Änderungen in einem bestimmten Gebiet auf dem Laufenden zu bleiben, können Sie dieses als <span class="bold">individuellen RSS-Feed</span> abonnieren. Somit werden Sie fortan immer dann informiert, wenn sich in Ihrer Beobachtungsfläche etwas tut, also wenn dort eine neue Meldung hinzukommt oder sich eine bestehende Meldung ändert.
         <br/>
-        Als Beobachtungsgebiete kommen entweder das <span class="bold">gesamte durch <span class="italic">Klarschiff</span> abgedeckte Gebiet</span> auf einmal, ausgewählte Teile davon (zum Beispiel Stadtteile) oder selbst definierte Flächen in Frage. Möchten Sie sich einen RSS-Feed zum Abonnement „basteln“, so steht die Entscheidung über eine dieser drei Arten von zu beobachtenden Flächen am Anfang und ist im Menü auf der Kartenseite zu treffen. Für das gesamte Gebiet reicht ein Klick auf den entsprechenden Menüpunkt, die beiden anderen Arten bedürfen jeweils noch einer kurzen Erläuterung:
+        Als Beobachtungsgebiete kommen entweder das <span class="bold">gesamte durch <span class="italic">Klarschiff</span> abgedeckte Gebiet</span> auf einmal, ausgewählte Teile davon (zum Beispiel Ortsteile) oder selbst definierte Flächen in Frage. Möchten Sie sich einen RSS-Feed zum Abonnement „basteln“, so steht die Entscheidung über eine dieser drei Arten von zu beobachtenden Flächen am Anfang und ist im Menü auf der Kartenseite zu treffen. Für das gesamte Gebiet reicht ein Klick auf den entsprechenden Menüpunkt, die beiden anderen Arten bedürfen jeweils noch einer kurzen Erläuterung:
         <br/>
         Haben Sie sich für das Auswählen von <span class="bold">Gebietsteilen</span> entschieden, erscheinen diese als orange Flächen in der Karte. Klicken Sie nun auf einen Gebietsteil, wird er Ihrer Auswahl hinzugefügt und auf der Karte pink markiert – klicken Sie ihn erneut an, wird er entfernt und erscheint wieder orange. Um fortzufahren, müssen Sie jetzt im Menü auf den dort erschienenen Button <span class="italic">übernehmen</span> klicken.
         <br/>
@@ -207,12 +207,12 @@
       <p class="screenshot clearfix large">
         <span class="left"><img src="images/hilfe_screenshot13.png" alt="screenshot_13" title="Art der Beobachtungsfläche wählen" /></span>
         <span class="right"><img src="images/hilfe_screenshot15.png" alt="screenshot_15" title="eigene Beobachtungsfläche erstellen" /></span>
-        <span class="center"><img src="images/hilfe_screenshot14.png" alt="screenshot_14" title="Auswahl an Stadtteilen treffen" /></span>
+        <span class="center"><img src="images/hilfe_screenshot14.png" alt="screenshot_14" title="Auswahl an Ortsteilen treffen" /></span>
       </p>
       <p class="screenshot annotation clearfix large">
-        <span class="left">Im Menü erst <span class="italic">Beobachtungsflächen</span> und dann entweder <span class="italic">Stadtteil(e) auswählen</span> oder <span class="italic">Fläche erstellen</span> wählen,…</span>
+        <span class="left">Im Menü erst <span class="italic">Beobachtungsflächen</span> und dann entweder <span class="italic">Ortsteil(e) auswählen</span> oder <span class="italic">Fläche erstellen</span> wählen,…</span>
         <span class="right">…oder eigene Beobachtungsfläche erstellen und mit Doppelklick abschließen.</span>
-        <span class="center">…und danach Auswahl an Stadtteilen treffen und im Menü <span class="italic">übernehmen</span> anklicken…</span>
+        <span class="center">…und danach Auswahl an Ortsteilen treffen und im Menü <span class="italic">übernehmen</span> anklicken…</span>
       </p>
 
       <h2><a name="subheadline06"></a>Muss ich sonst noch etwas wissen?</h2>

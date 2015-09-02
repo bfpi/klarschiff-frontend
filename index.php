@@ -70,7 +70,7 @@ $config = include 'config/config.php';
         <div class="col-md-4 center">
           <h2>Adressensuche</h2>
           <div id="search">
-            <input id="searchtext" size="20" type="text" name="searchtext" title="Stadtteil, Straße oder Adresse eingeben…" />
+            <input id="searchtext" size="20" type="text" name="searchtext" title="Ortsteil, Straße oder Adresse eingeben…" />
             <div class="results" id="results-container"></div>
           </div>
           <a id="start" class="button" href="<?php echo MAP_URL; ?>" target="_self">Karte aufrufen</a>
