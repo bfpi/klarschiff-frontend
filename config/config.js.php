@@ -6,11 +6,12 @@ $config = include('config.php');
 var zoom = 2;
 var lonLat_center = [11.44210, 53.61698];
 var mv_bbox_25833 = [380000, 5980000, 410000, 6010000];
-var extent = [232000, 5923000, 295000, 5974300]
-var resolutions = [28.2222222222, 22.9305555556,
-  17.6388888889, 12.3472222222, 8.8194444444, 7.0555555556, 5.2916666667,
-  3.5277777778, 2.6458333333, 1.7638888889, 0.8819444444, 0.3527777778,
-  0.1763888889];
+var extent = [232000, 5923000, 295000, 5974300];
+var resolutions = [4891.96981025, 2445.98490513, 1222.99245256, 611.496226281,
+  305.748113141, 152.87405657, 76.4370282852, 38.2185141426, 19.1092570713, 9.5546285356,
+  4.7773142678, 2.3886571339, 1.194328567, 0.5971642835];
+var resolutions = [38.2185141426, 19.1092570713, 9.5546285356,
+  4.7773142678, 2.3886571339, 1.194328567, 0.5971642835];
 
 var problemMeldungenMoeglich = true;
 var ideeMeldungenMoeglich = false;
@@ -95,12 +96,12 @@ var ol_config = {
     "Stadtplan": {
       type: "TileWMTS",
       title: "Stadtplan",
-      url: "http://geo.sv.rostock.de/geodienste/stadtplan/wmts/stadtplan_wmts/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
+      url: "http://www.geodaten-mv.de/dienste/orka_wmts/wmts/{layer}/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
       visibility: true,
-      layers: "stadtplan_wmts",
-      tileGridOrigin: [200000, 6075000],
-      matrixSet: "grid_25833_wmts",
-      matrixIds: [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+      layers: "orka",
+      tileGridOrigin: [-464849.38, 6310160.14],
+      matrixSet: "ETRS89UTM33",
+      matrixIds: [7, 8, 9, 10, 11, 12, 13],
       requestEncoding: "REST",
       projection: "EPSG:25833",
       format: "image/png",
@@ -111,12 +112,12 @@ var ol_config = {
     Luftbild: {
       type: "TileWMTS",
       title: "Luftbild",
-      url: "http://geo.sv.rostock.de/geodienste/luftbild/wmts/luftbild_wmts/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
+      url: "http://www.geodaten-mv.de/dienste/dop_wmts/wmts/{layer}/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
       visibility: true,
-      layers: "luftbild",
-      tileGridOrigin: [200000, 6075000],
-      matrixSet: "epsg_25833_wmts",
-      matrixIds: [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+      layers: "mv_dop",
+      tileGridOrigin: [-464849.38, 6310160.14],
+      matrixSet: "ETRS89UTM33",
+      matrixIds: [7, 8, 9, 10, 11, 12, 13],
       requestEncoding: "REST",
       projection: "EPSG:25833",
       format: "image/png",

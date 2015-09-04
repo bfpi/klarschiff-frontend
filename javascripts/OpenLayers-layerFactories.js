@@ -10,7 +10,6 @@ var OLLayerFactory = function() {
   this.createTileWMTSLayer = function(def, projection) {
     var layer = new ol.layer.Tile({
       title: def.title,
-      extent: def.extent,
       projection: projection,
       source: new ol.source.WMTS({
         projection: def.projection,
