@@ -461,11 +461,10 @@ function showAdviceInstruction(targetId) {
     return;
   }
   var dlg = $('<div></div>').attr('id', 'advise-instruction').html(
-          'Bitte setzen Sie in der Karte das Symbol durch Verschieben mit gedrückter ' +
-          'linker Maustaste an den Ort ' + (targetId === 'problem' ? 'des Problems' : 'der Idee') + '.<br/><br/>' +
-          'Teilen Sie bitte pro Meldung nur ' + (targetId === 'problem' ? 'ein Problem' : 'eine Idee') + ' aus den vorgegebenen ' +
-          'Kategorien mit.<br/><br/>Sehen Sie bitte von Meldungen ab, die komplexe ' +
-          'städtebauliche oder verkehrsplanerische Sachverhalte behandeln.'
+          'Melden Sie bitte keinesfalls Sachverhalte, die einer sofortigen und/oder direkten Reaktion bedürfen, wie etwa Notfälle!<br/><br/>' +
+          'Bitte setzen Sie in der Karte das Symbol durch Verschieben mit gedrückter linker Maustaste an den Ort ' + (targetId === 'problem' ? 'des Problems' : 'der Idee') + '.<br/><br/>' +
+          'Teilen Sie bitte pro Meldung nur ' + (targetId === 'problem' ? 'ein Problem' : 'eine Idee') + ' aus den vorgegebenen Kategorien mit.<br/><br/>' +
+          'Sehen Sie bitte von Meldungen ab, die komplexe städtebauliche oder verkehrsplanerische Sachverhalte behandeln.'
           ).dialog({
     title: 'Hinweise',
     width: 600,
