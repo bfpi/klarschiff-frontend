@@ -24,7 +24,7 @@
             <h3>Adressensuche</h3>
             <div id='standortsuche'>
               <div class="search" style="display:block">
-                <input type="text" name="searchtext" id="searchtext" placeholder="Stadtteil/Straße/Adresse eingeben…" />
+                <input type="text" name="searchtext" id="searchtext" placeholder="Ortsteil/Straße/Adresse eingeben…" />
                 <div class="results" id="results_container" style="position:relative;"></div>
               </div>
             </div>
@@ -51,8 +51,8 @@
             </div>
             <h3>Beobachtungsflächen</h3>
             <div id="beobachtungsflaechen">
-              <button id="flaeche_stadtgebiet" class="flaecheAction">gesamtes Stadtgebiet</button>
-              <button id="flaeche_stadtteil" class="flaecheAction">Stadtteil(e) auswählen</button>
+              <button id="flaeche_gebiet" class="flaecheAction">gesamtes Gebiet</button>
+              <button id="flaeche_ortsteil" class="flaecheAction">Ortsteil(e) auswählen</button>
               <button id="flaeche_neu" class="flaecheAction">Fläche erstellen</button>
               <button id="flaeche_apply" class="flaecheCtrl" style="display:none">übernehmen</button>
               <button id="flaeche_cancel" class="flaecheCtrl" style="display:none">abbrechen</button>
@@ -61,9 +61,11 @@
             <div id="mapicons"></div>
             <h3>Hilfe und Impressum</h3>
             <div id="sonderseiten">
-<?php foreach ($config['links']['help_and_impressing'] as $link) { ?>
+<?php foreach ($config['nav'] as $link) {
+    if ($link['sonderseite']) { ?>
               <a href="<?php echo $link['url']  ?>" target="_blank"><?php echo $link['label'] ?></a>
-<?php } ?>
+<?php }
+} ?>
             </div>
           </div>
           <a id="back_to_start" href="<?php echo FRONTEND_URL; ?>">Startseite</a>

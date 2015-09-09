@@ -10,9 +10,6 @@
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/icons/favicon.ico" />
     <link rel="stylesheet" type="text/css" media="all" href="libs/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="styles/index.css" />
-
-    <script type="text/javascript" src="javascripts/build/libs.js"></script>
-    <script type="text/javascript" src="javascripts/build/index.js"></script>
   </head>
   <body>
     <?php include("header.inc.php"); ?>
@@ -31,7 +28,7 @@
       <h2>Protokollierung</h2>
       <p class="justified">
         Wenn Sie auf das vorliegende Angebot der Universitäts- und Hansestadt Greifswald zugreifen, werden folgende Zugriffsdaten protokolliert:<br/>
-        <ul>
+        <ul class="left">
           <li>die IP-Adresse des zugreifenden Gerätes,</li>
           <li>die Beschreibung des Webbrowsers, des Betriebssystems und der Bildschirmauflösung des zugreifenden Gerätes,</li>
           <li>Datum, Uhrzeit sowie Zeitdauer des Zugriffs,</li>
@@ -39,6 +36,8 @@
           <li>der Zugriffsstatus sowie</li>
           <li>die übertragene Datenmenge.</li>
         </ul>
+      </p>
+      <p class="justified">
         Die Protokollierung der Zugriffsdaten dient ausschließlich statistischen Zwecken, um auf diese Weise einen Überblick über die Nutzung des vorliegenden Angebotes allgemein respektive einzelner Bestandteile davon im Speziellen zu erhalten. Für die automatisierte Durchführung der statistischen Auswertung nutzt die Universitäts- und Hansestadt Greifswald unter anderem <a href="http://piwik.org/" target="_blank"><span class="italic">Piwik</span></a>, ein Open-Source-Programm zur Webanalytik. <span class="italic">Piwik</span> verwendet Cookies, die auf dem zugreifenden Gerät gespeichert werden (zu Cookies siehe auch nachfolgenden Abschnitt).<br/>
         Die Zugriffsdaten werden nur intern und nur zu ihrem vorgesehenen Zweck gespeichert und verwendet. Sie unterliegen dem DSG M-V. Eine Weitergabe an Dritte erfolgt ausschließlich bei gesetzlicher oder durch Gerichtsentscheidung hervorgerufener Verpflichtung oder im Falle von Angriffen auf die Internetinfrastruktur der Universitäts- und Hansestadt Greifswald, soweit eine Rechts- oder Strafverfolgung dies erfordert. Eine Weitergabe zu kommerziellen oder anderen Zwecken erfolgt nicht.
       </p>

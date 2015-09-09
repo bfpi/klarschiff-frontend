@@ -77,7 +77,7 @@ class FrontendDAO {
   function rss() {
     return pg_fetch_all(
       pg_query($this->conn, "SELECT meldung, datum, typ, status, hauptkategorie, unterkategorie, "
-        . "betreff, details, foto, info_der_verwaltung, unterstuetzungen, x, y "
+        . "beschreibung, foto, info_der_verwaltung, unterstuetzungen, x, y "
         . "FROM klarschiff.klarschiff_wfs_georss"));
   }
 
@@ -101,8 +101,8 @@ class FrontendDAO {
   }
 
   function categories() {
-    $res = pg_query($this->conn, "SELECT id, name, parent, vorgangstyp AS typ, aufforderung, "
-      . "naehere_beschreibung_notwendig, 0 AS childcount "
+    $res = pg_query($this->conn, "SELECT id, name, parent, vorgangstyp AS typ, "
+      . "0 AS childcount "
       . "FROM klarschiff.klarschiff_kategorie "
       . "ORDER BY name");
     $categories = array();

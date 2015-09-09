@@ -98,7 +98,7 @@ while ($row = pg_fetch_assoc($result)) {
     $row["geom"] = $row["bbox"];
   }
   $search->updateIndex(
-    $row["strassenname"] . " " . $row["hausnummer"] . " " . $row["hausnummerzusatz"],
+    $row["strassenname"] . " " . $row["hausnummer"] . $row["hausnummerzusatz"],
     array(
       "type" => "Adresse",
       "strassenname" => $row["strassenname"],

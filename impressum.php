@@ -10,9 +10,6 @@
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/icons/favicon.ico" />
     <link rel="stylesheet" type="text/css" media="all" href="libs/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="styles/index.css" />
-
-    <script type="text/javascript" src="javascripts/build/libs.js"></script>
-    <script type="text/javascript" src="javascripts/build/index.js"></script>
   </head>
   <body>
     <?php include("header.inc.php"); ?>

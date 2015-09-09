@@ -48,7 +48,7 @@ foreach ($result->documents as $doc) {
   } elseif ($type === "straße") {
     $title = $data['strassenname'];
   } elseif ($type === "adresse") {
-    $title = $data["strassenname"] . " " . $data["hausnummer"] . " " . $data["hausnummerzusatz"];
+    $title = $data["strassenname"] . " " . $data["hausnummer"] . $data["hausnummerzusatz"];
   } elseif ($type === "poi") {
     $title = $data['title'];
   } else {

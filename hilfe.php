@@ -10,9 +10,6 @@
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/icons/favicon.ico" />
     <link rel="stylesheet" type="text/css" media="all" href="libs/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="styles/index.css" />
-
-    <script type="text/javascript" src="javascripts/build/libs.js"></script>
-    <script type="text/javascript" src="javascripts/build/index.js"></script>
   </head>
   <body>
     <?php include("header.inc.php"); ?>
@@ -123,9 +120,7 @@
       </p>
       <h3><a name="section03_04"></a>(4) vorhandene Meldungen verstehen</h3>
       <p class="justified">
-        Sie wissen jetzt zum Beispiel, dass ein gelbes Symbol mit Ausrufezeichen ein Problem in Bearbeitung und ein gelb-grünes Symbol mit Glühbirne eine nicht umsetzbare Idee darstellt. Aber wie sind die Zusammenhänge und wann tritt welcher Fall ein?
-        <br/>
-        Folgendes Schema soll Ihnen zum besseren Verständnis den <span class="bold">Weg einer Meldung</span> in <span class="italic">Klarschiff</span> verdeutlichen:
+        Sie wissen jetzt zum Beispiel, dass ein gelbes Symbol mit Ausrufezeichen ein Problem in Bearbeitung und ein gelb-grünes Symbol mit Glühbirne eine nicht umsetzbare Idee darstellt. Aber wie sind die Zusammenhänge und wann tritt welcher Fall ein? Folgendes Schema soll Ihnen zum besseren Verständnis den <span class="bold">Weg einer Meldung</span> in <span class="italic">Klarschiff</span> verdeutlichen:
       </p>
       <p class="screenshot clearfix">
         <img src="images/hilfe_schema.png" alt="weg_einer_meldung" title="Weg einer Meldung in Klarschiff" />
@@ -163,7 +158,7 @@
         <br/>
         Damit Ihre Verwaltung Ihre Meldung korrekt einordnen kann, müssen Sie im Dialog eine Hauptkategorie (zum Beispiel <span class="italic">Müll/Schmutz)</span> und eine Unterkategorie (zum Beispiel <span class="italic">Sperrmüll)</span> auswählen, die am besten zum Problem oder zur Idee passt. Außerdem müssen Sie Ihre <span class="bold">E-Mail-Adresse angeben,</span> um nach der erfolgreichen Erstellung der neuen Meldung eine automatische E-Mail zu erhalten, in der Sie über einen Link Ihre Meldung nochmals bestätigen müssen. Diese Besonderheit ist notwendig, um den Missbrauch des Portals zu verhindern, mindestens aber zu reduzieren.
         <br/>
-        Die <span class="bold">weiteren Angaben</span> zu Betreff und Details sind bei einigen bestimmten Kategorien verpflichtend (es erscheint dann ein Hinweis), ansonsten aber freiwillig. Über ein <span class="bold">Foto</span> freut sich Ihre Verwaltung natürlich immer, da es die Arbeit erleichtert, aber Sie müssen natürlich keines hochladen.
+        Die <span class="bold">weiteren Angaben</span> zur Beschreibung sind Pflicht. Über ein <span class="bold">Foto</span> freut sich Ihre Verwaltung natürlich immer, da es die Arbeit erleichtert, aber Sie müssen natürlich keines hochladen.
         <br/>
         Und nun, wenn Sie mit allem zufrieden sind, klicken Sie auf den Button <span class="italic">melden</span> und schon ist die neue Meldung online – zunächst erscheint sie grau, später dann rot, wenn Sie sie in der bereits erwähnten automatischen E-Mail nochmals bestätigt haben.
         <br/>
@@ -199,7 +194,7 @@
       <p class="justified">
         Um über alle Änderungen in einem bestimmten Gebiet auf dem Laufenden zu bleiben, können Sie dieses als <span class="bold">individuellen RSS-Feed</span> abonnieren. Somit werden Sie fortan immer dann informiert, wenn sich in Ihrer Beobachtungsfläche etwas tut, also wenn dort eine neue Meldung hinzukommt oder sich eine bestehende Meldung ändert.
         <br/>
-        Als Beobachtungsgebiete kommen entweder das <span class="bold">gesamte durch <span class="italic">Klarschiff</span> abgedeckte Gebiet</span> auf einmal, ausgewählte Teile davon (zum Beispiel Stadtteile) oder selbst definierte Flächen in Frage. Möchten Sie sich einen RSS-Feed zum Abonnement „basteln“, so steht die Entscheidung über eine dieser drei Arten von zu beobachtenden Flächen am Anfang und ist im Menü auf der Kartenseite zu treffen. Für das gesamte Gebiet reicht ein Klick auf den entsprechenden Menüpunkt, die beiden anderen Arten bedürfen jeweils noch einer kurzen Erläuterung:
+        Als Beobachtungsgebiete kommen entweder das <span class="bold">gesamte durch <span class="italic">Klarschiff</span> abgedeckte Gebiet</span> auf einmal, ausgewählte Teile davon (zum Beispiel Ortsteile) oder selbst definierte Flächen in Frage. Möchten Sie sich einen RSS-Feed zum Abonnement „basteln“, so steht die Entscheidung über eine dieser drei Arten von zu beobachtenden Flächen am Anfang und ist im Menü auf der Kartenseite zu treffen. Für das gesamte Gebiet reicht ein Klick auf den entsprechenden Menüpunkt, die beiden anderen Arten bedürfen jeweils noch einer kurzen Erläuterung:
         <br/>
         Haben Sie sich für das Auswählen von <span class="bold">Gebietsteilen</span> entschieden, erscheinen diese als orange Flächen in der Karte. Klicken Sie nun auf einen Gebietsteil, wird er Ihrer Auswahl hinzugefügt und auf der Karte pink markiert – klicken Sie ihn erneut an, wird er entfernt und erscheint wieder orange. Um fortzufahren, müssen Sie jetzt im Menü auf den dort erschienenen Button <span class="italic">übernehmen</span> klicken.
         <br/>
@@ -212,12 +207,12 @@
       <p class="screenshot clearfix large">
         <span class="left"><img src="images/hilfe_screenshot13.png" alt="screenshot_13" title="Art der Beobachtungsfläche wählen" /></span>
         <span class="right"><img src="images/hilfe_screenshot15.png" alt="screenshot_15" title="eigene Beobachtungsfläche erstellen" /></span>
-        <span class="center"><img src="images/hilfe_screenshot14.png" alt="screenshot_14" title="Auswahl an Stadtteilen treffen" /></span>
+        <span class="center"><img src="images/hilfe_screenshot14.png" alt="screenshot_14" title="Auswahl an Ortsteilen treffen" /></span>
       </p>
       <p class="screenshot annotation clearfix large">
-        <span class="left">Im Menü erst <span class="italic">Beobachtungsflächen</span> und dann entweder <span class="italic">Stadtteil(e) auswählen</span> oder <span class="italic">Fläche erstellen</span> wählen,…</span>
+        <span class="left">Im Menü erst <span class="italic">Beobachtungsflächen</span> und dann entweder <span class="italic">Ortsteil(e) auswählen</span> oder <span class="italic">Fläche erstellen</span> wählen,…</span>
         <span class="right">…oder eigene Beobachtungsfläche erstellen und mit Doppelklick abschließen.</span>
-        <span class="center">…und danach Auswahl an Stadtteilen treffen und im Menü <span class="italic">übernehmen</span> anklicken…</span>
+        <span class="center">…und danach Auswahl an Ortsteilen treffen und im Menü <span class="italic">übernehmen</span> anklicken…</span>
       </p>
 
       <h2><a name="subheadline06"></a>Muss ich sonst noch etwas wissen?</h2>

@@ -48,6 +48,10 @@ h3 {
   font-style: italic;
 }
 
+.left {
+  text-align: left;
+}
+
 div#header, 
 div.container {
   border-left: 1px solid #104382;

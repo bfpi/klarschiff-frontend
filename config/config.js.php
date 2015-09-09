@@ -17,8 +17,7 @@ var ideeMeldungenMoeglich = false;
 
 var unterstuetzer_schwellenwert = <?php echo $config['thresholds']['supporter']; ?>;
 
-var placeholder_betreff = "Bitte geben Sie einen Betreff an.";
-var placeholder_details = "Bitte beschreiben Sie Ihre Meldung genauer.";
+var placeholder_beschreibung = "Bitte beschreiben Sie Ihre Meldung genauer.";
 var placeholder_email = "Bitte geben Sie Ihre E-Mail-Adresse an.";
 var placeholder_begruendung = "Bitte geben Sie eine Begründung an.";
 var placeholder_freitext = "Bitte tragen Sie hier Ihr Lob, Ihre Hinweise oder Ihre Kritik zur Meldung ein.";
@@ -26,8 +25,7 @@ var placeholder_freitext = "Bitte tragen Sie hier Ihr Lob, Ihre Hinweise oder Ih
 //// Variablen mit Fehlertexten
 var hauptkategorieLeer = "Sie müssen eine Hauptkategorie auswählen.";
 var unterkategorieLeer = "Sie müssen eine Unterkategorie auswählen.";
-var betreffLeer = "Sie müssen einen Betreff angeben.";
-var detailsLeer = "Sie müssen Ihre Meldung genauer beschreiben.";
+var beschreibungLeer = "Sie müssen Ihre Meldung genauer beschreiben.";
 var emailFalsch = "Die angegebene E-Mail-Adresse ist syntaktisch falsch. Bitte korrigieren Sie Ihre Eingabe.";
 var emailLeer = "Sie müssen Ihre E-Mail-Adresse angeben.";
 var begruendungLeer = "Sie müssen eine Begründung angeben.";
@@ -126,9 +124,9 @@ var ol_config = {
     },
 //    "POI": {
 //      type: "ImageWMS",
-//      url: "http://geo.sv.rostock.de/geodienste/klarschiff_poi/ows?",
+//      url: "http://geo.sv.rostock.de/geodienste/klarschiff-poi/wms?",
 //      version: "1.1.1",
-//      layers: "abfallbehaelter,ampeln,beleuchtung,brunnen,denkmale,hundetoiletten,recyclingcontainer,sitzgelegenheiten,sperrmuelltermine",
+//      layers: "hro.klarschiff-poi.abfallbehaelter,hro.klarschiff-poi.ampeln,hro.klarschiff-poi.beleuchtung,hro.klarschiff-poi.brunnen,hro.klarschiff-poi.denkmale,hro.klarschiff-poi.hundetoiletten,hro.klarschiff-poi.recyclingcontainer,hro.klarschiff-poi.sitzgelegenheiten,hro.klarschiff-poi.sperrmuelltermine",
 //      projection: "EPSG:25833",
 //      format: "image/png",
 //      default_layer: true,
@@ -143,6 +141,15 @@ var ol_config = {
       enableClustering: true,
       clusterDistance: 40,
       style: meldungenStyles,
+      url_with_filter: function() {
+        if (this.filter === undefined) {
+          return this.url;
+        }
+        if (this.filter == null) {
+          return null;
+        }
+        return this.url + "&Filter=" + this.filter;
+      },
       eventHandlers: {
 	      change: function(evt) {
           if (typeof(map.showAdvice) === "function") {
@@ -162,7 +169,7 @@ var ol_config = {
     "SketchBeobachtungsflaeche": {
       title: "SketchBeobachtungsflaeche",
       type: "Vector",
-      url: "<?php echo STADTTEILE_WFS_URL; ?>",
+      url: "<?php echo ORTSTEILE_WFS_URL; ?>",
       default_layer: false,
       style: ol_styles.beobachtungsflaeche
     },

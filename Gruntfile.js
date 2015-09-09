@@ -5,8 +5,8 @@ module.exports = function(grunt) {
     versions: {
       bootstrap: '3.3.1',
       ol: 'v3.7.0',
-      jq: '1.11.2',
-      jqui: '1.11.2',
+      jq: '1.11.3',
+      jqui: '1.11.4',
       proj4: '2.3.3',
     },
     curl: {
