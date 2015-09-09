@@ -13,7 +13,7 @@
   </head>
   <body>
     <?php include("header.inc.php"); ?>
-    <div id="content" class="container">
+    <div id="content" class="container center">
       <h1>Nutzungsbedingungen</h1>
 
       <h2>Nutzung des vorliegenden Angebotes der Universitäts- und Hansestadt Greifswald</h2>

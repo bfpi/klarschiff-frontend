@@ -13,7 +13,7 @@
   </head>
   <body>
     <?php include("header.inc.php"); ?>
-    <div id="content" class="container">
+    <div id="content" class="container center">
       <h1>Impressum</h1>
 
       <h2>Herausgeberin</h2>
@@ -57,7 +57,7 @@
         Telefax: +49-3841-758-1211<br/>
         E-Mail: <a href="mailto:info@bfpi.de">info@bfpi.de</a><br/>
       </p>
-      <a href="http://www.europa-mv.de/cms2/Europamv_prod/Europamv/de/eufoerderinstrumente/Europaeische_Fonds_in_Mecklenburg-Vorpommern/index.jsp" target="_blank"><img src="/pc/images/logo_eu-fonds.png"/></a></br/>
+      <a href="http://www.europa-mv.de/cms2/Europamv_prod/Europamv/de/eufoerderinstrumente/Europaeische_Fonds_in_Mecklenburg-Vorpommern/index.jsp" target="_blank"><img src="images/logo_eu-fonds.png"/></a></br/>
       <small>Dieses Projekt wurde gefördert durch die Europäische Union und das Land Mecklenburg-Vorpommern.</small>
 
       <h2>Lizenzbestimmungen</h2>
