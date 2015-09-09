@@ -22,27 +22,33 @@ return array(
   'nav' => array(
     array(
       'label' => 'Startseite',
-      'url' => BASE_URL
+      'url' => BASE_URL,
+      'sonderseite' => false
     ),
     array(
       'label' => 'Karte',
-      'url' => MAP_URL
+      'url' => MAP_URL,
+      'sonderseite' => false
     ),
     array(
       'label' => 'Hilfe',
-      'url' => FRONTEND_URL . 'hilfe.php'
+      'url' => FRONTEND_URL . 'hilfe.php',
+      'sonderseite' => true
     ),
     array(
       'label' => 'Datenschutz',
-      'url' => FRONTEND_URL . 'datenschutz.php'
+      'url' => FRONTEND_URL . 'datenschutz.php',
+      'sonderseite' => true
     ),
     array(
       'label' => 'Impressum',
-      'url' => FRONTEND_URL . 'impressum.php'
+      'url' => FRONTEND_URL . 'impressum.php',
+      'sonderseite' => true
     ),
     array(
       'label' => 'Nutzungsbedingungen',
-      'url' => FRONTEND_URL . 'nutzungsbedingungen.php'
+      'url' => FRONTEND_URL . 'nutzungsbedingungen.php',
+      'sonderseite' => true
     )
   )
 );

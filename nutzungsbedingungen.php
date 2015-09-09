@@ -18,7 +18,7 @@
 
       <h2>Nutzung des vorliegenden Angebotes der Hansestadt Rostock</h2>
       <p class="justified">
-        Alle mittels des vorliegenden Angebotes der Hansestadt Rostock übermittelten Meldungen werden vor ihrer Veröffentlichung durch die Stadtverwaltung der Hansestadt Rostock redaktionell überprüft und gegebenenfalls bearbeitet. Im Besonderen gilt dies für die von den Nutzerinnen und Nutzern selbständig verfassten textlichen Angaben (Betreff, Details) sowie für Fotografien. Textliche Angaben oder Fotografien, die personenbezogene Daten (also Einzelangaben über persönliche oder sachliche Verhältnisse einer bestimmten oder bestimmbaren natürlichen Person) enthalten, werden entweder vor ihrer Veröffentlichung durch redaktionelle Bearbeitung von diesen Daten befreit oder nicht veröffentlicht: Als Beispiel sind hier auf Fotografien erkennbare Kraftfahrzeugkennzeichen zu nennen, die als Einzelangaben über sachliche Verhältnisse einer bestimmten natürlichen Person zugeordnet werden können. Angaben zu Grundstücken können ebenfalls als personenbezogene Daten gelten: Hier wird jedoch in jedem Einzelfall das Interesse der betroffenen natürlichen Person am Schutz ihrer Persönlichkeit gegen das Interesse der Allgemeinheit abgewogen. Nötigenfalls wird die Hansestadt Rostock einer entsprechenden Meldung nachgehen ohne sie zu veröffentlichen.<br/>
+        Alle mittels des vorliegenden Angebotes der Hansestadt Rostock übermittelten Meldungen werden vor ihrer Veröffentlichung durch die Stadtverwaltung der Hansestadt Rostock redaktionell überprüft und gegebenenfalls bearbeitet. Im Besonderen gilt dies für die von den Nutzerinnen und Nutzern selbständig verfassten textlichen Angaben (Beschreibung) sowie für Fotografien. Textliche Angaben oder Fotografien, die personenbezogene Daten (also Einzelangaben über persönliche oder sachliche Verhältnisse einer bestimmten oder bestimmbaren natürlichen Person) enthalten, werden entweder vor ihrer Veröffentlichung durch redaktionelle Bearbeitung von diesen Daten befreit oder nicht veröffentlicht: Als Beispiel sind hier auf Fotografien erkennbare Kraftfahrzeugkennzeichen zu nennen, die als Einzelangaben über sachliche Verhältnisse einer bestimmten natürlichen Person zugeordnet werden können. Angaben zu Grundstücken können ebenfalls als personenbezogene Daten gelten: Hier wird jedoch in jedem Einzelfall das Interesse der betroffenen natürlichen Person am Schutz ihrer Persönlichkeit gegen das Interesse der Allgemeinheit abgewogen. Nötigenfalls wird die Hansestadt Rostock einer entsprechenden Meldung nachgehen ohne sie zu veröffentlichen.<br/>
         Ferner bleibt es der Stadtverwaltung der Hansestadt Rostock vorbehalten, die von den Nutzerinnen und Nutzern selbständig verfassten textlichen Angaben inhaltlich zu bearbeiten und zu kürzen.
       </p>
 
@@ -28,7 +28,7 @@
       </p>
 
       <h2>Nutzung der Kartenbilder der Hansestadt Rostock</h2>
-      <p>
+      <p class="justified">
         Die von der Hansestadt Rostock angebotenen und in ihrem Eigentum befindlichen Kartenbilder unterliegen der freien Lizenz <a href="http://creativecommons.org/licenses/by/3.0/deed.de" target="_blank">Creative Commons Namensnennung 3.0</a> (CC BY 3.0). Damit ist es gestattet die Kartenbilder zu kopieren, zu verbreiten, öffentlich zugänglich zu machen, Abwandlungen und Bearbeitungen anzufertigen sowie die Kartenbilder kommerziell zu nutzen. Allein der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © Hansestadt Rostock (CC BY 3.0).
       </p>
 

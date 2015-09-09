@@ -37,45 +37,34 @@ $conf['meldung_template'] = '
 <p style="margin-left:2%">${unterkategorie}</p>
 
 <h3 style="margin-left:2%;margin-bottom:0.5%">Status</h3>
-<p style="margin-left:2%">{{if status != \'wirdNichtBearbeitet\' && status != \'inBearbeitung\'}}${status}{{/if}}{{if status == \'wirdNichtBearbeitet\'}}wird nicht bearbeitet{{/if}}{{if status == \'inBearbeitung\'}}in Bearbeitung{{/if}} (seit ${datum_statusaenderung}), aktuell bei<br/>${zustaendigkeit}</p>
-
-{{if betreff_vorhanden == "true" && betreff_freigegeben == "true"}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Betreff</h3>
-<p style="margin-left:2%">${titel}</p>
-{{else status == \'offen\' && betreff_vorhanden == "true" && betreff_freigegeben == "false"}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Betreff</h3>
-<p style="margin-left:2%;font-style:italic">redaktionelle Prüfung ausstehend</p>
-{{else status != \'offen\' && status != \'gemeldet\' && betreff_vorhanden == "true" && betreff_freigegeben == "false"}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Betreff</h3>
-<p style="margin-left:2%;font-style:italic">redaktionell nicht freigegeben</p>
-{{/if}}
-
-{{if details_vorhanden == "true" && details_freigegeben == "true"}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
-<p style="margin-left:2%">${details}</p>
-{{else status == \'offen\' && details_vorhanden == "true" && details_freigegeben == "false"}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
-<p style="margin-left:2%;font-style:italic">redaktionelle Prüfung ausstehend</p>
-{{else status != \'offen\' && status != \'gemeldet\' && details_vorhanden == "true" && details_freigegeben == "false"}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
-<p style="margin-left:2%;font-style:italic">redaktionell nicht freigegeben</p>
-{{/if}}
-  
-{{if foto_vorhanden == "true" && foto_freigegeben == "true"}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Foto</h3>
-<img style="margin-left:2%;margin-right:2%;margin-top:1%" src="${img_url}" />
-{{else status == \'offen\' && foto_vorhanden == "true" && foto_freigegeben == "false"}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Foto</h3>
-<p style="margin-left:2%;font-style:italic">redaktionelle Prüfung ausstehend</p>
-{{else status != \'offen\' && status != \'gemeldet\' && foto_vorhanden == "true" && foto_freigegeben == "false"}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Foto</h3>
-<p style="margin-left:2%;font-style:italic">redaktionell nicht freigegeben</p>
-{{/if}}
+<p style="margin-left:2%">{{if status != \'wirdNichtBearbeitet\' && status != \'inBearbeitung\'}}${status}{{/if}}{{if status == \'wirdNichtBearbeitet\'}}wird nicht bearbeitet{{/if}}{{if status == \'inBearbeitung\'}}in Bearbeitung{{/if}} (seit ${datum_statusaenderung}){{if status != \'gemeldet\'}}, aktuell bei<br/>${zustaendigkeit}{{/if}}</p>
 
 {{if bemerkung}}
 <div id="bemerkung_eintrag">
-<h3 style="margin-left:2%;margin-bottom:0.5%">Info der Verwaltung</h3>
+<h3 style="margin-left:2%;margin-bottom:0.5%">Statusinformation</h3>
 <p style="margin-left:2%">{{html bemerkung}}</p>
+{{/if}}
+
+{{if (beschreibung_vorhanden == "true" || beschreibung_vorhanden == "t") && (beschreibung_freigegeben == "true" || beschreibung_freigegeben == "t")}}
+<h3 style="margin-left:2%;margin-bottom:0.5%">Beschreibung</h3>
+<p style="margin-left:2%">${beschreibung}</p>
+{{else status == \'offen\' && (beschreibung_vorhanden == "true" || beschreibung_vorhanden == "t") && (beschreibung_freigegeben == "false" || beschreibung_freigegeben == "f")}}
+<h3 style="margin-left:2%;margin-bottom:0.5%">Beschreibung</h3>
+<p style="margin-left:2%;font-style:italic">redaktionelle Prüfung ausstehend</p>
+{{else status != \'offen\' && status != \'gemeldet\' && (beschreibung_vorhanden == "true" || beschreibung_vorhanden == "t") && (beschreibung_freigegeben == "false" || beschreibung_freigegeben == "f")}}
+<h3 style="margin-left:2%;margin-bottom:0.5%">Beschreibung</h3>
+<p style="margin-left:2%;font-style:italic">redaktionell nicht freigegeben</p>
+{{/if}}
+  
+{{if (foto_vorhanden == "true" || foto_vorhanden == "t") && (foto_freigegeben == "true" || foto_freigegeben == "t")}}
+<h3 style="margin-left:2%;margin-bottom:0.5%">Foto</h3>
+<img style="margin-left:2%;margin-right:2%;margin-top:1%" src="${img_url}" />
+{{else status == \'offen\' && (foto_vorhanden == "true" || foto_vorhanden == "t") && (foto_freigegeben == "false" || foto_freigegeben == "f")}}
+<h3 style="margin-left:2%;margin-bottom:0.5%">Foto</h3>
+<p style="margin-left:2%;font-style:italic">redaktionelle Prüfung ausstehend</p>
+{{else status != \'offen\' && status != \'gemeldet\' && (foto_vorhanden == "true" || foto_vorhanden == "t") && (foto_freigegeben == "false" || foto_freigegeben == "f")}}
+<h3 style="margin-left:2%;margin-bottom:0.5%">Foto</h3>
+<p style="margin-left:2%;font-style:italic">redaktionell nicht freigegeben</p>
 {{/if}}
 </div>
 
