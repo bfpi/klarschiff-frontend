@@ -54,11 +54,11 @@
       </p>
       <h2>Technische Realisierung</h2>
       <p>
-        BFPI Büro für praktische Informatik GmbH<br/>
-        Alter Holzhafen 17a<br/>
-        23966 Wismar<br/>
-        Telefon: +49-3841-758-1210<br/>
-        Telefax: +49-3841-758-1211<br/>
+        BFPI – Büro für praktische Informatik GmbH<br/>
+        Fleckebyer Straße 1<br/>
+        18239 Satow<br/>
+        Telefon: +49 38295 778-780<br/>
+        Telefax: +49 38295 778-781<br/>
         E-Mail: <a href="mailto:info@bfpi.de">info@bfpi.de</a><br/>
       </p>
       <p>
