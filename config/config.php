@@ -13,7 +13,7 @@ return array(
     )
   ),
   'functions' => array(
-    'report_idea' => true,
+    'report_idea' => false,
     'report_problem' => true
   ),
   'thresholds' => array(
