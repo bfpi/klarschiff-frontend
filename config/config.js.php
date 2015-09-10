@@ -12,8 +12,8 @@ var resolutions = [28.2222222222, 22.9305555556,
   3.5277777778, 2.6458333333, 1.7638888889, 0.8819444444, 0.3527777778,
   0.1763888889];
 
-var problemMeldungenMoeglich = true;
-var ideeMeldungenMoeglich = true;
+var problemMeldungenMoeglich = <?php echo var_export($config['functions']['report_problem'], true); ?>;
+var ideeMeldungenMoeglich = <?php echo var_export($config['functions']['report_idea'], true); ?>;
 
 var unterstuetzer_schwellenwert = <?php echo $config['thresholds']['supporter']; ?>;
 
