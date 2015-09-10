@@ -48,7 +48,7 @@ echo "<br/>Last error : " . pg_last_error();
 /* * *********************************************************************
  * S T R A S S E    S E A R C H
  * ********************************************************************* */
-$sql = "SELECT s.id AS id, s.strasse_name AS strasse_name"
+$sql = "SELECT s.id, s.strasse_name, s.zusatz"
   . ",box2d(s.geom) AS bbox, st_dimension(s.geom) AS dimension FROM " . SCHEMA . ".standortsuche s WHERE s.strasse_name IS NOT NULL";
 $result = pg_query($conn, $sql);
 $num = 0;
@@ -67,6 +67,7 @@ while ($row = pg_fetch_assoc($result)) {
     array(
       "type" => "Straße",
       "strasse_name" => $row["strasse_name"],
+      "zusatz" => $row["zusatz"],
       "geom" => $row["geom"]
     )
   );
@@ -80,7 +81,7 @@ echo "<br/>Last error : " . pg_last_error();
 /* * *********************************************************************
  * A D R E S S E    S E A R C H
  * ********************************************************************* */
-$sql = "SELECT a.id, a.strasse AS strasse, a.hausnummer, a.hausnummerzusatz"
+$sql = "SELECT a.id, a.strasse, a.hausnummer, a.hausnummerzusatz, a.zusatz"
   . ",box2d(a.geom) AS bbox, st_dimension(a.geom) AS dimension"
   . " FROM " . SCHEMA . ".standortsuche a WHERE a.hausnummer IS NOT NULL";
 $result = pg_query($conn, $sql);
@@ -102,6 +103,7 @@ while ($row = pg_fetch_assoc($result)) {
       "strasse" => $row["strasse"],
       "hausnummer" => $row["hausnummer"],
       "hausnummerzusatz" => $row["hausnummerzusatz"],
+      "zusatz" => $row["zusatz"],
       "geom" => $row["geom"]
     )
   );
