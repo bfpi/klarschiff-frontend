@@ -40,10 +40,7 @@ $config = include 'config/config.php';
         <div class="overlay news">
           <span class="bold">Neuigkeiten</span>
           <p>
-            30.03.2015 – Sie finden <span class="italic">Klarschiff.HRO</span> gut? Dann stimmen Sie doch ab beim <a href="https://www.politik.de/ecm-politik/politikde/de/mapconsultation/46838/single/proposal/101/back/grid" target="_blank">Preis für Online-Partizipation 2015</a>!
-          </p>
-          <p>
-            21.01.2015 – Abholtermine für Sperrmüll und E-Schrott werden jetzt auf der Karte angezeigt.
+            11.09.2015 – <span class="italic">Klarschiff.HRO</span> hat einige Updates erfahren, sowohl „unter der Haube“ als auch für Sie sichtbar: Meldungen verfügen nun über eine Beschreibung (ersetzt Betreff und Details) und Permalinks auf Meldungen sind kürzer und einfacher geworden.
           </p>
         </div>
         <div id="map" title="Karte aufrufen…"></div>
