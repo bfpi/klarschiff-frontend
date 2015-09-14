@@ -14,7 +14,7 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
     <copyright>Hansestadt Rostock</copyright>
     <image>
     <url><?php echo FRONTEND_URL, 'images/rss.png'; ?></url>
-    <title>Klarschiff.HRO: Meldungen</title>
+    <title>Klarschiff.HRO-Meldungen</title>
     <link><?php echo FRONTEND_URL; ?></link>
     </image>
     <?php
