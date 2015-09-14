@@ -13,7 +13,7 @@ $config = include 'config/config.php';
     <meta name="author" content="Hansestadt Rostock" />
     <title>Klarschiff – Portal zur Bürgerbeteiligung</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico" />
-    <link rel="alternate" type="application/atom+xml" title="Klarschiff: Meldungen" href="rss.php" />
+    <link rel="alternate" type="application/atom+xml" title="Klarschiff-Meldungen" href="rss.php" />
     <link rel="stylesheet" type="text/css" media="all" href="styles/jquery-ui-1.11.2.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="libs/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="styles/index.css" />
