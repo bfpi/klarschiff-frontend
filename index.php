@@ -59,9 +59,9 @@ $config = include 'config/config.php';
             <div class="media-body text">Meldung<?php if (intval($done_last_month) != 1) echo 'en'; ?> erledigt letzten Monat</div>
           </div>
           <div class="media statistic">
-            <?php $new_since_start = $frontend->count_new_advices_since('2014-12-01'); ?>
+            <?php $new_since_start = $frontend->count_new_advices_since('2015-03-02'); ?>
             <div class="media-left number yellow"><?php echo intval($new_since_start) ?></div>
-            <div class="media-body text">neue Meldung<?php if (intval($new_since_start) != 1) echo 'en' ?> seit 01.12.2014</div>
+            <div class="media-body text">neue Meldung<?php if (intval($new_since_start) != 1) echo 'en' ?> seit 02.03.2015</div>
           </div>
         </div>
         <div class="col-md-4 center">
