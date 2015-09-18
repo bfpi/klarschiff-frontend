@@ -40,7 +40,7 @@ $config = include 'config/config.php';
         <div class="overlay news">
           <span class="bold">Neuigkeiten</span>
           <p>
-            11.09.2015 – <span class="italic">Klarschiff.HRO</span> hat einige Updates erfahren, sowohl „unter der Haube“ als auch für Sie sichtbar: Meldungen verfügen nun über eine Beschreibung (ersetzt Betreff und Details) und Permalinks auf Meldungen sind kürzer und einfacher geworden.
+            Da es sich bei der vorliegenden Anwendung lediglich um einen Testserverbetrieb handelt, werden eingehende Meldungen naturgemäß <span class="bold">nicht</span> als reale Fälle angesehen und von der Verwaltung auch <span class="bold">nicht</span> als solche bearbeitet.
           </p>
         </div>
         <div id="map" title="Karte aufrufen…"></div>
