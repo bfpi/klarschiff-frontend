@@ -75,28 +75,25 @@ function meldungIcon(feature, highlight) {
 
 function reloadMeldungenIcons() {
   var config = ol_config.layers.Meldungen;
-  var vectorSource = getLayerByTitle(config.title).getSource().getSource();
-  vectorSource.getFeatures().forEach(function(feature) {
-    vectorSource.removeFeature(feature);
-  });
   var url = config.url_with_filter();
   if (url == null) {
     return;
   }
-  $.ajax(url).done(function(response) {
+  $.ajax({ url: url, dataType: "json" }).done(function(response) {
+    var vectorSource = getLayerByTitle(config.title).getSource().getSource();
+    vectorSource.clear(false);
     vectorSource.addFeatures((new ol.format.GeoJSON()).readFeatures(response));
   });
 }
 
 function moveMapToShowFeature(feature, dlg) {
-  featureOffset = map.getPixelFromCoordinate(feature.getGeometry().getCoordinates());
-
+  var featureOffset = map.getPixelFromCoordinate(feature.getGeometry().getCoordinates());
   var puffer = 75;
-  new_top = featureOffset[1];
-  new_left = featureOffset[0] + puffer + (dlg.width() / 2);
+  var newLeft = featureOffset[0] + puffer + (dlg.width() / 2);
+  var newTop = featureOffset[1];
 
-  var new_position = map.getCoordinateFromPixel(Array(new_left, new_top));
-  map.getView().setCenter(new_position);
+  map.beforeRender(ol.animation.pan({ source: map.getView().getCenter() }));
+  map.getView().setCenter(map.getCoordinateFromPixel(Array(newLeft, newTop)));
 }
 
 function fitViewportToBBox(bboxArray) {
