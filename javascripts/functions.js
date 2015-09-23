@@ -68,15 +68,8 @@ function meldungIcon(feature, highlight) {
 
 function reloadMeldungenIcons() {
   var config = ol_config.layers.Meldungen;
-  var url = config.url_with_filter();
-  if (url == null) {
-    return;
-  }
-  $.ajax({ url: url, dataType: "json" }).done(function(response) {
-    var vectorSource = getLayerByTitle(config.title).getSource().getSource();
-    vectorSource.clear(true);
-    vectorSource.addFeatures((new ol.format.GeoJSON()).readFeatures(response));
-  });
+  var vectorSource = getLayerByTitle(config.title).getSource().getSource();
+  vectorSource.clear(true);
 }
 
 function highlightFeature(feature) {
