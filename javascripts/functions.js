@@ -22,15 +22,8 @@ function meldungenStyles(features) {
   size = features.get("features").length;
   if (size == 1) {
     feature = features.get("features")[0];
-    highlight = false;
-    if ($('#meldung_show').length > 0) {
-      if (feature.get('id') == $('#meldung_show').data('feature-id')) {
-        highlight = true;
-      }
-    }
-
     features.setStyle(new ol.style.Style({
-      image: meldungIcon(feature, highlight)
+      image: meldungIcon(feature, false)
     }));
   } else {
     features.setStyle(new ol.style.Style({
@@ -76,27 +69,28 @@ function meldungIcon(feature, highlight) {
 function reloadMeldungenIcons() {
   var config = ol_config.layers.Meldungen;
   var vectorSource = getLayerByTitle(config.title).getSource().getSource();
-  vectorSource.getFeatures().forEach(function(feature) {
-    vectorSource.removeFeature(feature);
-  });
-  var url = config.url_with_filter();
-  if (url == null) {
-    return;
+  vectorSource.clear(true);
+}
+
+function highlightFeature(feature) {
+  var collection;
+  if(feature) {
+    collection = Array(feature);
   }
-  $.ajax(url).done(function(response) {
-    vectorSource.addFeatures((new ol.format.GeoJSON()).readFeatures(response));
-  });
+  highlightedOverlay.setSource(new ol.source.Vector({
+    features: new ol.Collection(collection),
+    useSpatialIndex: false
+  }));
 }
 
 function moveMapToShowFeature(feature, dlg) {
-  featureOffset = map.getPixelFromCoordinate(feature.getGeometry().getCoordinates());
-
+  var featureOffset = map.getPixelFromCoordinate(feature.getGeometry().getCoordinates());
   var puffer = 75;
-  new_top = featureOffset[1];
-  new_left = featureOffset[0] + puffer + (dlg.width() / 2);
+  var newLeft = featureOffset[0] + puffer + (dlg.width() / 2);
+  var newTop = featureOffset[1];
 
-  var new_position = map.getCoordinateFromPixel(Array(new_left, new_top));
-  map.getView().setCenter(new_position);
+  map.beforeRender(ol.animation.pan({ source: map.getView().getCenter() }));
+  map.getView().setCenter(map.getCoordinateFromPixel(Array(newLeft, newTop)));
 }
 
 function fitViewportToBBox(bboxArray) {
