@@ -26,9 +26,7 @@ function init_mapicons() {
       $("<img/>").attr("src", "images/icons/generalisiert_layer.png")
     )
   ));
-  $('input', kol).click(function() {
-    buildFilter();
-  });
+  $('input', kol).click(reloadMeldungenIcons);
   mapicons.append(kol);
 }
 
@@ -42,6 +40,7 @@ function buildFilter() {
   // Alle angehakten Teilfilter abholen...
   var cbs = $('#mapicons input');
   var filters = {};
+  var allChecked = true;
   cbs.each(function() {
     var self = $(this);
     if (self.is(':checked')) {
@@ -58,7 +57,13 @@ function buildFilter() {
         filters[filter.vorgangstyp].push(filter.status);
       }
     }
+    else {
+      allChecked = false;
+    }
   });
+  if (allChecked) {
+    return; // Alle angehakt -> kein Filter
+  }
 
   var condition = [];
   Object.keys(filters).forEach(function(key) {
@@ -76,9 +81,7 @@ function buildFilter() {
       + "</And>");
   });
 
-  ol_config.layers.Meldungen.filter = condition.length == 0 ? null :
+  return condition.length == 0 ? null :
     "<Filter>" + (condition.length > 1 ? "<Or>" + condition.join("") + "</Or>" : condition[0])
     + "</Filter>";
-
-  reloadMeldungenIcons()
 }
