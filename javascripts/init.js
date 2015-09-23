@@ -1,4 +1,4 @@
-var map;
+var map, highlightedOverlay;
 $(function() {
   init_map();
   init_sidebar();

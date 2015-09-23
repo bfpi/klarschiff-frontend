@@ -22,15 +22,8 @@ function meldungenStyles(features) {
   size = features.get("features").length;
   if (size == 1) {
     feature = features.get("features")[0];
-    highlight = false;
-    if ($('#meldung_show').length > 0) {
-      if (feature.get('id') == $('#meldung_show').data('feature-id')) {
-        highlight = true;
-      }
-    }
-
     features.setStyle(new ol.style.Style({
-      image: meldungIcon(feature, highlight)
+      image: meldungIcon(feature, false)
     }));
   } else {
     features.setStyle(new ol.style.Style({
@@ -81,9 +74,20 @@ function reloadMeldungenIcons() {
   }
   $.ajax({ url: url, dataType: "json" }).done(function(response) {
     var vectorSource = getLayerByTitle(config.title).getSource().getSource();
-    vectorSource.clear(false);
+    vectorSource.clear(true);
     vectorSource.addFeatures((new ol.format.GeoJSON()).readFeatures(response));
   });
+}
+
+function highlightFeature(feature) {
+  var collection;
+  if(feature) {
+    collection = Array(feature);
+  }
+  highlightedOverlay.setSource(new ol.source.Vector({
+    features: new ol.Collection(collection),
+    useSpatialIndex: false
+  }));
 }
 
 function moveMapToShowFeature(feature, dlg) {
