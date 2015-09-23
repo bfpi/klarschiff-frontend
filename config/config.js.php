@@ -136,19 +136,27 @@ var ol_config = {
     "Meldungen": {
       title: "Meldungen",
       type: "Vector",
-      url: "<?php echo MELDUNGEN_WFS_URL; ?>",
       default_layer: true,
       enableClustering: true,
       clusterDistance: 40,
       style: meldungenStyles,
-      url_with_filter: function() {
-        if (this.filter === undefined) {
-          return this.url;
+      loader: function() {
+        var url = "<?php echo MELDUNGEN_WFS_URL; ?>";
+        var filter = buildFilter();
+        if (filter === null) {
+          return;
         }
-        if (this.filter == null) {
-          return null;
+        else if (filter !== undefined) {
+          url = url + "&Filter=" + filter;
         }
-        return this.url + "&Filter=" + this.filter;
+        $.ajax({
+          url: url,
+          dataType: 'json'
+        }).done(function(response) {
+          var config = ol_config.layers.Meldungen;
+          var vectorSource = getLayerByTitle(config.title).getSource().getSource();
+          vectorSource.addFeatures((new ol.format.GeoJSON()).readFeatures(response));
+        });
       },
       eventHandlers: {
 	      change: function(evt) {
