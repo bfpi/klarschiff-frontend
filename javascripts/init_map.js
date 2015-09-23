@@ -46,6 +46,21 @@ function init_map() {
   });
 
   addControls(map);
+
+  highlightedOverlay = new ol.layer.Vector({
+    map: map,
+    source: new ol.source.Vector({
+      features: new ol.Collection(),
+      useSpatialIndex: false // optional, might improve performance
+    }),
+    style: function(feature) {
+      feature.setStyle(new ol.style.Style({
+        image: meldungIcon(feature, true)
+      }));
+    },
+    updateWhileAnimating: true, // optional, for instant visual feedback
+    updateWhileInteracting: true // optional, for instant visual feedback
+  });
 }
 
 function addControls(map) {
