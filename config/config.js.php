@@ -142,12 +142,14 @@ var ol_config = {
       style: meldungenStyles,
       loader: function() {
         var url = "<?php echo MELDUNGEN_WFS_URL; ?>";
-        var filter = buildFilter();
-        if (filter === null) {
-          return;
-        }
-        else if (filter !== undefined) {
-          url = url + "&Filter=" + filter;
+        if (typeof(buildFilter) == "function") {
+          var filter = buildFilter();
+          if (filter === null) {
+            return;
+          }
+          else if (filter !== undefined) {
+            url = url + "&Filter=" + filter;
+          }
         }
         $.ajax({
           url: url,
