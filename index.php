@@ -38,9 +38,9 @@ $config = include 'config/config.php';
           </p>
         </div>
         <div class="overlay news">
-          <span class="bold">Neuigkeiten</span>
+          <span class="bold">Achtung!</span>
           <p>
-            Da es sich bei der vorliegenden Anwendung lediglich um einen Testserverbetrieb handelt, werden eingehende Meldungen naturgemäß <span class="bold">nicht</span> als reale Fälle angesehen und von der Verwaltung auch <span class="bold">nicht</span> als solche bearbeitet.
+            Da es sich bei der vorliegenden Anwendung lediglich um eine <span class="bold">Demo</span> zu Demonstrations- und Testzwecken handelt, werden eingehende Meldungen naturgemäß <span class="bold">nicht</span> als reale Fälle angesehen und von der Verwaltung auch <span class="bold">nicht</span> als solche bearbeitet.
           </p>
         </div>
         <div id="map" title="Karte aufrufen…"></div>
@@ -84,11 +84,11 @@ $config = include 'config/config.php';
       </div>
       <div class="row footer">
         <h3><span class="italic">Klarschiff.HRO</span> mobil</h3>
-        Wenn Sie diese Website mit einem Smartphone oder Tablet besuchen, wird automatisch die <a href="<?php echo MOBILE_FRONTEND_URL; ?>" target="_self"><span class="bold">mobile Version</span></a> von <span class="italic">Klarschiff.HRO</span> gestartet.
+        Wenn Sie diese Website mit einem Smartphone oder Tablet besuchen, wird automatisch die <a href="<?php echo MOBILE_FRONTEND_URL; ?>" target="_blank"><span class="bold">mobile Version</span></a> von <span class="italic">Klarschiff.HRO</span> gestartet.
       </div>
       <div class="row footer">
         <h3><span class="italic">Klarschiff.HRO</span> als „Spielwiese“</span></h3>
-        Falls Sie den Funktionsumfang von <span class="italic">Klarschiff.HRO</span> kennenlernen möchten ohne dabei reale Meldungen an die Stadtverwaltung abzusetzen, so können Sie dies in der <a href="http://demo.klarschiff-hro.de" target="_blank"><span class="bold">Demo-Version</span></a> tun, die wir zu Demonstrations- und Testzwecken eingerichtet haben.
+        Falls Sie den Funktionsumfang von <span class="italic">Klarschiff.HRO</span> kennenlernen möchten ohne dabei reale Meldungen an die Stadtverwaltung abzusetzen, so können Sie dies in der <a href="http://demo.klarschiff-hro.de" target="_blank"><span class="bold">Demo</span></a> tun, die wir zu Demonstrations- und Testzwecken eingerichtet haben.
       </div>
     </div>
   </body>
