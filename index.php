@@ -25,7 +25,7 @@ $config = include 'config/config.php';
     <div class="container">
       <div id="eye-catcher" class="row">
         <div class="overlay guide">
-          <h3><span class="italic">Klarschiff.HRO</span> – Bürgerbeteiligung</h3>
+          <h3><span class="italic">Klarschiff</span> – Bürgerbeteiligung</h3>
           <p>
             Rufen Sie die <a href="<?php echo MAP_URL; ?>" target="_self">
               <span class="bold">Karte</span></a> auf <span class="bold">→</span>
@@ -38,9 +38,9 @@ $config = include 'config/config.php';
           </p>
         </div>
         <div class="overlay news">
-          <span class="bold">Neuigkeiten</span>
+          <span class="bold">Achtung!</span>
           <p>
-            Da es sich bei der vorliegenden Anwendung lediglich um eine <span class="bold">Demo</span> zu Anschauungs- und Testzwecken handelt, werden eingehende Meldungen naturgemäß <span class="bold">nicht</span> als reale Fälle angesehen und von der Verwaltung auch <span class="bold">nicht</span> als solche bearbeitet.
+            Da es sich bei der vorliegenden Anwendung lediglich um eine <span class="bold">Demo</span> zu Demonstrations- und Testzwecken handelt, werden eingehende Meldungen naturgemäß <span class="bold">nicht</span> als reale Fälle angesehen und von der Verwaltung auch <span class="bold">nicht</span> als solche bearbeitet.
           </p>
         </div>
         <div id="map" title="Karte aufrufen…"></div>
@@ -84,11 +84,19 @@ $config = include 'config/config.php';
       </div>
       <div class="row footer">
         <h3><span class="italic">Klarschiff</span> mobil</h3>
-        Wenn Sie diese Website mit einem Smartphone oder Tablet besuchen, wird automatisch die <a href="<?php echo MOBILE_FRONTEND_URL; ?>" target="_self"><span class="bold">mobile Version</span></a> von <span class="italic">Klarschiff</span> gestartet.
+        Wenn Sie diese Website mit einem Smartphone oder Tablet besuchen, wird automatisch die <a href="<?php echo MOBILE_FRONTEND_URL; ?>" target="_blank"><span class="bold">mobile Version</span></a> von <span class="italic">Klarschiff</span> gestartet.
       </div>
       <div class="row footer">
         <h3><span class="italic">Klarschiff</span> aus Sicht der Verwaltung</span></h3>
-        Falls Sie daran interessiert sind, wie die „Rückseite“ von <span class="italic">Klarschiff</span> aussieht, also die Verwaltungsanwendung, dann rufen Sie dieses als <a href="<?php echo BACKEND_URL; ?>" target="_self"><span class="bold">Backend</span></a> bezeichnete Anwendung doch einfach auf.
+        Falls Sie daran interessiert sind, wie die „Rückseite“ von <span class="italic">Klarschiff</span> aussieht, also die Verwaltungsanwendung, dann rufen Sie dieses als <a href="<?php echo BACKEND_URL; ?>" target="_blank"><span class="bold">Backend</span></a> bezeichnete Anwendung doch einfach auf.
+      </div>
+      <div class="row footer">
+        <h3><span class="italic">Klarschiff</span> im Verwaltungsaußendienst</span></h3>
+        Falls Sie daran interessiert sind, wie <span class="italic">Klarschiff</span> im Außendienst der Verwaltung verwendet wird, dann rufen Sie den <a href="<?php echo PPC_URL; ?>" target="_blank"><span class="bold">Prüf- und Protokollclient</span></a> auf. Anmelden können Sie sich dort zum Beispiel mit dem Benutzernamen „s01“ und dem Passwort „s01“ (jeweils ohne Anführungszeichen): Dabei handelt es sich um einen exemplarischen Benutzer, der dem (ebenfalls exemplarischen) Außendiensteinheiten-Team 1 zugeordnet ist.
+      </div>
+      <div class="row footer">
+        <h3><span class="italic">CitySDK-</span>API für <span class="italic">Klarschiff</span></h3>
+        <span class="italic">Klarschiff</span> verfügt nun über eine <a href="http://www.citysdk.eu/participation" target="_blank"><span class="bold italic">CitySDK-Smart-Participation-Schnittstelle</span></a>, und zwar <a href="<?php echo CITYSDK_URL; ?>" target="_blank"><span class="bold">hier</span></a>. Wie Sie diese nutzen können, erfahren Sie <a href="https://github.com/bfpi/klarschiff-citysdk" target="_blank"><span class="bold">hier</span></a>.
       </div>
     </div>
   </body>
