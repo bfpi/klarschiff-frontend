@@ -343,14 +343,7 @@ function meldungFormSubmit() {
       }).spinner("show");
     },
     success: function() {
-      getLayerByTitle("Meldungen").setSource(new ol.source.Cluster({
-        distance: ol_config["layers"]["Meldungen"]["clusterDistance"],
-        source: new ol.source.Vector({
-          format: new ol.format.GeoJSON(),
-          url: ol_config["layers"]["Meldungen"]["url"]
-        })
-      }));
-      map.render();
+      reloadMeldungenIcons();
       $('body').spinner("success", "<p>Es kann einige Minuten dauern, bis die Meldung auf der Karte erscheint. Sie erhalten in Kürze eine E-Mail, in der Sie Ihre Meldung noch einmal bestätigen müssen.</p>");
     },
     error: function() {
