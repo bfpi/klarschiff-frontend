@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Portal,Bürgerbeteiligung,Rostock,Karte,Probleme,Ideen,Verwaltung" />
-    <meta name="description" content="Melden Sie via Karte Probleme und Ideen im öffentlichen Raum, die dann von der Verwaltung bearbeitet werden." />
+    <meta name="keywords" content="Portal,Bürgerbeteiligung,Karte,Probleme,Ideen,Rostock,Verwaltung" />
+    <meta name="description" content="Melden Sie via Karte Probleme und Ideen im öffentlichen Raum der Hansestadt Rostock, die dann von der Stadtverwaltung bearbeitet werden." />
     <meta name="author" content="Hansestadt Rostock" />
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <title>Klarschiff.HRO – Portal zur Bürgerbeteiligung der Hansestadt Rostock – Hilfe</title>
@@ -18,11 +18,11 @@
 
       <h2>Inhaltsverzeichnis</h2>
       <p>
-        <a href="#subheadline01">Was genau ist <span class="italic">Klarschiff</span> und was kann ich hier tun?</span></a>
+        <a href="#subheadline01">Was genau ist <span class="italic">Klarschiff.HRO</span> und was kann ich hier tun?</span></a>
         <br/>
         <span class="small">•••</span>
         <br/>
-        <a href="#subheadline02">Warum sollte ich <span class="italic">Klarschiff</span> nutzen?</a>
+        <a href="#subheadline02">Warum sollte ich <span class="italic">Klarschiff.HRO</span> nutzen?</a>
         <br/>
         <span class="small">•••</span>
         <br/>
@@ -60,27 +60,27 @@
         <br/>
         <span class="small">•••</span>
         <br/>
-        <a href="#subheadline07">Ach ja, zuletzt noch die Frage: Mit welchen Browsern kann ich Klarschiff nutzen?</a>
+        <a href="#subheadline07">Ach ja, zuletzt noch die Frage: Mit welchen Browsern kann ich Klarschiff.HRO nutzen?</a>
       </p>
 
-      <h2><a name="subheadline01"></a>Was genau ist <span class="italic">Klarschiff</span> und was kann ich hier tun?</h2>
+      <h2><a name="subheadline01"></a>Was genau ist <span class="italic">Klarschiff.HRO</span> und was kann ich hier tun?</h2>
       <p class="justified">
-        <span class="italic">Klarschiff</span> ist ein Portal zur Bürgerbeteiligung, genauer gesagt eine Onlineplattform zum <span class="bold">Melden</span> und <span class="bold">Bearbeiten</span> von <span class="bold">Problemen</span> und <span class="bold">Ideen,</span> die sich auf den öffentlichen Raum beziehen. Das Melden wird von den Bürgerinnen und Bürgern übernommen – das Bearbeiten von den Sachbearbeiterinnen und Sachbearbeitern einer Verwaltung.
+        <span class="italic">Klarschiff.HRO</span> ist das Portal zur Bürgerbeteiligung der Hansestadt Rostock, genauer gesagt eine Onlineplattform zum <span class="bold">Melden</span> und <span class="bold">Bearbeiten</span> von <span class="bold">Problemen</span> und <span class="bold">Ideen,</span> die sich auf den öffentlichen Raum der Hansestadt Rostock beziehen. Das Melden wird von den Bürgerinnen und Bürgern übernommen – das Bearbeiten von den Sachbearbeiterinnen und Sachbearbeitern der Stadtverwaltung.
         <br/>
-        Damit Sie Probleme und Ideen schnell und bequem melden können, steht Ihnen in <span class="italic">Klarschiff</span> eine <span class="bold">interaktive Karte</span> zur Verfügung, auf der Sie ganz einfach neue Meldungen erstellen oder sich vorhandene ansehen können.
+        Damit Sie Probleme und Ideen schnell und bequem melden können, steht Ihnen in <span class="italic">Klarschiff.HRO</span> eine <span class="bold">interaktive Karte</span> zur Verfügung, auf der Sie ganz einfach neue Meldungen erstellen oder sich vorhandene ansehen können.
       </p>
 
-      <h2><a name="subheadline02"></a>Warum sollte ich <span class="italic">Klarschiff</span> nutzen?</h2>
+      <h2><a name="subheadline02"></a>Warum sollte ich <span class="italic">Klarschiff.HRO</span> nutzen?</h2>
       <p class="justified">
-        Einmal angenommen, Sie entdecken Müll im Park: Wen benachrichtigen Sie, das Umweltamt oder das Grünamt Ihrer Kommune? Per Telefon, Fax, Brief oder E-Mail? Und wie beschreiben Sie kurz und präzise den Fundort?
+        Einmal angenommen, Sie entdecken Müll im Park: Wen benachrichtigen Sie, das Umweltamt oder das Grünamt? Per Telefon, Fax, Brief oder E-Mail? Und wie beschreiben Sie kurz und präzise den Fundort?
         <br/>
-        Damit Sie in Fällen wie diesem nicht länger über solche Fragen grübeln müssen, gibt es <span class="italic">Klarschiff:</span> Sie <span class="bold">markieren die Stelle</span> einfach online auf der Karte und melden das Problem <span class="bold">mit wenigen Klicks.</span> Und die Verwaltung Ihrer Kommune kümmert sich dann um die Entsorgung.
+        Damit Sie in Fällen wie diesem nicht länger über solche Fragen grübeln müssen, gibt es <span class="italic">Klarschiff.HRO:</span> Sie <span class="bold">markieren die Stelle</span> einfach online auf der Karte und melden das Problem <span class="bold">mit wenigen Klicks.</span> Und die Stadtverwaltung kümmert sich dann um die Entsorgung.
       </p>
 
       <h2><a name="subheadline03"></a>OK, überzeugt. Wie fange ich an?</h2>
       <h3><a name="section03_01"></a>(1) Karte aufrufen</h3>
       <p class="justified">
-        Am Anfang einer jeden Nutzung von <span class="italic">Klarschiff</span> steht das Aufrufen der Karte. Diese erreichen Sie entweder direkt durch einen Klick auf die entsprechenden Links. Oder Sie suchen zuerst nach einer <span class="bold">Adresse,</span> auf die die Karte dann springt, wenn Sie auf das Suchresultat klicken.
+        Am Anfang einer jeden Nutzung von <span class="italic">Klarschiff.HRO</span> steht das Aufrufen der Karte. Diese erreichen Sie entweder direkt durch einen Klick auf die entsprechenden Links. Oder Sie suchen zuerst nach einer <span class="bold">Adresse,</span> auf die die Karte dann springt, wenn Sie auf das Suchresultat klicken.
       </p>
       <p class="screenshot clearfix">
         <span class="left"><img src="images/hilfe_screenshot01.png" alt="screenshot_01" title="Karte direkt aufrufen" /></span>
@@ -120,13 +120,13 @@
       </p>
       <h3><a name="section03_04"></a>(4) vorhandene Meldungen verstehen</h3>
       <p class="justified">
-        Sie wissen jetzt zum Beispiel, dass ein gelbes Symbol mit Ausrufezeichen ein Problem in Bearbeitung und ein gelb-grünes Symbol mit Glühbirne eine nicht umsetzbare Idee darstellt. Aber wie sind die Zusammenhänge und wann tritt welcher Fall ein? Folgendes Schema soll Ihnen zum besseren Verständnis den <span class="bold">Weg einer Meldung</span> in <span class="italic">Klarschiff</span> verdeutlichen:
+        Sie wissen jetzt zum Beispiel, dass ein gelbes Symbol mit Ausrufezeichen ein Problem in Bearbeitung und ein gelb-grünes Symbol mit Glühbirne eine nicht umsetzbare Idee darstellt. Aber wie sind die Zusammenhänge und wann tritt welcher Fall ein? Folgendes Schema soll Ihnen zum besseren Verständnis den <span class="bold">Weg einer Meldung</span> in <span class="italic">Klarschiff.HRO</span> verdeutlichen:
       </p>
       <p class="screenshot clearfix">
-        <img src="images/hilfe_schema.png" alt="weg_einer_meldung" title="Weg einer Meldung in Klarschiff" />
+        <img src="images/hilfe_schema.png" alt="weg_einer_meldung" title="Weg einer Meldung in Klarschiff.HRO" />
       </p>
       <p class="screenshot annotation clearfix">
-        <span>Keine Sorge: Die gelb-grünen Symbole werden nicht zum Regelfall! Sie werden aber beispielsweise immer dann auftreten, wenn eine Meldung auf einem Privatgrundstück liegt. In einem solchen Fall werden wir stets die/den Eigentümer/-in des Grundstücks informieren, sofern die Art der Meldung dies erfordert.</span>
+        <span>Keine Sorge: Die gelb-grünen Symbole werden nicht zum Regelfall! Sie werden aber beispielsweise immer dann auftreten, wenn eine Meldung auf einem Privatgrundstück liegt. In einem solchen Fall werden wird die Stadtverwaltung stets die/den Eigentümer/-in des Grundstücks informieren, sofern die Art der Meldung dies erfordert.</span>
       </p>
 
       <h2><a name="subheadline04"></a>Wie werde ich selbst aktiv?</h2>
@@ -134,11 +134,11 @@
       <p class="justified">
         Falls Sie eine vorhandene Meldung mal etwas genauer unter die Lupe genommen haben, sind Ihnen bestimmt die Buttons <span class="italic">Meldung unterstützen</span> und <span class="italic">Missbrauch melden</span> aufgefallen. Damit haben Sie die beiden Möglichkeiten, auf eine vorhandene Meldung zu reagieren, nämlich auch schon entdeckt:
         <br/>
-        Sie können ein <span class="bold">Problem unterstützen,</span> um dessen Dringlichkeit zu unterstreichen, oder aber, wenn Sie es eigentlich melden wollten, Ihnen aber jemand zuvorgekommen ist – hierdurch vermeiden Sie mehrfache Meldungen desselben Sachverhalts. Eine noch größere Bedeutung hat jedoch die <span class="bold">Unterstützung einer Idee,</span> denn erst dann, wenn eine bestimmte Anzahl von Bürgerinnen und Bürgern eine Idee unterstützt hat, kümmert sich Ihre Verwaltung um deren Bearbeitung. Klar: Um zum Beispiel „mal schnell“ eine neue Parkbank aufzustellen, braucht es eben zuerst einen gewissen Bedarf!
+        Sie können ein <span class="bold">Problem unterstützen,</span> um dessen Dringlichkeit zu unterstreichen, oder aber, wenn Sie es eigentlich melden wollten, Ihnen aber jemand zuvorgekommen ist – hierdurch vermeiden Sie mehrfache Meldungen desselben Sachverhalts. Eine noch größere Bedeutung hat jedoch die <span class="bold">Unterstützung einer Idee,</span> denn erst dann, wenn eine bestimmte Anzahl von Bürgerinnen und Bürgern eine Idee unterstützt hat, kümmert sich die Stadtverwaltung um deren Bearbeitung. Klar: Um zum Beispiel „mal schnell“ eine neue Parkbank aufzustellen, braucht es eben zuerst einen gewissen Bedarf!
         <br/>
-        Eine <span class="bold">Missbrauchsmeldung</span> mit Angabe des Grundes können und sollten Sie dann absetzen, wenn Sie durch eine Meldung Persönlichkeitsrechte verletzt sehen, also wenn auf einem Foto zum Beispiel Gesichter oder Kfz-Kennzeichen zu erkennen sind. Ihre Verwaltung wird zwar alle eingehenden Texteingaben und Fotos der Bürgerinnen und Bürger auf solche Verletzungen prüfen, bevor sie sie zur Veröffentlichung freigibt; trotzdem kann aber mal unabsichtlich etwas „durchrutschen“.
+        Eine <span class="bold">Missbrauchsmeldung</span> mit Angabe des Grundes können und sollten Sie dann absetzen, wenn Sie durch eine Meldung Persönlichkeitsrechte verletzt sehen, also wenn auf einem Foto zum Beispiel Gesichter oder Kfz-Kennzeichen zu erkennen sind. Die Stadtverwaltung wird zwar alle eingehenden Texteingaben und Fotos der Bürgerinnen und Bürger auf solche Verletzungen prüfen, bevor sie sie zur Veröffentlichung freigibt; trotzdem kann aber mal unabsichtlich etwas „durchrutschen“.
         <br/>
-        Wenn Sie gerne <span class="bold">Lob, Hinweise oder Kritik</span> zu einer Meldung an Ihre Verwaltung senden möchten, dann sollten Sie die entsprechende Funktion nutzen. Ihre Nachricht wird dann direkt an die aktuell zuständigen Sachbearbeiterinnen und/oder Sachbearbeiter geleitet.
+        Wenn Sie gerne <span class="bold">Lob, Hinweise oder Kritik</span> zu einer Meldung an die Stadtverwaltung senden möchten, dann sollten Sie die entsprechende Funktion nutzen. Ihre Nachricht wird dann direkt an die aktuell zuständigen Sachbearbeiterinnen und/oder Sachbearbeiter geleitet.
       </p>
       <p class="screenshot clearfix large">
         <span class="left"><img src="images/hilfe_screenshot07.png" alt="screenshot_07" title="Meldung unterstützen" /></span>
@@ -148,7 +148,7 @@
       <p class="screenshot annotation clearfix large">
         <span class="left">Solange die nötige Anzahl an Unterstützungen für eine Idee nicht erreicht ist, bleibt die Zahl rot hinterlegt wie auch das Symbol in der Karte rot bleibt.</span>
         <span class="right">Lob, Hinweise oder Kritik zu einer Meldung werden <span class="bold">direkt</span> weitergeleitet an die aktuell zuständigen Sachbearbeiterinnen und/oder Sachbearbeiter.</span>
-        <span class="center">Wenn Sie einen Missbrauch melden, wird die betroffene Meldung so lange <span class="bold">deaktiviert</span> (und damit unsichtbar), bis wir den Missbrauch beseitigt haben.</span>
+        <span class="center">Wenn Sie einen Missbrauch melden, wird die betroffene Meldung so lange <span class="bold">deaktiviert</span> (und damit unsichtbar), bis die Stadtverwaltung den Missbrauch beseitigt hat.</span>
       </p>
       <h3><a name="section04_02"></a>(2) neue Meldung erstellen</h3>
       <p class="justified">
@@ -156,9 +156,9 @@
         <br/>
         <span class="italic">Hinweis: Falls Sie die Meldung außerhalb eines definierten Gebiets (zum Beispiel Ihrer Kommune) oder zu dicht neben einer vorhandenen Meldung positioniert haben, weist Sie das System zu diesem Zeitpunkt daraufhin und sie können das Symbol dann wieder „hineinschieben“ respektive die Position entsprechend verändern.</span>
         <br/>
-        Damit Ihre Verwaltung Ihre Meldung korrekt einordnen kann, müssen Sie im Dialog eine Hauptkategorie (zum Beispiel <span class="italic">Müll/Schmutz)</span> und eine Unterkategorie (zum Beispiel <span class="italic">Sperrmüll)</span> auswählen, die am besten zum Problem oder zur Idee passt. Außerdem müssen Sie Ihre <span class="bold">E-Mail-Adresse angeben,</span> um nach der erfolgreichen Erstellung der neuen Meldung eine automatische E-Mail zu erhalten, in der Sie über einen Link Ihre Meldung nochmals bestätigen müssen. Diese Besonderheit ist notwendig, um den Missbrauch des Portals zu verhindern, mindestens aber zu reduzieren.
+        Damit die Stadtverwaltung Ihre Meldung korrekt einordnen kann, müssen Sie im Dialog eine Hauptkategorie (zum Beispiel <span class="italic">Müll/Schmutz)</span> und eine Unterkategorie (zum Beispiel <span class="italic">Sperrmüll)</span> auswählen, die am besten zum Problem oder zur Idee passt. Außerdem müssen Sie Ihre <span class="bold">E-Mail-Adresse angeben,</span> um nach der erfolgreichen Erstellung der neuen Meldung eine automatische E-Mail zu erhalten, in der Sie über einen Link Ihre Meldung nochmals bestätigen müssen. Diese Besonderheit ist notwendig, um den Missbrauch des Portals zu verhindern, mindestens aber zu reduzieren.
         <br/>
-        Die <span class="bold">weiteren Angaben</span> zur Beschreibung sind Pflicht. Über ein <span class="bold">Foto</span> freut sich Ihre Verwaltung natürlich immer, da es die Arbeit erleichtert, aber Sie müssen natürlich keines hochladen.
+        Die <span class="bold">weiteren Angaben</span> zur Beschreibung sind Pflicht. Über ein <span class="bold">Foto</span> freut sich die Stadtverwaltung natürlich immer, da es die Arbeit erleichtert, aber Sie müssen natürlich keines hochladen.
         <br/>
         Und nun, wenn Sie mit allem zufrieden sind, klicken Sie auf den Button <span class="italic">melden</span> und schon ist die neue Meldung online – zunächst erscheint sie grau, später dann rot, wenn Sie sie in der bereits erwähnten automatischen E-Mail nochmals bestätigt haben.
         <br/>
@@ -184,7 +184,7 @@
       <h2><a name="subheadline05"></a>Wie bleibe ich auf dem Laufenden?</h2>
       <h3><a name="section05_01"></a>(1) Meldungen verfolgen</h3>
       <p class="justified">
-        Sobald eine Ihrer eigenen Meldungen in den grünen oder gelb-grünen Zustand versetzt wurde, sie also abgeschlossen ist, erhalten Sie automatisch eine <span class="bold">Benachrichtigung per E-Mail.</span> Und natürlich können Sie jederzeit in <span class="italic">Klarschiff</span> vorbeischauen, und nachsehen, wie es um die eine oder andere Meldung steht, die Sie interessiert.
+        Sobald eine Ihrer eigenen Meldungen in den grünen oder gelb-grünen Zustand versetzt wurde, sie also abgeschlossen ist, erhalten Sie automatisch eine <span class="bold">Benachrichtigung per E-Mail.</span> Und natürlich können Sie jederzeit in <span class="italic">Klarschiff.HRO</span> vorbeischauen, und nachsehen, wie es um die eine oder andere Meldung steht, die Sie interessiert.
       </p>
       <h3><a name="section05_02"></a>(2) über Neuigkeiten informiert werden</h3>
       <p class="justified">
@@ -194,7 +194,7 @@
       <p class="justified">
         Um über alle Änderungen in einem bestimmten Gebiet auf dem Laufenden zu bleiben, können Sie dieses als <span class="bold">individuellen RSS-Feed</span> abonnieren. Somit werden Sie fortan immer dann informiert, wenn sich in Ihrer Beobachtungsfläche etwas tut, also wenn dort eine neue Meldung hinzukommt oder sich eine bestehende Meldung ändert.
         <br/>
-        Als Beobachtungsgebiete kommen entweder das <span class="bold">gesamte durch <span class="italic">Klarschiff</span> abgedeckte Gebiet</span> auf einmal, ausgewählte Teile davon (zum Beispiel Ortsteile) oder selbst definierte Flächen in Frage. Möchten Sie sich einen RSS-Feed zum Abonnement „basteln“, so steht die Entscheidung über eine dieser drei Arten von zu beobachtenden Flächen am Anfang und ist im Menü auf der Kartenseite zu treffen. Für das gesamte Gebiet reicht ein Klick auf den entsprechenden Menüpunkt, die beiden anderen Arten bedürfen jeweils noch einer kurzen Erläuterung:
+        Als Beobachtungsgebiete kommen entweder das <span class="bold">gesamte durch <span class="italic">Klarschiff.HRO</span> abgedeckte Gebiet</span> auf einmal, ausgewählte Teile davon (zum Beispiel Ortsteile) oder selbst definierte Flächen in Frage. Möchten Sie sich einen RSS-Feed zum Abonnement „basteln“, so steht die Entscheidung über eine dieser drei Arten von zu beobachtenden Flächen am Anfang und ist im Menü auf der Kartenseite zu treffen. Für das gesamte Gebiet reicht ein Klick auf den entsprechenden Menüpunkt, die beiden anderen Arten bedürfen jeweils noch einer kurzen Erläuterung:
         <br/>
         Haben Sie sich für das Auswählen von <span class="bold">Gebietsteilen</span> entschieden, erscheinen diese als orange Flächen in der Karte. Klicken Sie nun auf einen Gebietsteil, wird er Ihrer Auswahl hinzugefügt und auf der Karte pink markiert – klicken Sie ihn erneut an, wird er entfernt und erscheint wieder orange. Um fortzufahren, müssen Sie jetzt im Menü auf den dort erschienenen Button <span class="italic">übernehmen</span> klicken.
         <br/>
@@ -217,16 +217,16 @@
 
       <h2><a name="subheadline06"></a>Muss ich sonst noch etwas wissen?</h2>
       <p class="justified">
-        Ansonsten ist Ihnen bestimmt schon die <span class="bold">Statistik</span> auf der Startseite von <span class="italic">Klarschiff</span> aufgefallen, die folgende Fragen jeweils mit einer Zahl beantwortet: Wie viele neue Meldungen sind im letzten Monat eingegangen? Wie viele Probleme und Ideen konnten imselben Zeitraum bereits gelöst respektive umgesetzt werden? Und wie viele neue Meldungen sind seit der Eröffnung von <span class="italic">Klarschiff</span> eingegangen?
+        Ansonsten ist Ihnen bestimmt schon die <span class="bold">Statistik</span> auf der Startseite von <span class="italic">Klarschiff.HRO</span> aufgefallen, die folgende Fragen jeweils mit einer Zahl beantwortet: Wie viele neue Meldungen sind im letzten Monat eingegangen? Wie viele Probleme und Ideen konnten imselben Zeitraum bereits gelöst respektive umgesetzt werden? Und wie viele neue Meldungen sind seit der Eröffnung von <span class="italic">Klarschiff.HRO</span> eingegangen?
         <br/>
         Außerdem gibt es auf der Startseite einen sogenannten <span class="bold">„Eye-Catcher“</span>-Bereich, über den Sie sich womöglich schon gewundert haben: Gemeint ist der Kartenstreifen, auf dem alle paar Sekunden ein neuer Ausschnitt mit einer Meldung erscheint. Dieser Bereich soll die Seite etwas auflockern und Ihnen einen Vorgeschmack bieten auf die Karte und das, was Sie dort erwartet.
         <br/>
         Ferner finden Sie dort noch die Rubrik <span class="bold">„Kürzlich gemeldet“</span>, in der die vier zuletzt eingegangenen Meldungen aufgelistet sind und in der Sie auch den Link auf den oben bereits erwähnten <span class="bold">allgemeinen RSS-Feed</span> vorfinden.
       </p>
 
-      <h2><a name="subheadline07"></a>Ach ja, zuletzt noch die Frage: Mit welchen Browsern kann ich <span class="italic">Klarschiff</span> nutzen?</h2>
+      <h2><a name="subheadline07"></a>Ach ja, zuletzt noch die Frage: Mit welchen Browsern kann ich <span class="italic">Klarschiff.HRO</span> nutzen?</h2>
       <p class="justified">
-        Gemäß verschiedenen Tests können Sie für die Nutzung von <span class="italic">Klarschiff</span> problemlos folgende Webbrowser einsetzen: Mozilla <span class="bold">Firefox</span> ab der Version 3.6, <span class="bold">Google Chrome</span> ab 9.0, <span class="bold">Safari</span> ab 5.0, Opera ab 11.0 und <span class="bold">Internet Explorer</span> ab der Version 8.0.6001.18702. Frühere Ausgaben des Internet Explorers sind ausdrücklich <span class="italic">nicht</span> empfehlenswert, da diese sehr wahrscheinlich Probleme bereiten.
+        Gemäß verschiedenen Tests können Sie für die Nutzung von <span class="italic">Klarschiff.HRO</span> problemlos folgende Webbrowser einsetzen: Mozilla <span class="bold">Firefox</span> ab der Version 3.6, <span class="bold">Google Chrome</span> ab 9.0, <span class="bold">Safari</span> ab 5.0, Opera ab 11.0 und <span class="bold">Internet Explorer</span> ab der Version 8.0.6001.18702. Frühere Ausgaben des Internet Explorers sind ausdrücklich <span class="italic">nicht</span> empfehlenswert, da diese sehr wahrscheinlich Probleme bereiten.
       </p>
     </div>
   </body>

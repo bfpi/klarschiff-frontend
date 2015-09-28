@@ -8,8 +8,8 @@ $config = include 'config/config.php';
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Portal,Bürgerbeteiligung,Karte,Probleme,Ideen,Verwaltung" />
-    <meta name="description" content="Melden Sie via Karte Probleme und Ideen im öffentlichen Raum, die dann von einer kommunalen Verwaltung bearbeitet werden." />
+    <meta name="keywords" content="Portal,Bürgerbeteiligung,Karte,Probleme,Ideen,Rostock,Verwaltung" />
+    <meta name="description" content="Melden Sie via Karte Probleme und Ideen im öffentlichen Raum der Hansestadt Rostock, die dann von der Stadtverwaltung bearbeitet werden." />
     <meta name="author" content="Hansestadt Rostock" />
     <title>Klarschiff.HRO – Portal zur Bürgerbeteiligung der Hansestadt Rostock</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico" />
