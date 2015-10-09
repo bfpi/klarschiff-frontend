@@ -88,7 +88,7 @@ function addControls(map) {
       var title = '';
       if (features === undefined) {
         // Fall: neue Meldung anlegen
-        title = "mit gedrückter linker Maustaste an den Ort der Meldung verschieben";
+        title = "mit gedrÃ¼ckter linker Maustaste an den Ort der Meldung verschieben";
       } else if (features.length === 1) {
         title = "Meldung " + features[0].get("id");
       } else {
