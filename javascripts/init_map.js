@@ -85,20 +85,19 @@ function addControls(map) {
     } else {
       $("#" + map.getTarget()).css("cursor", "pointer");
       var features = feature.get("features");
-      var title = "";
-      if (features !== undefined && features.length === 1) {
-        var title = "Meldung " + features[0].get("id");
-        tooltip.html(title);
-        tooltip.css("left", (pixel[0] + 10) + 'px');
-        tooltip.css("top", (pixel[1] + 10) + 'px');
-        tooltip.show();
-      } else if (features !== undefined) {
-        var title = "fasst " + features.length + " Meldungen zusammen:<br/>klicken zum Zoomen,<br/>in letzter Zoomstufe zum Anzeigen";
-        tooltip.html(title);
-        tooltip.css("left", (pixel[0] + 10) + 'px');
-        tooltip.css("top", (pixel[1] + 10) + 'px');
-        tooltip.show();
+      var title = '';
+      if (features === undefined) {
+        // Fall: neue Meldung anlegen
+        title = "mit gedrückter linker Maustaste an den Ort der Meldung verschieben";
+      } else if (features.length === 1) {
+        title = "Meldung " + features[0].get("id");
+      } else {
+        title = "fasst " + features.length + " Meldungen zusammen:<br/>klicken zum Zoomen,<br/>in letzter Zoomstufe zum Anzeigen"
       }
+      tooltip.html(title);
+      tooltip.css("left", (pixel[0] + 10) + 'px');
+      tooltip.css("top", (pixel[1] + 10) + 'px');
+      tooltip.show();
     }
   });
 
