@@ -94,10 +94,6 @@ $config = include 'config/config.php';
         <h3><span class="italic">Klarschiff</span> im Verwaltungsaußendienst</span></h3>
         Falls Sie daran interessiert sind, wie <span class="italic">Klarschiff</span> im Außendienst der Verwaltung verwendet wird, dann rufen Sie den <a href="<?php echo PPC_URL; ?>" target="_blank"><span class="bold">Prüf- und Protokollclient</span></a> auf. Anmelden können Sie sich dort zum Beispiel mit dem Benutzernamen „s01“ und dem Passwort „s01“ (jeweils ohne Anführungszeichen): Dabei handelt es sich um einen exemplarischen Benutzer, der dem (ebenfalls exemplarischen) Außendiensteinheiten-Team 1 zugeordnet ist.
       </div>
-      <div class="row footer">
-        <h3><span class="italic">CitySDK-</span>API für <span class="italic">Klarschiff</span></h3>
-        <span class="italic">Klarschiff</span> verfügt nun über eine <a href="http://www.citysdk.eu/participation" target="_blank"><span class="bold italic">CitySDK-Smart-Participation-Schnittstelle</span></a>, und zwar <a href="<?php echo CITYSDK_URL; ?>" target="_blank"><span class="bold">hier</span></a>. Wie Sie diese nutzen können, erfahren Sie <a href="https://github.com/bfpi/klarschiff-citysdk" target="_blank"><span class="bold">hier</span></a>.
-      </div>
     </div>
   </body>
 </html>
