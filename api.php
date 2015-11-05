@@ -29,7 +29,7 @@
       
       <h2>Endpunkt</h2>
       <p class="justified">
-        Sie erreichen den API-Endpunkt unter der folgenden Adresse: <a href="<?php echo CITYSDK_URL; ?>" target="_blank"><?php echo CITYSDK_URL; ?></a>
+        Sie erreichen den API-Endpunkt unter der folgenden Adresse: <a href="<?php echo CITYSDK_URL; ?>" target="_blank"><?php echo CITYSDK_URL; ?></a>. Eine Übersicht über die Eigenschaften der API („Service Discovery“) finden Sie unter der folgenden Adresse: <a href="<?php echo CITYSDK_URL; ?>/discovery.json" target="_blank"><?php echo CITYSDK_URL; ?>/discovery.json</a>.
       </p>
       
       <h2>Anwendungen</h2>
