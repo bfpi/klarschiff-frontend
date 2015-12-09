@@ -87,6 +87,7 @@ function addControls(map) {
   });
 
   map.on("click", function(e) {
+    $("#tooltip").hide()
     if(getLayerByTitle("DrawBeobachtungsflaeche").getVisible() ||
       getLayerByTitle("SketchBeobachtungsflaeche").getVisible()) {
       return true;
