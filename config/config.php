@@ -13,7 +13,7 @@ return array(
     )
   ),
   'functions' => array(
-    'report_idea' => false,
+    'report_idea' => true,
     'report_problem' => true
   ),
   'thresholds' => array(
@@ -26,19 +26,23 @@ return array(
     ),
     array(
       'label' => 'Hilfe',
-      'url' => FRONTEND_URL . 'hilfe.php'
+      'url' => FRONTEND_URL . 'hilfe.php',
+      'sonderseite' => true
     ),
     array(
       'label' => 'Datenschutz',
-      'url' => FRONTEND_URL . 'datenschutz.php'
+      'url' => FRONTEND_URL . 'datenschutz.php',
+      'sonderseite' => true
     ),
     array(
       'label' => 'Impressum',
-      'url' => FRONTEND_URL . 'impressum.php'
+      'url' => FRONTEND_URL . 'impressum.php',
+      'sonderseite' => true
     ),
     array(
       'label' => 'Nutzungsbedingungen',
-      'url' => FRONTEND_URL . 'nutzungsbedingungen.php'
+      'url' => FRONTEND_URL . 'nutzungsbedingungen.php',
+      'sonderseite' => true
     )
   )
 );
