@@ -14,7 +14,7 @@ var resolutions = [38.2185141426, 19.1092570713, 9.5546285356,
   4.7773142678, 2.3886571339, 1.194328567, 0.5971642835];
 
 var problemMeldungenMoeglich = true;
-var ideeMeldungenMoeglich = false;
+var ideeMeldungenMoeglich = true;
 
 var unterstuetzer_schwellenwert = <?php echo $config['thresholds']['supporter']; ?>;
 
