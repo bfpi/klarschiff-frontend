@@ -90,13 +90,6 @@ $config = include 'config/config.php';
         <a href="<?php echo MOBILE_FRONTEND_URL; ?>" target="_self"><span class="bold">mobile Version</span></a> von
         <span class="italic">Klarschiff</span> gestartet.
       </div>
-      <div class="row footer">
-        <h3><span class="italic">Klarschiff</span> aus Sicht der Verwaltung</h3>
-        Falls Sie daran interessiert sind, wie die „Rückseite“ von <span class="italic">Klarschiff</span>
-        aussieht, also die Verwaltungsanwendung, dann rufen Sie dieses als
-        <a href="<?php echo BACKEND_URL; ?>" target="_blank"><span class="bold">Backend</span></a>
-        bezeichnete Anwendung doch einfach auf.
-      </div>
     </div>
   </body>
 </html>
