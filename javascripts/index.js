@@ -26,7 +26,7 @@ function eyeCatcher() {
     view: new ol.View({
       projection: projection_25833,
       resolutions: resolutions,
-      zoom: 9
+      zoom: 1
     }),
     controls: [],
     interactions: []
@@ -44,7 +44,10 @@ function eyeCatcher() {
       url: 'php/next_meldung.php',
       cache: false,
       success: function(data) {
-        map.getView().setCenter([parseInt(data.x), parseInt(data.y)]);
+        if (data) {
+          map.getView().setCenter([parseInt(data.x), parseInt(data.y)]);
+          map.getView().setZoom(9);
+        }
       }
     });
   };
