@@ -38,11 +38,8 @@ $config = include 'config/config.php';
           </p>
         </div>
         <div class="overlay news">
-          <span class="bold">Achtung!</span>
           <p>
-            Da es sich bei der vorliegenden Anwendung lediglich um eine <span class="bold">Demo</span>
-            zu Anschauungs- und Testzwecken handelt, werden eingehende Meldungen naturgemäß <span class="bold">nicht</span>
-            als reale Fälle angesehen und von der Stadtverwaltung auch <span class="bold">nicht</span> als solche bearbeitet.
+            Das System ist für die Bürgerinnen und Bürger voraussichtlich ab dem 01.03.2016 nutzbar.
           </p>
         </div>
         <div id="map" title="Karte aufrufen"></div>
@@ -61,9 +58,9 @@ $config = include 'config/config.php';
             <div class="media-body text">Meldung<?php if (intval($done_last_month) != 1) echo 'en'; ?> erledigt letzten Monat</div>
           </div>
           <div class="media statistic">
-            <?php $new_since_start = $frontend->count_new_advices_since('2016-01-02'); ?>
+            <?php $new_since_start = $frontend->count_new_advices_since('2016-03-01'); ?>
             <div class="media-left number yellow"><?php echo intval($new_since_start) ?></div>
-            <div class="media-body text">neue Meldung<?php if (intval($new_since_start) != 1) echo 'en' ?> seit 01.02.2016</div>
+            <div class="media-body text">neue Meldung<?php if (intval($new_since_start) != 1) echo 'en' ?> seit 01.03.2016</div>
           </div>
         </div>
         <div class="col-md-4 center">
@@ -89,6 +86,12 @@ $config = include 'config/config.php';
         Wenn Sie diese Website mit einem Smartphone oder Tablet besuchen, wird automatisch die
         <a href="<?php echo MOBILE_FRONTEND_URL; ?>" target="_self"><span class="bold">mobile Version</span></a> von
         <span class="italic">Klarschiff</span> gestartet.
+      </div>
+      <div class="row footer">
+        <h3>Bei Fragen oder Hinweisen wenden Sie sich bitte an das</h3>
+        Ideen- und Beschwerdemanagement der Stadtverwaltung Schwerin<br/>
+        E-Mail: <a href="mailto:ideen-beschwerden@schwerin.de">ideen-beschwerden@schwerin.de</a><br/>
+        Telefon: 0385 545 2222
       </div>
     </div>
   </body>
