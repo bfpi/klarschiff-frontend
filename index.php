@@ -10,7 +10,7 @@ $config = include 'config/config.php';
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Portal,Bürgerbeteiligung,Karte,Probleme,Ideen,Verwaltung" />
     <meta name="description" content="Melden Sie via Karte Probleme und Ideen im öffentlichen Raum, die dann von einer kommunalen Verwaltung bearbeitet werden." />
-    <meta name="author" content="Hansestadt Greifswald" />
+    <meta name="author" content="<?php echo $config['labels']['name']; ?>" />
     <title>Klarschiff – Portal zur Bürgerbeteiligung</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/icons/favicon.ico" />
     <link rel="alternate" type="application/atom+xml" title="Klarschiff: Meldungen" href="rss.php" />
