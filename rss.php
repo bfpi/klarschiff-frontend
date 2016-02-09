@@ -20,10 +20,10 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
     <?php
     $frontend = new FrontendDAO();
     foreach ($frontend->rss() as $rss) {
-      $link = htmlentities(strip_tags(MAP_URL . "?advice=" . $rss['meldung']), ENT_QUOTES);
+      $link = htmlentities(strip_tags(MAP_URL . "?advice=" . $rss['id']), ENT_QUOTES);
       ?>
       <item>
-        <title><?php echo "#", $rss['meldung'], " ", $rss['typ'], " (", $rss['hauptkategorie'], " – ", $rss['unterkategorie'], ")"; ?></title>
+        <title><?php echo "#", $rss['id'], " ", $rss['typ'], " (", $rss['hauptkategorie'], " – ", $rss['unterkategorie'], ")"; ?></title>
         <description>
           <![CDATA[
           <b>Status:</b> <?php echo $rss['status']; ?><br/>
@@ -31,7 +31,7 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
           <b>Beschreibung:</b> <?php echo $rss['beschreibung']; ?><br/>
           <b>Foto:</b> <?php echo $rss['foto']; ?><br/>
           <b>Info der Verwaltung:</b> <?php echo $rss['info_der_verwaltung']; ?><br/>
-          <a href="<?php echo $link; ?>" target="_blank">Meldung in Klarschiff.HRO ansehen</a>
+          <a href="<?php echo $link; ?>" target="_blank">Meldung in Klarschiff.SN ansehen</a>
           ]]>
         </description>
         <link><?php echo $link; ?></link>
