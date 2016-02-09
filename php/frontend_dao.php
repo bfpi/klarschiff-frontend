@@ -110,7 +110,7 @@ class FrontendDAO {
   }
 
   function categories() {
-    $res = pg_query($this->conn, "SELECT id, name, parent, vorgangstyp AS typ, "
+    $res = pg_query($this->conn, "SELECT id, name, parent, vorgangstyp AS typ, geloescht, "
       . "0 AS childcount "
       . "FROM klarschiff.klarschiff_kategorie "
       . "ORDER BY name");
