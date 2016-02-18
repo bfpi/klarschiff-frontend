@@ -15,7 +15,7 @@ $config = include('config/config.php');
         <ul class="nav navbar-nav">
           <?php
           foreach ($config['nav'] as $nav) {
-            if ((preg_match('/\/index.php$/', $_SERVER['SCRIPT_NAME']) && $nav['label'] == 'Startseite') 
+            if ((preg_match('/\/index.php$/', $_SERVER['SCRIPT_NAME']) && $nav['label'] == 'Start') 
               || (!preg_match('/\/index.php$/', $_SERVER['SCRIPT_NAME']) && $nav['label'] == 'Karte')) {
               continue;
             } else {

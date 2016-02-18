@@ -46,6 +46,21 @@ function init_map() {
   });
 
   addControls(map);
+
+  highlightedOverlay = new ol.layer.Vector({
+    map: map,
+    source: new ol.source.Vector({
+      features: new ol.Collection(),
+      useSpatialIndex: false // optional, might improve performance
+    }),
+    style: function(feature) {
+      feature.setStyle(new ol.style.Style({
+        image: meldungIcon(feature, true)
+      }));
+    },
+    updateWhileAnimating: true, // optional, for instant visual feedback
+    updateWhileInteracting: true // optional, for instant visual feedback
+  });
 }
 
 function addControls(map) {
@@ -73,11 +88,11 @@ function addControls(map) {
       var title = '';
       if (features === undefined) {
         // Fall: neue Meldung anlegen
-        title = "Verschieben an den Ort der Meldung";
+        title = "mit gedrückter linker Maustaste an den Ort der Meldung verschieben";
       } else if (features.length === 1) {
         title = "Meldung " + features[0].get("id");
       } else {
-        title = "Fasst " + features.length + " Meldungen zusammen:<br/>klicken zum Zoomen,<br/>in letzter Zoomstufe zum Anzeigen"
+        title = "fasst " + features.length + " Meldungen zusammen:<br/>klicken zum Zoomen,<br/>in letzter Zoomstufe zum Anzeigen"
       }
       tooltip.html(title);
       tooltip.css("left", (pixel[0] + 10) + 'px');

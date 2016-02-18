@@ -14,7 +14,7 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
     <copyright>Universitäts- und Hansestadt Greifswald</copyright>
     <image>
     <url><?php echo FRONTEND_URL, 'images/rss.png'; ?></url>
-    <title>Klarschiff: Meldungen</title>
+    <title>Klarschiff-Meldungen</title>
     <link><?php echo FRONTEND_URL; ?></link>
     </image>
     <?php
@@ -27,7 +27,7 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
         <description>
           <![CDATA[
           <b>Status:</b> <?php echo $rss['status']; ?><br/>
-          <b>Statusinformation:</b> <?php echo $rss['statusinformation']; ?><br/>
+          <b>Statusinformation:</b> <?php echo $rss['info_der_verwaltung']; ?><br/>
           <b>Unterstützungen:</b> <?php echo $rss['unterstuetzungen']; ?><br/>
           <b>Beschreibung:</b> <?php echo $rss['beschreibung']; ?><br/>
           <b>Foto:</b> <?php echo $rss['foto']; ?><br/>

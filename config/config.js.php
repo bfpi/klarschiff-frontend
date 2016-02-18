@@ -3,14 +3,11 @@
 $config = include('config.php');
 ?>
 
-var zoom = 4;
+var zoom = 1;
 var lonLat_center = [13.409414, 54.089276];
-var mv_bbox_25833 = [380000, 5980000, 410000, 6010000];
+var mv_bbox_25833 = [206885, 5890624, 460857, 6060841];
 var extent = [380000, 5980000, 410000, 6010000]
-var resolutions = [28.2222222222, 22.9305555556,
-  17.6388888889, 12.3472222222, 8.8194444444, 7.0555555556, 5.2916666667,
-  3.5277777778, 2.6458333333, 1.7638888889, 0.8819444444, 0.3527777778,
-  0.1763888889];
+var resolutions = [27.024570517098006,19.109257071294042,13.512285258549001,9.55462853564702,6.7561426292745,4.77731426782351,3.3780713146372494,2.3886571339117544,1.6890356573186245,1.1943285669558772,0.8445178286593122,0.5971642834779384,0.422258914329656,0.29858214173896913,0.21112945716482798,0.14929107086948457];
 
 var problemMeldungenMoeglich = <?php echo var_export($config['functions']['report_problem'], true); ?>;
 var ideeMeldungenMoeglich = <?php echo var_export($config['functions']['report_idea'], true); ?>;
@@ -93,12 +90,12 @@ var ol_config = {
     "Stadtplan": {
       type: "TileWMTS",
       title: "Stadtplan",
-      url: "http://geo.sv.rostock.de/geodienste/stadtplan/wmts/stadtplan_wmts/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
+      url: "http://www.orka-mv.de/geodienste/orkamv/wmts/orkamv/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
       visibility: true,
-      layers: "stadtplan_wmts",
-      tileGridOrigin: [200000, 6075000],
-      matrixSet: "grid_25833_wmts",
-      matrixIds: [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+      layers: "orkamv",
+      tileGridOrigin: [-464849.38, 6310160.14],
+      matrixSet: "epsg_25833",
+      matrixIds: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
       requestEncoding: "REST",
       projection: "EPSG:25833",
       format: "image/png",
@@ -109,12 +106,12 @@ var ol_config = {
     Luftbild: {
       type: "TileWMTS",
       title: "Luftbild",
-      url: "http://geo.sv.rostock.de/geodienste/luftbild/wmts/luftbild_wmts/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
+      url: "http://geo.sv.rostock.de/geodienste/luftbild_mv-40/wmts/hro.luftbild_mv-40.luftbild_mv-40/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
       visibility: true,
-      layers: "luftbild",
-      tileGridOrigin: [200000, 6075000],
-      matrixSet: "epsg_25833_wmts",
-      matrixIds: [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+      layers: "hro.luftbild_mv-40.luftbild_mv-40",
+      tileGridOrigin: [-464849.38, 6310160.14],
+      matrixSet: "epsg_25833",
+      matrixIds: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
       requestEncoding: "REST",
       projection: "EPSG:25833",
       format: "image/png",
@@ -136,19 +133,29 @@ var ol_config = {
     "Meldungen": {
       title: "Meldungen",
       type: "Vector",
-      url: "<?php echo MELDUNGEN_WFS_URL; ?>",
       default_layer: true,
       enableClustering: true,
       clusterDistance: 40,
       style: meldungenStyles,
-      url_with_filter: function() {
-        if (this.filter === undefined) {
-          return this.url;
+      loader: function() {
+        var url = "<?php echo MELDUNGEN_WFS_URL; ?>";
+        if (typeof(buildFilter) == "function") {
+          var filter = buildFilter();
+          if (filter === null) {
+            return;
+          }
+          else if (filter !== undefined) {
+            url = url + "&Filter=" + filter;
+          }
         }
-        if (this.filter == null) {
-          return null;
-        }
-        return this.url + "&Filter=" + this.filter;
+        $.ajax({
+          url: url,
+          dataType: 'json'
+        }).done(function(response) {
+          var config = ol_config.layers.Meldungen;
+          var vectorSource = getLayerByTitle(config.title).getSource().getSource();
+          vectorSource.addFeatures((new ol.format.GeoJSON()).readFeatures(response));
+        });
       },
       eventHandlers: {
 	      change: function(evt) {

@@ -126,7 +126,7 @@
         <img src="images/hilfe_schema.png" alt="weg_einer_meldung" title="Weg einer Meldung in Klarschiff" />
       </p>
       <p class="screenshot annotation clearfix">
-        <span>Keine Sorge: Die gelb-grünen Symbole werden nicht zum Regelfall! Sie werden aber beispielsweise immer dann auftreten, wenn eine Meldung auf einem Privatgrundstück liegt. In einem solchen Fall werden wir stets die/den Eigentümer/-in des Grundstücks informieren, sofern die Art der Meldung dies erfordert.</span>
+        <span>Keine Sorge: Die gelb-grünen Symbole werden nicht zum Regelfall! Sie werden aber beispielsweise immer dann auftreten, wenn eine Meldung auf einem Privatgrundstück liegt. In einem solchen Fall wird Ihre Verwaltung stets die/den Eigentümer/-in des Grundstücks informieren, sofern die Art der Meldung dies erfordert.</span>
       </p>
 
       <h2><a name="subheadline04"></a>Wie werde ich selbst aktiv?</h2>
@@ -148,7 +148,7 @@
       <p class="screenshot annotation clearfix large">
         <span class="left">Solange die nötige Anzahl an Unterstützungen für eine Idee nicht erreicht ist, bleibt die Zahl rot hinterlegt wie auch das Symbol in der Karte rot bleibt.</span>
         <span class="right">Lob, Hinweise oder Kritik zu einer Meldung werden <span class="bold">direkt</span> weitergeleitet an die aktuell zuständigen Sachbearbeiterinnen und/oder Sachbearbeiter.</span>
-        <span class="center">Wenn Sie einen Missbrauch melden, wird die betroffene Meldung so lange <span class="bold">deaktiviert</span> (und damit unsichtbar), bis wir den Missbrauch beseitigt haben.</span>
+        <span class="center">Wenn Sie einen Missbrauch melden, wird die betroffene Meldung so lange <span class="bold">deaktiviert</span> (und damit unsichtbar), bis Ihre Verwaltung den Missbrauch beseitigt hat.</span>
       </p>
       <h3><a name="section04_02"></a>(2) neue Meldung erstellen</h3>
       <p class="justified">

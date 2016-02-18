@@ -315,6 +315,18 @@ a:hover {
   border-radius: 6px;
 }
 
+p.logo {
+  clear: both;
+  margin: 5px auto 0;
+  width: 450px;
+}
+
+p.logo span.center,
+p.logo span.left,
+p.logo span.right {
+  width: 220px;
+}
+
 p.screenshot {
   clear: both;
   margin: 5px auto 0;
@@ -325,11 +337,11 @@ p.screenshot.large {
   width: 970px;
 }
 
-p.screenshot * {
+p.screenshot *, p.logo * {
   box-sizing: content-box;
 }
 
-p.screenshot span {
+p.screenshot span, p.logo span {
   display: inline-block;
 }
 
@@ -340,7 +352,6 @@ p.screenshot img {
 p.screenshot span.center,
 p.screenshot span.left,
 p.screenshot span.right {
-  height: 200px;
   width: 300px;
 }
 

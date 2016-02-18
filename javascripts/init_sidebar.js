@@ -70,6 +70,14 @@ function init_layerSwitcher() {
           if (layers[i].getProperties().displayInLayerSwitcher) {
             layers[i].setVisible(i == checkedLayer);
           }
+          else if (layers[i].getProperties().type == 'ImageWMS') {
+            if (layers[checkedLayer].getProperties().default_layer) {
+                layers[i].setVisible(true);
+            }
+            else {
+                layers[i].setVisible(false);   
+            }
+          }
         }
       }));
     }

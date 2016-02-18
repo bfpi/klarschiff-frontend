@@ -69,11 +69,6 @@
       <p class="justified">
         Die Daten der <a href="http://www.laiv-mv.de/land-mv/LAiV_prod/LAiV/AfGVK/Aufsicht/Verz_Vermessungs-Geoinformationsbehoerden.jsp" target="_blank">unteren Vermessungs- und Geoinformationsbehörden Mecklenburg-Vorpommerns</a> (uVGB-MV), die von der Universitäts- und Hansestadt Greifswald angebotenen Inhalten zugrundeliegen, sind durch das Landesgesetz über das amtliche Geoinformations- und Vermessungswesen (GeoVermG M-V) und das Bundesgesetz über Urheberrecht und verwandte Schutzrechte (UrhG) in den jeweils geltenden Fassungen geschützt. Eine Nutzungserlaubnis liegt der Universitäts- und Hansestadt Greifswald vor. Der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © uVGB-MV.
       </p>
-
-      <h2>Dokumentation der Erzeugung des Stadtplans</h2>
-      <p class="justified">
-        Der Stadtplan ist ein Ergebnis zweier Datenquellen, nämlich einerseits OpenStreetMap (Gewässer, Gewässereinrichtungen, Straßen und Wege, Schienenbahnen, Seilbahnen, Flughäfen sowie Beschriftungselemente) und andererseits der Liegenschaftskarte der uVGB-MV (administrative Grenzen, Einfärbungen des Kartenhintergrunds nach der Art der tatsächlichen Nutzung sowie Gebäudegrundrisse mit Hausnummern). Die Daten werden bis zum Rendern der Kartenkacheln in getrennten Datenbanken gehalten und erfüllen damit die Voraussetzungen einer „Sammeldatenbank“ (“Collective Database”) gemäß ODbL. Eine Aktualisierung der OpenStreetMap-Daten erfolgt täglich über den Import von Differenzdaten. Die Daten der uVGB-MV werden hingegen direkt durch die Dienststellen der Landkreise und kreisfreien Städte nach Bedarf aktualisiert.
-      </p>
     </div>
   </body>
 </html>

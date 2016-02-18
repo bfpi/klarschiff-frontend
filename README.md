@@ -41,4 +41,3 @@ Eine Installationsanleitung für Debian basierte Systeme ist hier zu finden: htt
   1. Für beide Umgebungen wird der Standard-Tasks wie folgt aufgerufen:
   
           grunt
-

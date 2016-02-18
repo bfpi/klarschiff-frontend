@@ -21,7 +21,7 @@ return array(
   ),
   'nav' => array(
     array(
-      'label' => 'Startseite',
+      'label' => 'Start',
       'url' => BASE_URL,
       'sonderseite' => false
     ),
