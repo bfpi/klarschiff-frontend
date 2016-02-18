@@ -9,9 +9,9 @@ include_once(dirname(__FILE__) . "/functions.php");
  * Frontend-Fassade für Absetzen einer Missbrauchsmeldung
  */
 $data = array(
-  "id" => $_REQUEST["id"],
-  "email" => $_REQUEST["email"],
-  "begruendung" => $_REQUEST["begruendung"]
+  "vorgang" => $_REQUEST["id"],
+  "text" => $_REQUEST["details"],
+  "email" => $_REQUEST["email"]
 );
 
 /* * ************************************************************************** */
@@ -22,12 +22,6 @@ if ($trashmail_check) {
   die($trashmail_check);
 }
 
-$backend_data = array(
-  "vorgang" => $data["id"],
-  "text" => $data["begruendung"],
-  "email" => $data["email"]
-);
-
-$answer = returnRelay($backend_data, "missbrauchsmeldung");
+$answer = returnRelay($data, "missbrauchsmeldung");
 
 print(utf8_decode($answer['content']));

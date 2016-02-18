@@ -88,11 +88,11 @@ function addControls(map) {
       var title = '';
       if (features === undefined) {
         // Fall: neue Meldung anlegen
-        title = "Verschieben an den Ort der Meldung";
+        title = "mit gedrückter linker Maustaste an den Ort der Meldung verschieben";
       } else if (features.length === 1) {
         title = "Meldung " + features[0].get("id");
       } else {
-        title = "Fasst " + features.length + " Meldungen zusammen:<br/>klicken zum Zoomen,<br/>in letzter Zoomstufe zum Anzeigen"
+        title = "fasst " + features.length + " Meldungen zusammen:<br/>klicken zum Zoomen,<br/>in letzter Zoomstufe zum Anzeigen"
       }
       tooltip.html(title);
       tooltip.css("left", (pixel[0] + 10) + 'px');

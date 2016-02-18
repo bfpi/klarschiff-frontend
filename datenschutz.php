@@ -15,6 +15,7 @@
     <?php include("header.inc.php"); ?>
     <div class="container center">
       <h1>Datenschutz</h1>
+      
       <h2>Nutzung des vorliegenden Angebotes der Hansestadt Rostock</h2>
       <p class="justified">
         Die Nutzung des vorliegenden Angebotes der Hansestadt Rostock ist in weiten Teilen ohne Angabe personenbezogener Daten möglich. Einzig das Absetzen neuer Meldungen, das Unterstützen vorhandener Meldungen sowie das Absetzen von Missbrauchsmeldungen bedürfen der Angabe einer E-Mail-Adresse. Dieses personenbezogene Datum wird nur intern und nur zu seinem vorgesehenen Zweck gespeichert und verwendet. Es unterliegt dem Landesdatenschutzgesetz Mecklenburg-Vorpommerns (DSG M-V). Eine Weitergabe an Dritte erfolgt ausschließlich bei gesetzlicher oder durch Gerichtsentscheidung hervorgerufener Verpflichtung oder im Falle von Angriffen auf die Internetinfrastruktur der Hansestadt Rostock, soweit eine Rechts- oder Strafverfolgung dies erfordert. Eine Weitergabe zu kommerziellen oder anderen Zwecken erfolgt nicht.
@@ -27,19 +28,7 @@
 
       <h2>Protokollierung</h2>
       <p class="justified">
-        Wenn Sie auf das vorliegende Angebot der Hansestadt Rostock zugreifen, werden folgende Zugriffsdaten protokolliert:<br/>
-      </p>
-        <ul class="left">
-          <li>die IP-Adresse des zugreifenden Gerätes,</li>
-          <li>die Beschreibung des Webbrowsers, des Betriebssystems und der Bildschirmauflösung des zugreifenden Gerätes,</li>
-          <li>Datum, Uhrzeit sowie Zeitdauer des Zugriffs,</li>
-          <li>der aufgerufene Dienst, die aufgerufene Ressource und die verwendete Aktion,</li>
-          <li>der Zugriffsstatus sowie</li>
-          <li>die übertragene Datenmenge.</li>
-        </ul>
-      <p class="justified">
-        Die Protokollierung der Zugriffsdaten dient ausschließlich statistischen Zwecken, um auf diese Weise einen Überblick über die Nutzung des vorliegenden Angebotes allgemein respektive einzelner Bestandteile davon im Speziellen zu erhalten. Für die automatisierte Durchführung der statistischen Auswertung nutzt die Hansestadt Rostock unter anderem <a href="http://piwik.org/" target="_blank"><span class="italic">Piwik</span></a>, ein Open-Source-Programm zur Webanalytik. <span class="italic">Piwik</span> verwendet Cookies, die auf dem zugreifenden Gerät gespeichert werden (zu Cookies siehe auch nachfolgenden Abschnitt).<br/>
-        Die Zugriffsdaten werden nur intern und nur zu ihrem vorgesehenen Zweck gespeichert und verwendet. Sie unterliegen dem DSG M-V. Eine Weitergabe an Dritte erfolgt ausschließlich bei gesetzlicher oder durch Gerichtsentscheidung hervorgerufener Verpflichtung oder im Falle von Angriffen auf die Internetinfrastruktur der Hansestadt Rostock, soweit eine Rechts- oder Strafverfolgung dies erfordert. Eine Weitergabe zu kommerziellen oder anderen Zwecken erfolgt nicht.
+        Das vorliegende Angebot der Hansestadt Rostock kommt ohne die Protokollierung von Zugriffsdaten aus.
       </p>
 
       <h2>Einsatz von Cookies</h2>

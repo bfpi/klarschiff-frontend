@@ -343,14 +343,7 @@ function meldungFormSubmit() {
       }).spinner("show");
     },
     success: function() {
-      getLayerByTitle("Meldungen").setSource(new ol.source.Cluster({
-        distance: ol_config["layers"]["Meldungen"]["clusterDistance"],
-        source: new ol.source.Vector({
-          format: new ol.format.GeoJSON(),
-          url: ol_config["layers"]["Meldungen"]["url"]
-        })
-      }));
-      map.render();
+      reloadMeldungenIcons();
       $('body').spinner("success", "<p>Es kann einige Minuten dauern, bis die Meldung auf der Karte erscheint. Sie erhalten in Kürze eine E-Mail, in der Sie Ihre Meldung noch einmal bestätigen müssen.</p>");
     },
     error: function() {
@@ -382,9 +375,9 @@ function getKategorien(parent, typ) {
     }
   }
   kategorien.sort(function(a, b) {
-    return a.name.localeCompare(b.name);
-  });
-  kategorien.unshift({ id: 0, name: "auswählen…" });
+     return a.name.localeCompare(b.name);
+   });
+   kategorien.unshift({ id: 0, name: "auswählen…" });
   return kategorien;
 }
 
@@ -462,6 +455,7 @@ function showAdviceInstruction(targetId) {
   }
   var dlg = $('<div></div>').attr('id', 'advise-instruction').html(
           'Melden Sie bitte keinesfalls Sachverhalte, die einer sofortigen und/oder direkten Reaktion bedürfen, wie etwa Notfälle!<br/><br/>' +
+          'Stellen Sie bitte keine persönlichen Anfragen, wie etwa Adressänderungen, Leistungsanträge, Dokumentenanforderungen.<br/><br/>' +
           'Bitte setzen Sie in der Karte das Symbol durch Verschieben mit gedrückter linker Maustaste an den Ort ' + (targetId === 'problem' ? 'des Problems' : 'der Idee') + '.<br/><br/>' +
           'Teilen Sie bitte pro Meldung nur ' + (targetId === 'problem' ? 'ein Problem' : 'eine Idee') + ' aus den vorgegebenen Kategorien mit.<br/><br/>' +
           'Sehen Sie bitte von Meldungen ab, die komplexe städtebauliche oder verkehrsplanerische Sachverhalte behandeln.'

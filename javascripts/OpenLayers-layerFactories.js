@@ -31,7 +31,9 @@ var OLLayerFactory = function() {
         ]
       }),
       visible: def.default_layer,
-      displayInLayerSwitcher: def.displayInLayerSwitcher
+      displayInLayerSwitcher: def.displayInLayerSwitcher,
+      default_layer: def.default_layer,
+      type: def.type
     });
     return layer;
   },
@@ -53,7 +55,9 @@ var OLLayerFactory = function() {
         }
       }),
       visible: def.default_layer,
-      displayInLayerSwitcher: def.displayInLayerSwitcher
+      displayInLayerSwitcher: def.displayInLayerSwitcher,
+      default_layer: def.default_layer,
+      type: def.type
     });
     return layer;
   },
