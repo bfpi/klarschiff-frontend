@@ -120,7 +120,7 @@ class Search
             $phon = $this->phonetic->encode($term);
             $tmp[] = $term;
             $terms .= " $term $phon";
-            $query .= " (*$phon*)";
+            $query .= " ($term^31.0 OR $term*^30.5 OR *$term*^30.0 OR $phon^1.5 OR $phon*^1.0 OR *$phon*^0.5)";
 
             // Street
             if ($term !== $token) {

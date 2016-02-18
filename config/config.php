@@ -21,7 +21,7 @@ return array(
   ),
   'nav' => array(
     array(
-      'label' => 'Startseite',
+      'label' => 'Start',
       'url' => BASE_URL,
       'sonderseite' => false
     ),
@@ -29,6 +29,11 @@ return array(
       'label' => 'Karte',
       'url' => MAP_URL,
       'sonderseite' => false
+    ),
+    array(
+      'label' => 'API',
+      'url' => FRONTEND_URL . 'api.php',
+      'sonderseite' => true
     ),
     array(
       'label' => 'Hilfe',

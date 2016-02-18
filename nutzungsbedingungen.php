@@ -44,7 +44,7 @@
         Koordinierungsstelle für Geoinformationswesen (KGeo)<br/>
         Postfach 120135<br/>
         19018 Schwerin<br/>
-        Telefon: +49-385-58856342<br/>
+        Telefon: +49 385 588-56342<br/>
         E-Mail: <a href="mailto:geodatenservice@laiv-mv.de">geodatenservice@laiv-mv.de</a><br/>
       </p>
       <p class="justified">
@@ -59,11 +59,6 @@
       <h2>Nutzung der Daten der unteren Vermessungs- und Geoinformationsbehörden Mecklenburg-Vorpommerns</h2>
       <p class="justified">
         Die Daten der <a href="http://www.laiv-mv.de/land-mv/LAiV_prod/LAiV/AfGVK/Aufsicht/Verz_Vermessungs-Geoinformationsbehoerden.jsp" target="_blank">unteren Vermessungs- und Geoinformationsbehörden Mecklenburg-Vorpommerns</a> (uVGB-MV), die von der Hansestadt Rostock angebotenen Inhalten zugrundeliegen, sind durch das Landesgesetz über das amtliche Geoinformations- und Vermessungswesen (GeoVermG M-V) und das Bundesgesetz über Urheberrecht und verwandte Schutzrechte (UrhG) in den jeweils geltenden Fassungen geschützt. Eine Nutzungserlaubnis liegt der Hansestadt Rostock vor. Der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © uVGB-MV.
-      </p>
-
-      <h2>Dokumentation der Erzeugung des Stadtplans</h2>
-      <p class="justified">
-        Der Stadtplan ist ein Ergebnis zweier Datenquellen, nämlich einerseits OpenStreetMap (Gewässer, Gewässereinrichtungen, Straßen und Wege, Schienenbahnen, Seilbahnen, Flughäfen sowie Beschriftungselemente) und andererseits der Liegenschaftskarte der uVGB-MV (administrative Grenzen, Einfärbungen des Kartenhintergrunds nach der Art der tatsächlichen Nutzung sowie Gebäudegrundrisse mit Hausnummern). Die Daten werden bis zum Rendern der Kartenkacheln in getrennten Datenbanken gehalten und erfüllen damit die Voraussetzungen einer „Sammeldatenbank“ (“Collective Database”) gemäß ODbL. Eine Aktualisierung der OpenStreetMap-Daten erfolgt täglich über den Import von Differenzdaten. Die Daten der uVGB-MV werden hingegen direkt durch die Dienststellen der Landkreise und kreisfreien Städte nach Bedarf aktualisiert.
       </p>
     </div>
   </body>

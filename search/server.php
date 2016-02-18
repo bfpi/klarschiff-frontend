@@ -46,9 +46,9 @@ foreach ($result->documents as $doc) {
   } elseif ($type === "ortsteil") {
     $title = $data['stadtteil_name'];
   } elseif ($type === "straße") {
-    $title = $data['strasse_name'];
+    $title = $data['strasse_name'] . " " . $data["zusatz"];;
   } elseif ($type === "adresse") {
-    $title = $data["strasse"] . " " . $data["hausnummer"] . " " . $data["hausnummerzusatz"];
+    $title = $data["strasse"] . " " . $data["hausnummer"] . $data["hausnummerzusatz"] . " " . $data["zusatz"];
   } elseif ($type === "poi") {
     $title = $data['poi_titel'];
   } else {
