@@ -34,3 +34,11 @@ Zur Installation werden [**Node.js**](http://nodejs.org) >= 0.10 und [npm](https
 1.  referenzierte Bibliotheken installieren und einrichten via [**Grunt**](http://gruntjs.com):
 
         grunt install
+
+1. Die Tasks sind für zwei Umgebungen vorbereitet: 
+    1. `development`: (Standardkonfiguration), die JavaScripte werden nur zusammengefasst, nicht komprimiert und es gibt einen Wachtdog, der bei Änderungen an den Quelldateien automatisch neue Builds für die Referenz in der Seite erstellt.
+    2. `production`: Konfiguration via `GRUNT_ENV=production` (ggf. in der `/etc/environment`). Die Scripte werden für eine bessere Performance zusätzlich komprimiert an den Browser ausgeliefert. Ein automatisierter Watchdienst ist bisher nicht konfiguriert.
+  
+  1. Für beide Umgebungen wird der Standard-Tasks wie folgt aufgerufen:
+  
+          grunt
