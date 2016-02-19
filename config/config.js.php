@@ -9,8 +9,8 @@ var mv_bbox_25833 = [206885, 5890624, 460857, 6060841];
 var extent = [271264, 5938535, 356804, 6017573]
 var resolutions = [27.024570517098006,19.109257071294042,13.512285258549001,9.55462853564702,6.7561426292745,4.77731426782351,3.3780713146372494,2.3886571339117544,1.6890356573186245,1.1943285669558772,0.8445178286593122,0.5971642834779384,0.422258914329656,0.29858214173896913,0.21112945716482798,0.14929107086948457];
 
-var problemMeldungenMoeglich = true;
-var ideeMeldungenMoeglich = true;
+var problemMeldungenMoeglich = <?php echo var_export($config['functions']['report_problem'], true); ?>;
+var ideeMeldungenMoeglich = <?php echo var_export($config['functions']['report_idea'], true); ?>;
 
 var unterstuetzer_schwellenwert = <?php echo $config['thresholds']['supporter']; ?>;
 

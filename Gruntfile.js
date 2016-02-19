@@ -9,19 +9,18 @@ module.exports = function(grunt) {
       jqui: '1.11.4',
       proj4: '2.3.3',
     },
-    curl: {
+    exec: {
       'config-js': {
-        dest: 'javascripts/build/config.js',
-        src: 'http://localhost/klarschiff_desktop/config/config.js.php',
+        cmd: 'php -f config/config.js.php > javascripts/build/config.js'
       },
       'jq-ks-spinner-js': {
-        dest: 'javascripts/build/jquery.ks.spinner.js',
-        src: 'http://localhost/klarschiff_desktop/javascripts/jquery.ks.spinner.php',
+        cmd: 'php -f javascripts/jquery.ks.spinner.php > javascripts/build/jquery.ks.spinner.js'
       },
       'init-ks-lut-js': {
-        dest: 'javascripts/build/init_ks_lut.js',
-        src: 'http://localhost/klarschiff_desktop/javascripts/init_ks_lut.js.php',
+        cmd: 'php -f javascripts/init_ks_lut.js.php > javascripts/build/init_ks_lut.js'
       },
+    },
+    curl: {
       'ol-css': {
         dest: 'libs/OpenLayers.css',
         src: 'https://raw.githubusercontent.com/openlayers/ol3/<%= versions.ol %>/css/ol.css',
@@ -177,7 +176,7 @@ module.exports = function(grunt) {
     watch: {
       'js-php': {
         files: '{config,javascripts}/*.js.php',
-        tasks: 'curl:prebuild-js',
+        tasks: 'prebuild-js',
       },
       js: {
         files: ['javascripts/**/*.js', '!javascripts/build/{index,map}{,-libs}.js'],
@@ -193,6 +192,7 @@ module.exports = function(grunt) {
   grunt.config('env', grunt.option('env') || process.env.GRUNT_ENV || 'development');
 
   grunt.loadNpmTasks('grunt-curl');
+  grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -217,7 +217,7 @@ module.exports = function(grunt) {
       'curl:proj4-min-js',
       ]);
 
-  grunt.registerTask('curl:prebuild-js', ['curl:config-js', 'curl:jq-ks-spinner-js', 'curl:init-ks-lut-js']);
+  grunt.registerTask('prebuild-js', ['exec:config-js', 'exec:jq-ks-spinner-js', 'exec:init-ks-lut-js']);
 
   grunt.registerTask('concat:js', ['concat:index-js', 'concat:map-js']);
   grunt.registerTask('install', ['curl:libs', 'default']);
@@ -225,5 +225,5 @@ module.exports = function(grunt) {
   grunt.registerTask('dev-default', ['concat', 'watch']);
   grunt.registerTask('prod-default', ['uglify:js', 'concat']);
 
-  grunt.registerTask('default', ['curl:prebuild-js', (grunt.config('env') === 'production' ? 'prod' : 'dev') + '-default']);
+  grunt.registerTask('default', ['prebuild-js', (grunt.config('env') === 'production' ? 'prod' : 'dev') + '-default']);
 };
