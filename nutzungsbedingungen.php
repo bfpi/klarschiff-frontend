@@ -26,10 +26,10 @@
       <p class="justified">
         Bei einer gleichzeitigen Nutzung (Mischnutzung) der Inhalte mehrerer Eigentümer sind die nachfolgend aufgeführten Nutzungsbedingungen jedes Eigentümers im Einzelnen zu beachten.
       </p>
-
-      <h2>Nutzung der Kartenbilder der Hansestadt Rostock</h2>
+      
+      <h2>Nutzung der ORKa.MV</h2>
       <p class="justified">
-        Die von der Hansestadt Rostock angebotenen und in ihrem Eigentum befindlichen Kartenbilder unterliegen der freien Lizenz <a href="http://creativecommons.org/licenses/by/3.0/deed.de" target="_blank">Creative Commons Namensnennung 3.0</a> (CC BY 3.0). Damit ist es gestattet die Kartenbilder zu kopieren, zu verbreiten, öffentlich zugänglich zu machen, Abwandlungen und Bearbeitungen anzufertigen sowie die Kartenbilder kommerziell zu nutzen. Allein der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © Hansestadt Rostock (CC BY 3.0).
+        Die von der Hansestadt Rostock angebotene und in ihrem Eigentum befindliche ORKa.MV unterliegt der freien Lizenz <a href="http://creativecommons.org/licenses/by/4.0/deed.de" target="_blank"><span lang="en">Creative Commons</span> Namensnennung 4.0 International</a> (CC BY 4.0). Damit ist es gestattet die ORKa.MV zu nutzen, in jedwedem Format oder Medium zu vervielfältigen und weiterzuverbreiten sowie zu remixen, zu verändern und auf der ORKa.MV aufbauen, und zwar für beliebige Zwecke, auch und vor allem kommerziell. Allein der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © Hansestadt Rostock (CC BY 4.0).
       </p>
 
       <h2>Nutzung der sonstigen Inhalte der Hansestadt Rostock</h2>
@@ -56,9 +56,9 @@
           Die Daten des Projektes <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>, die von der Hansestadt Rostock angebotenen Inhalten zugrundeliegen, unterliegen der freien Datenbanklizenz <a href="http://opendatacommons.org/licenses/odbl/" target="_blank">Open Data Commons Open Database License</a> (ODbL). Für die Aufbereitung der Daten verwendet die Hansestadt Rostock die Open-Source-Software <a href="http://imposm.org/" target="_blank">Imposm</a>. Der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © OpenStreetMap (ODbL).
       </p>
 
-      <h2>Nutzung der Daten der unteren Vermessungs- und Geoinformationsbehörden Mecklenburg-Vorpommerns</h2>
+      <h2>Nutzung der Daten der Landkreise und kreisfreien Städte in Mecklenburg-Vorpommern</h2>
       <p class="justified">
-        Die Daten der <a href="http://www.laiv-mv.de/land-mv/LAiV_prod/LAiV/AfGVK/Aufsicht/Verz_Vermessungs-Geoinformationsbehoerden.jsp" target="_blank">unteren Vermessungs- und Geoinformationsbehörden Mecklenburg-Vorpommerns</a> (uVGB-MV), die von der Hansestadt Rostock angebotenen Inhalten zugrundeliegen, sind durch das Landesgesetz über das amtliche Geoinformations- und Vermessungswesen (GeoVermG M-V) und das Bundesgesetz über Urheberrecht und verwandte Schutzrechte (UrhG) in den jeweils geltenden Fassungen geschützt. Eine Nutzungserlaubnis liegt der Hansestadt Rostock vor. Der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © uVGB-MV.
+        Die Daten der Landkreise und kreisfreien Städte in Mecklenburg-Vorpommern (LkKfS-MV), die von der Hansestadt Rostock angebotenen Inhalten zugrundeliegen, sind durch das Bundesgesetz über Urheberrecht und verwandte Schutzrechte (UrhG) in den jeweils geltenden Fassungen geschützt. Eine Nutzungserlaubnis liegt der Hansestadt Rostock vor. Der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © LkKfS-MV.
       </p>
     </div>
   </body>
