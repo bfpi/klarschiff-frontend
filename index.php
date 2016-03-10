@@ -88,6 +88,9 @@ $config = include 'config/config.php';
         <span class="italic">Klarschiff</span> gestartet.
       </div>
       <div class="row footer">
+        <a href="http://ks-mecklenburg.de/" target="_blank" title="zur KSM Seite" style="display: inline-block;float: right; margin-top: 20px;">
+          <img src="images/ksm-logo.png" alt="Logo" />
+        </a>
         <h3>Bei Fragen oder Hinweisen wenden Sie sich bitte an das</h3>
         Ideen- und Beschwerdemanagement der Stadtverwaltung Schwerin<br/>
         E-Mail: <a href="mailto:ideen-beschwerden@schwerin.de">ideen-beschwerden@schwerin.de</a><br/>
