@@ -17,7 +17,7 @@ return array(
     'report_problem' => true
   ),
   'thresholds' => array(
-    'supporter' => 20
+    'supporter' => 3
   ),
   'nav' => array(
     array(
