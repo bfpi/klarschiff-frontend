@@ -1,5 +1,6 @@
 jQuery(function($) {
   var mapUrl = 'map.php';
+  var map;
 
   eyeCatcher();
   initSearch();
@@ -21,7 +22,7 @@ jQuery(function($) {
 
 function eyeCatcher() {
 
-  var map = new ol.Map({
+  map = new ol.Map({
     target: 'map',
     view: new ol.View({
       projection: projection_25833,
