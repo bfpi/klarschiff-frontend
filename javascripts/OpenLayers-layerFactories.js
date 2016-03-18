@@ -63,6 +63,7 @@ var OLLayerFactory = function() {
     var source;
     source = new ol.source.Vector({
       format: new ol.format.GeoJSON(),
+      loader: def.loader,
       url: def.url
     });
     if (def.enableClustering) {
