@@ -11,5 +11,5 @@ $geoserver_base = BASE_URL . "ows/klarschiff/";
 $wfs_query = $geoserver_base . "ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=application/json";
 
 define("MELDUNGEN_WFS_URL", $wfs_query . "&typeName=klarschiff_sn:vorgaenge");
-define("STADTTEILE_WFS_URL", $wfs_query . "&typeName=klarschiff_sn:stadtteile");
+define("ORTSTEILE_WFS_URL", $wfs_query . "&typeName=klarschiff_sn:stadtteile");
 define("GEORSS_URL", $geoserver_base . "wms/reflect?layers=klarschiff_sn:klarschiff_wfs_georss&format=rss");

@@ -52,7 +52,7 @@
         Koordinierungsstelle für Geoinformationswesen (KGeo)<br/>
         Postfach 120135<br/>
         19018 Schwerin<br/>
-        Telefon: +49-385-58856342<br/>
+        Telefon: +49 385 588-56342<br/>
         E-Mail: <a href="mailto:geodatenservice@laiv-mv.de">geodatenservice@laiv-mv.de</a><br/>
       </p>
       <p class="justified">

@@ -10,8 +10,8 @@ var extent = [232000, 5923000, 295000, 5974300];
 var resolutions = [38.2185141426, 19.1092570713, 9.5546285356,
   4.7773142678, 2.3886571339, 1.194328567, 0.5971642835];
 
-var problemMeldungenMoeglich = true;
-var ideeMeldungenMoeglich = true;
+var problemMeldungenMoeglich = <?php echo var_export($config['functions']['report_problem'], true); ?>;
+var ideeMeldungenMoeglich = <?php echo var_export($config['functions']['report_idea'], true); ?>;
 
 var unterstuetzer_schwellenwert = <?php echo $config['thresholds']['supporter']; ?>;
 
@@ -167,7 +167,7 @@ var ol_config = {
     "SketchBeobachtungsflaeche": {
       title: "SketchBeobachtungsflaeche",
       type: "Vector",
-      url: "<?php echo STADTTEILE_WFS_URL; ?>",
+      url: "<?php echo ORTSTEILE_WFS_URL; ?>",
       default_layer: false,
       style: ol_styles.beobachtungsflaeche
     },

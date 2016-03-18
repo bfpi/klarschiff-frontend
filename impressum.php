@@ -59,10 +59,11 @@
       </p>
       <h2>Technische Realisierung</h2>
       <p>
-        BFPI Büro für praktische Informatik GmbH<br/>
+        BFPI – Büro für praktische Informatik GmbH<br/>
         Fleckebyer Straße 1<br/>
         18239 Satow<br/>
-        Telefon: +49-38295-778-780<br/>
+        Telefon: +49 38295 778-780<br/>
+        Telefax: +49 38295 778-781<br/>
         E-Mail: <a href="mailto:info@bfpi.de">info@bfpi.de</a><br/>
       </p>
       <a href="http://www.europa-mv.de/cms2/Europamv_prod/Europamv/de/eufoerderinstrumente/Europaeische_Fonds_in_Mecklenburg-Vorpommern/index.jsp" target="_blank"><img src="/pc/images/logo_eu-fonds.png"/></a></br/>

@@ -76,7 +76,8 @@ class FrontendDAO {
 
   function rss() {
     return pg_fetch_all(
-      pg_query($this->conn, "SELECT * "
+      pg_query($this->conn, "SELECT meldung, datum, typ, status, hauptkategorie, unterkategorie, "
+        . "beschreibung, foto, info_der_verwaltung, unterstuetzungen, x, y "
         . "FROM klarschiff.klarschiff_wfs_georss"));
   }
 
