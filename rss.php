@@ -6,10 +6,10 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
 ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss">
   <channel>
-    <title>Klarschiff: Meldungen</title>
+    <title>Klarschiff-Meldungen</title>
     <atom:link href="<?php echo FRONTEND_URL, 'rss.php'; ?>" rel="self" type="application/rss+xml" />
     <link><?php echo FRONTEND_URL; ?></link>
-    <description>Meldungen im Bürgerbeteiligungsportal Klarschiff</description>
+    <description>Diese Daten umfassen die Meldungen in Klarschiff, dem Portal zur Bürgerbeteiligung.</description>
     <language>de-de</language>
     <copyright>Ladeshauptstadt Schwerin</copyright>
     <image>
@@ -27,6 +27,7 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
         <description>
           <![CDATA[
           <b>Status:</b> <?php echo $rss['status']; ?><br/>
+          <b>Statusinformation:</b> <?php echo $rss['statusinformation']; ?><br/>
           <b>Unterstützungen:</b> <?php echo $rss['unterstuetzungen']; ?><br/>
           <b>Beschreibung:</b> <?php echo $rss['beschreibung']; ?><br/>
           <b>Foto:</b> <?php echo $rss['foto']; ?><br/>
