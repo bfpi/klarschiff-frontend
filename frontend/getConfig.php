@@ -46,13 +46,13 @@ $conf['meldung_template'] = '
 {{/if}}
 
 {{if (beschreibung_vorhanden == "true" || beschreibung_vorhanden == "t") && (beschreibung_freigegeben == "true" || beschreibung_freigegeben == "t")}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Beschreibung</h3>
+<h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
 <p style="margin-left:2%">${beschreibung}</p>
 {{else status == \'offen\' && (beschreibung_vorhanden == "true" || beschreibung_vorhanden == "t") && (beschreibung_freigegeben == "false" || beschreibung_freigegeben == "f")}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Beschreibung</h3>
+<h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
 <p style="margin-left:2%;font-style:italic">redaktionelle Prüfung ausstehend</p>
 {{else status != \'offen\' && status != \'gemeldet\' && (beschreibung_vorhanden == "true" || beschreibung_vorhanden == "t") && (beschreibung_freigegeben == "false" || beschreibung_freigegeben == "f")}}
-<h3 style="margin-left:2%;margin-bottom:0.5%">Beschreibung</h3>
+<h3 style="margin-left:2%;margin-bottom:0.5%">Details</h3>
 <p style="margin-left:2%;font-style:italic">redaktionell nicht freigegeben</p>
 {{/if}}
   
