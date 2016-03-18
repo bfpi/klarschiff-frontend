@@ -22,7 +22,13 @@ return array(
   'nav' => array(
     array(
       'label' => 'Startseite',
-      'url' => BASE_URL
+      'url' => BASE_URL,
+      'sonderseite' => false
+    ),
+    array(
+      'label' => 'Karte',
+      'url' => MAP_URL,
+      'sonderseite' => false
     ),
     array(
       'label' => 'Hilfe',
