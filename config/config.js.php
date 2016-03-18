@@ -139,6 +139,15 @@ var ol_config = {
       enableClustering: true,
       clusterDistance: 40,
       style: meldungenStyles,
+      url_with_filter: function() {
+        if (this.filter === undefined) {
+          return this.url;
+        }
+        if (this.filter == null) {
+          return null;
+        }
+        return this.url + "&Filter=" + this.filter;
+      },
       eventHandlers: {
 	      change: function(evt) {
           if (typeof(map.showAdvice) === "function") {
