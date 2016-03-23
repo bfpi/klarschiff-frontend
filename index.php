@@ -37,9 +37,11 @@ $config = include 'config/config.php';
             Eine genaue Anleitung finden Sie <a href="hilfe.html" target="_blank"><span class="bold">hier</span></a>.
           </p>
         </div>
-        <div class="overlay news">
+        <div class="overlay news" style="text-align: left;">
           <p>
-            Das System ist für die Bürgerinnen und Bürger voraussichtlich ab dem 01.03.2016 nutzbar.
+            <h3 style="line-height: 18px;">Liebe Bürgerinnen und Bürger,<br /> liebe Gäste!</h3>
+Vielen Dank für Ihre Hinweise, Ideen  und Anregungen. Sie erleichtern unsere Arbeit mit einer möglichst präzisen Beschreibung Ihres Anliegens. Die Stadtverwaltung wird sich bemühen, innerhalb von drei Tagen darauf zu reagieren.
+
           </p>
         </div>
         <div id="map" title="Karte aufrufen"></div>
@@ -66,7 +68,7 @@ $config = include 'config/config.php';
         <div class="col-md-4 center">
           <h2>Adressensuche</h2>
           <div id="search">
-            <input id="searchtext" size="20" type="text" name="searchtext" title="Ortsteil, Straße oder Adresse eingeben…" />
+            <input id="searchtext" size="20" type="text" name="searchtext" title="Stadtteil, Straße oder Adresse eingeben…" />
             <div class="results" id="results-container"></div>
           </div>
           <a id="start" class="button" href="<?php echo MAP_URL; ?>" target="_self">Karte aufrufen</a>

@@ -26,12 +26,12 @@
         Angelika Gramkow<br/>
         Am Packhof 2-6<br/>
         19053 Schwerin<br/>
-        Telefon: +49-385-1001<br/>
+        Telefon: +49-385-545-1001<br/>
         <h3>E-Mail:</h3>
           <a href="mailto:ob@schwerin.de">ob@schwerin.de</a> (Oberbürgermeisterin)<br/>
           <a href="mailto:pressestelle@schwerin.de">pressestelle@schwerin.de</a> (Pressestelle)<br/>
         <h3>De-Mail:</h3>
-          <a href="mailto:poststelle@schwerin.de">poststelle@schwerin.de</a> (Adresse für die sichere
+          <a href="mailto:poststelle@schwerin.de-mail.de">poststelle@schwerin.de-mail.de</a> (Adresse für die sichere
           Übermittlung elektronischer Nachrichten und Dokumente,
           insbesondere für vertrauliche  und personenbezogene Daten empfohlen)
       </p>
@@ -59,11 +59,10 @@
       </p>
       <h2>Technische Realisierung</h2>
       <p>
-        BFPI – Büro für praktische Informatik GmbH<br/>
+        BFPI Büro für praktische Informatik GmbH<br/>
         Fleckebyer Straße 1<br/>
         18239 Satow<br/>
-        Telefon: +49 38295 778-780<br/>
-        Telefax: +49 38295 778-781<br/>
+        Telefon: +49-38295-778-780<br/>
         E-Mail: <a href="mailto:info@bfpi.de">info@bfpi.de</a><br/>
       </p>
       <a href="http://www.europa-mv.de/cms2/Europamv_prod/Europamv/de/eufoerderinstrumente/Europaeische_Fonds_in_Mecklenburg-Vorpommern/index.jsp" target="_blank"><img src="/pc/images/logo_eu-fonds.png"/></a></br/>
