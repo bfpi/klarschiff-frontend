@@ -29,7 +29,7 @@
       
       <h2>Nutzung der ORKa.MV</h2>
       <p class="justified">
-        Die von der Hansestadt Rostock angebotene und in ihrem Eigentum befindliche ORKa.MV unterliegt der freien Lizenz <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.de" target="_blank"><span lang="en">Creative Commons</span> Namensnennung 4.0 International</a> (CC BY 4.0). Damit ist es gestattet die ORKa.MV zu nutzen, in jedwedem Format oder Medium zu vervielfältigen und weiterzuverbreiten sowie zu remixen, zu verändern und auf der ORKa.MV aufbauen, und zwar für beliebige Zwecke, auch und vor allem kommerziell. Allein der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © Hansestadt Rostock (CC BY 4.0).
+        Die von der Hansestadt Rostock angebotene und in ihrem Eigentum befindliche ORKa.MV unterliegt der freien Lizenz <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.de" target="_blank"><span lang="en">Creative Commons</span> Namensnennung 4.0</a> (CC BY 4.0). Damit ist es gestattet die ORKa.MV zu nutzen, in jedwedem Format oder Medium zu vervielfältigen und weiterzuverbreiten sowie zu remixen, zu verändern und auf der ORKa.MV aufbauen, und zwar für beliebige Zwecke, auch und vor allem kommerziell. Allein der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © Hansestadt Rostock (CC BY 4.0).
       </p>
 
       <h2>Nutzung der sonstigen Inhalte der Hansestadt Rostock</h2>
