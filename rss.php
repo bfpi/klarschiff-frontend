@@ -9,9 +9,9 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
     <title>Klarschiff-Meldungen</title>
     <atom:link href="<?php echo FRONTEND_URL, 'rss.php'; ?>" rel="self" type="application/rss+xml" />
     <link><?php echo FRONTEND_URL; ?></link>
-    <description>Diese Daten umfassen die Meldungen in Klarschiff, dem Portal zur Bürgerbeteiligung.</description>
+    <description>Diese Daten umfassen die Meldungen in Klarschiff, dem Portal zur Bürgerbeteiligung, mit Informationen zu Nummer, Typ, Hauptkategorie, Unterkategorie, Status, Statusinformation, Unterstützungen, Beschreibung, Foto und Erstellungsdatum.</description>
     <language>de-de</language>
-    <copyright>Hansestadt Rostock</copyright>
+    <copyright>Das von der Hansestadt Rostock hier angebotene und in ihrem Eigentum befindliche Werk unterliegt der gemeinfreien Lizenz Creative Commons 1.0 Universell Public Domain Dedication (CC0 1.0; URL: https://creativecommons.org/publicdomain/zero/1.0/deed.de). Damit ist alles gestattet, ohne um weitere Erlaubnis bitten zu müssen. Es gelten folgende Regelungen zu Gewährleistung und Haftung: https://geo.sv.rostock.de/haftung-fuer-angebotene-inhalte.html</copyright>
     <image>
     <url><?php echo FRONTEND_URL, 'images/rss.png'; ?></url>
     <title>Klarschiff-Meldungen</title>
