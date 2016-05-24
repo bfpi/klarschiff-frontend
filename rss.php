@@ -20,7 +20,7 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
     <?php
     $frontend = new FrontendDAO();
     foreach ($frontend->rss() as $rss) {
-      $link = htmlentities(strip_tags(MAP_URL . "?advice=" . $rss['meldung']), ENT_QUOTES);
+      $link = htmlentities(strip_tags(BASE_URL . "?advice=" . $rss['meldung']), ENT_QUOTES);
       ?>
       <item>
         <title><?php echo "#", $rss['meldung'], " ", $rss['typ'], " (", $rss['hauptkategorie'], " – ", $rss['unterkategorie'], ")"; ?></title>
