@@ -22,7 +22,7 @@ class FrontendDAO {
       pg_query($this->conn, "SELECT COUNT(id) " .
         "FROM klarschiff.klarschiff_vorgang " .
         "WHERE datum >= (now() - (INTERVAL '1' MONTH)) " .
-        "AND status IN ('offen', 'inBearbeitung', 'wirdNichtBearbeitet', 'abgeschlossen')"), 'count');
+        "AND status IN ('offen', 'inBearbeitung', 'nichtLoesbar', 'geloest')"), 'count');
   }
 
   function count_done_advices_last_month() {
@@ -30,7 +30,7 @@ class FrontendDAO {
       pg_query($this->conn, "SELECT COUNT(id) " .
         "FROM klarschiff.klarschiff_vorgang " .
         "WHERE datum_statusaenderung >= (now() - (INTERVAL '1' MONTH)) " .
-        "AND status = 'abgeschlossen'"), 'count');
+        "AND status = 'geloest'"), 'count');
   }
 
   function count_new_advices_since($since = '2014-12-01') {
@@ -38,7 +38,7 @@ class FrontendDAO {
       pg_query_params($this->conn, "SELECT COUNT(id) "
         . "FROM klarschiff.klarschiff_vorgang "
         . "WHERE datum::DATE >= $1::DATE "
-        . "AND status IN ('offen', 'inBearbeitung', 'wirdNichtBearbeitet', 'abgeschlossen')", array($since)), 'count');
+        . "AND status IN ('offen', 'inBearbeitung', 'nichtLoesbar', 'geloest')", array($since)), 'count');
   }
 
   function newest_advices($limit = 5) {
@@ -49,7 +49,7 @@ class FrontendDAO {
         . "INNER JOIN klarschiff.klarschiff_kategorie k ON v.kategorieid = k.id "
         . "INNER JOIN klarschiff.klarschiff_kategorie hk ON k.parent = hk.id "
         . "WHERE NOT v.archiviert "
-        . "AND v.status IN ('offen', 'inBearbeitung', 'wirdNichtBearbeitet', 'abgeschlossen') "
+        . "AND v.status IN ('offen', 'inBearbeitung', 'nichtLoesbar', 'geloest') "
         . "ORDER BY v.datum DESC "
         . "LIMIT $1", array($limit)));
   }

@@ -217,7 +217,7 @@ if (problemMeldungenMoeglich) {
       checked: true,
       filter: {
         vorgangstyp: "problem",
-        status: "wirdNichtBearbeitet"
+        status: "nichtLoesbar"
       }
     },
     probleme5: {
@@ -226,7 +226,7 @@ if (problemMeldungenMoeglich) {
       checked: true,
       filter: {
         vorgangstyp: "problem",
-        status: "abgeschlossen"
+        status: "geloest"
       }
     }
   };
@@ -258,7 +258,7 @@ if (ideeMeldungenMoeglich) {
       checked: true,
       filter: {
         vorgangstyp: "idee",
-        status: "wirdNichtBearbeitet"
+        status: "nichtLoesbar"
       }
     },
     ideen5: {
@@ -267,7 +267,7 @@ if (ideeMeldungenMoeglich) {
       checked: true,
       filter: {
         vorgangstyp: "idee",
-        status: "abgeschlossen"
+        status: "geloest"
       }
     }
   };
