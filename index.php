@@ -34,7 +34,7 @@ $config = include 'config/config.php';
             verfolgen Sie, wie die Stadtverwaltung die Bearbeitung übernimmt.
           </p>
           <p>
-            Eine genaue Anleitung finden Sie <a href="hilfe.html" target="_blank"><span class="bold">hier</span></a>.
+            Eine genaue Anleitung finden Sie <a href="hilfe.php" target="_blank"><span class="bold">hier</span></a>.
           </p>
         </div>
         <div class="overlay news" style="text-align: left;">
