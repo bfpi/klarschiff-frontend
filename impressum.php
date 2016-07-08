@@ -20,24 +20,29 @@
       <p>
         Universitäts- und Hansestadt Greifswald<br/>
         Körperschaft des öffentlichen Rechts<br/>
-        Der Oberbürgermeister - Dr. Arthur König<br/>
+        Der Oberbürgermeister - Dr. Stefan Fassbinder<br/>
         Markt<br/>
         17489 Greifswald<br/>
-        Telefon: +49-3834-8536-0<br/>
-        Telefax: +49-3834-8536-1126<br/>
+        Telefon: +49 3834 8536-0<br/>
+        Telefax: +49 3834 8536-1126<br/>
         E-Mail: <a href="mailto:stadtverwaltung@greifswald.de">stadtverwaltung@greifswald.de</a><br/>
       </p>
       <h2>Inhaltliche Verantwortung gemäß § 7 Abs. 1 Telemediengesetz</h2>
       <p>
         Universitäts- und Hansestadt Greifswald<br/>
-        Der Oberbürgermeister<br/>
-        Pressestelle<br/>
-        Pressesprecherin Andrea Reimann<br/>
-        PF 3153<br/>
-        17461 Greifswald<br/>
-        Telefon: +49-3834-8536-1110 / +49-3834-8536-1111<br/>
-        Telefax: +49-3834-8636-1112<br/>
-        E-Mail: <a href="mailto:presse@greifswald.de">presse@greifswald.de</a><br/>
+        Körperschaft des öffentlichen Rechts<br/>
+        Der Oberbürgermeister - Dr. Stefan Fassbinder<br/>
+        Markt<br/>
+        17489 Greifswald<br/>
+        Telefon: +49 3834 8536-0<br/>
+        Telefax: +49 3834 8536-1126<br/>
+        E-Mail: <a href="mailto:stadtverwaltung@greifswald.de">stadtverwaltung@greifswald.de</a><br/>
+      </p>
+      <h2>Ansprechpartnerinnen</h2>
+      <p>
+        <a href="mailto:beschwerdemanagement@greifswald.de">beschwerdemanagement@greifswald.de</a><br/>
+        Frau Lela Scheer: +49 3834 8536-4340<br/>
+        Frau Angela Möller: +49 3834 8536-4340<br/>
       </p>
       <h2>Konzept und Betreuung</h2>
       <p>
@@ -46,7 +51,7 @@
         Abteilung Informations- und Kommunikationstechnik<br/>
         Postfach 3153<br/>
         17461 Greifswald<br/>
-        Telefon: +49-3834-85363100<br/>
+        Telefon: +49 3834 8536-3100<br/>
       </p>
       <h2>Technische Realisierung</h2>
       <p>
