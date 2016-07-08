@@ -42,7 +42,7 @@
       <p>
         <a href="mailto:beschwerdemanagement@greifswald.de">beschwerdemanagement@greifswald.de</a><br/>
         Frau Lela Scheer: +49 3834 8536-4340<br/>
-        Frau Angela Möller: +49 3834 8536-4340<br/>
+        Frau Angela Möller: +49 3834 8536-4113<br/>
       </p>
       <h2>Konzept und Betreuung</h2>
       <p>
