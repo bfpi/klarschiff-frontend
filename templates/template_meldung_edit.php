@@ -21,7 +21,7 @@
   <label for="beschreibung" style="margin-bottom:3px">Beschreibung</label>
   <textarea name="beschreibung">${beschreibung}</textarea>
 
-  <label for="foto" style="margin-bottom:3px">Foto <span style="font-style:italic;color:#d81920">(Dateigröße maximal 4 MB!)</span></label>
+  <label for="foto" style="margin-bottom:3px">Foto</label>
   <input type="file" name="foto"/>
   <table id="fotos"></table>
 
