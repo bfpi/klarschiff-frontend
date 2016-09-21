@@ -20,10 +20,10 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
     <?php
     $frontend = new FrontendDAO();
     foreach ($frontend->rss() as $rss) {
-      $link = htmlentities(strip_tags(MAP_URL . "?advice=" . $rss['id']), ENT_QUOTES);
+      $link = htmlentities(strip_tags(MAP_URL . "?advice=" . $rss['meldung']), ENT_QUOTES);
       ?>
       <item>
-        <title><?php echo "#", $rss['id'], " ", $rss['typ'], " (", $rss['hauptkategorie'], " – ", $rss['unterkategorie'], ")"; ?></title>
+        <title><?php echo "#", $rss['meldung'], " ", $rss['typ'], " (", $rss['hauptkategorie'], " – ", $rss['unterkategorie'], ")"; ?></title>
         <description>
           <![CDATA[
           <b>Status:</b> <?php echo $rss['status']; ?><br/>
