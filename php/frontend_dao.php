@@ -22,6 +22,7 @@ class FrontendDAO {
       pg_query($this->conn, "SELECT COUNT(id) " .
         "FROM klarschiff.klarschiff_vorgang " .
         "WHERE datum >= (now() - (INTERVAL '1' MONTH)) " .
+        "AND vorgangstyp IN ('idee', 'problem') " .
         "AND status IN ('offen', 'inBearbeitung', 'nichtLoesbar', 'geloest')"), 'count');
   }
 
@@ -30,6 +31,7 @@ class FrontendDAO {
       pg_query($this->conn, "SELECT COUNT(id) " .
         "FROM klarschiff.klarschiff_vorgang " .
         "WHERE datum_statusaenderung >= (now() - (INTERVAL '1' MONTH)) " .
+        "AND vorgangstyp IN ('idee', 'problem') " .
         "AND status = 'geloest'"), 'count');
   }
 
@@ -38,6 +40,7 @@ class FrontendDAO {
       pg_query_params($this->conn, "SELECT COUNT(id) "
         . "FROM klarschiff.klarschiff_vorgang "
         . "WHERE datum::DATE >= $1::DATE "
+        . "AND vorgangstyp IN ('idee', 'problem') "
         . "AND status IN ('offen', 'inBearbeitung', 'nichtLoesbar', 'geloest')", array($since)), 'count');
   }
 
@@ -49,6 +52,7 @@ class FrontendDAO {
         . "INNER JOIN klarschiff.klarschiff_kategorie k ON v.kategorieid = k.id "
         . "INNER JOIN klarschiff.klarschiff_kategorie hk ON k.parent = hk.id "
         . "WHERE NOT v.archiviert "
+        . "AND v.vorgangstyp IN ('idee', 'problem') "
         . "AND v.status IN ('offen', 'inBearbeitung', 'nichtLoesbar', 'geloest') "
         . "ORDER BY v.datum DESC "
         . "LIMIT $1", array($limit)));
@@ -59,6 +63,7 @@ class FrontendDAO {
       pg_query($this->conn, "SELECT ST_X(v.the_geom) as x, ST_Y(v.the_geom) as y "
         . "FROM klarschiff.klarschiff_wfs v "
         . "WHERE v.status <> 'gemeldet' "
+        . "AND v.vorgangstyp IN ('idee', 'problem') "
         . "ORDER BY RANDOM() LIMIT 1"));
   }
 
@@ -77,7 +82,7 @@ class FrontendDAO {
   function rss() {
     return pg_fetch_all(
       pg_query($this->conn, "SELECT * "
-        . "FROM klarschiff.klarschiff_wfs_georss"));
+        . "FROM klarschiff.klarschiff_wfs_georss WHERE vorgangstyp IN ('idee', 'problem')"));
   }
 
   function city_boundary() {
@@ -115,7 +120,7 @@ class FrontendDAO {
 
   function types() {
     $res = pg_query($this->conn, "SELECT id, name, ordinal "
-      . "FROM klarschiff.klarschiff_vorgangstyp");
+      . "FROM klarschiff.klarschiff_vorgangstyp WHERE name IN ('Idee', 'Problem')");
     $types = array();
     while ($row = pg_fetch_assoc($res)) {
       $types[$row['id']] = $row;
