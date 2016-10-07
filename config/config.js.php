@@ -99,7 +99,7 @@ var ol_config = {
       requestEncoding: "REST",
       projection: "EPSG:25833",
       format: "image/png",
-      attribution_text: 'Kartenbild © Hansestadt Rostock (<a href="http://creativecommons.org/licenses/by/3.0/deed.de" target="_blank" style="color:#006CB7;text-decoration:none;">CC BY 3.0</a>) | Kartendaten © <a href="http://www.openstreetmap.org/" target="_blank" style="color:#006CB7;text-decoration:none;">OpenStreetMap</a> (<a href="http://opendatacommons.org/licenses/odbl/" target="_blank" style="color:#006CB7;text-decoration:none;">ODbL</a>) und <a href="https://geo.sv.rostock.de/uvgb.html" target="_blank" style="color:#006CB7;text-decoration:none;">uVGB-MV</a>',
+      attribution_text: 'Kartenbild © Hansestadt Rostock (<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.de" target="_blank" style="color:#006CB7;text-decoration:none;">CC BY 4.0</a>) | Kartendaten © <a href="http://www.openstreetmap.org" target="_blank" style="color:#006CB7;text-decoration:none;">OpenStreetMap</a> (<a rel="license" href="http://opendatacommons.org/licenses/odbl" target="_blank" style="color:#006CB7;text-decoration:none;">ODbL</a>) und LkKfS-MV',
       default_layer: true,
       displayInLayerSwitcher: true
     },
@@ -217,7 +217,7 @@ if (problemMeldungenMoeglich) {
       checked: true,
       filter: {
         vorgangstyp: "problem",
-        status: "wirdNichtBearbeitet"
+        status: "nichtLoesbar"
       }
     },
     probleme5: {
@@ -226,7 +226,7 @@ if (problemMeldungenMoeglich) {
       checked: true,
       filter: {
         vorgangstyp: "problem",
-        status: "abgeschlossen"
+        status: "geloest"
       }
     }
   };
@@ -258,7 +258,7 @@ if (ideeMeldungenMoeglich) {
       checked: true,
       filter: {
         vorgangstyp: "idee",
-        status: "wirdNichtBearbeitet"
+        status: "nichtLoesbar"
       }
     },
     ideen5: {
@@ -267,7 +267,7 @@ if (ideeMeldungenMoeglich) {
       checked: true,
       filter: {
         vorgangstyp: "idee",
-        status: "abgeschlossen"
+        status: "geloest"
       }
     }
   };

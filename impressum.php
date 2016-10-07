@@ -82,7 +82,7 @@
 
       <h2>Lizenzbestimmungen</h2>
       <p>
-        Klarschiff ist unter der Freien-Software-Lizenz <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License</a> auf <a href="https://github.com/rostock" target="_blank">GitHub</a> veröffentlicht.
+        Klarschiff ist unter der Freien-Software-Lizenz <a rel="license" href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License</a> auf <a href="https://github.com/rostock" target="_blank">GitHub</a> veröffentlicht.
       </p>
 
       <h2>Haftung für angebotene Inhalte</h2>
@@ -99,7 +99,7 @@
 
       <h2>Urheberrecht</h2>
       <p class="justified">
-        Die von der Hansestadt Rostock angebotenen und in ihrem Eigentum befindlichen Kartenbilder unterliegen der freien Lizenz <a href="http://creativecommons.org/licenses/by/3.0/deed.de" target="_blank">Creative Commons Namensnennung 3.0</a> (CC BY 3.0). Damit ist es gestattet die Kartenbilder zu kopieren, zu verbreiten, öffentlich zugänglich zu machen, Abwandlungen und Bearbeitungen anzufertigen sowie die Kartenbilder kommerziell zu nutzen. Allein der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © Hansestadt Rostock (CC BY 3.0).<br/>
+        Die von der Hansestadt Rostock angebotene und in ihrem Eigentum befindliche ORKa.MV unterliegt der freien Lizenz <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.de" target="_blank"><span lang="en">Creative Commons</span> Namensnennung 4.0</a> (CC BY 4.0). Damit ist es gestattet die ORKa.MV zu nutzen, in jedwedem Format oder Medium zu vervielfältigen und weiterzuverbreiten sowie zu remixen, zu verändern und auf der ORKa.MV aufbauen, und zwar für beliebige Zwecke, auch und vor allem kommerziell. Allein der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © Hansestadt Rostock (CC BY 4.0).<br/>
         Die von der Hansestadt Rostock angebotenen und in ihrem Eigentum befindlichen sonstigen Inhalte sind urheberrechtlich geschützt und dienen ausschließlich Informationszwecken. Für nicht kommerzielle Zwecke ist es gestattet die Inhalte zu kopieren, zu verbreiten, öffentlich zugänglich zu machen sowie Abwandlungen und Bearbeitungen anzufertigen. Die Nutzung der Inhalte für kommerzielle Zwecke hingegen bedarf der vorherigen schriftlichen Zustimmung der Hansestadt Rostock und ist gegebenenfalls nur gegen Entgelt möglich. Der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und wie folgt auszugestalten: © Hansestadt Rostock.<br/>
         Angebotene Inhalte und/oder diesen zugrundeliegende Daten, die von fremden Eigentümern übermittelt oder gespeichert wurden, unterliegen den Urheberrechten der jeweiligen eingetragenen Eigentümer und sind als Inhalte und/oder diesen zugrundeliegende Daten Dritter mit einem Quellenvermerk kenntlich gemacht. Sollte die Hansestadt Rostock dennoch von einer Urheberrechtsverletzung Kenntnis erlangen, wird sie die betroffenen Inhalte und/oder diesen zugrundeliegende Daten umgehend entfernen.
       </h2>

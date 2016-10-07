@@ -7,12 +7,13 @@ Das Desktop-Frontend für *Klarschiff,* einer Onlineplattform zum Melden und Bea
 *   [**OpenLayers 3**](http://openlayers.org): JavaScript-Mapping-Framework
 *   [**Proj4js**](https://github.com/proj4js/proj4js): JavaScript-Bibliothek zur Transfomation von Koordinaten
 
-## Voraussetzungen
+## Installation
+
+### Voraussetzungen
 
 Zur Installation werden [**Node.js**](http://nodejs.org) >= 0.10 und [npm](https://www.npmjs.com) benötigt. Letzteres wird in der Regel durch die Installation von [Node.js](http://nodejs.org) bereitgestellt.
-Eine Installationsanleitung für Debian basierte Systeme ist hier zu finden: https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#debian-and-ubuntu-based-linux-distributions
 
-## Installation
+### Installation
 
 1.  Anwendung aus dem Git-Repository klonen:
 
