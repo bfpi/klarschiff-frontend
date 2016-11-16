@@ -19,7 +19,7 @@
     <div id="content" class="container">
       <h1>Impressum</h1>
 
-      <h2>Herausgeberin</h2>
+      <h2>Herausgeber</h2>
       <p>
         Landeshauptstadt Schwerin<br/>
         Der Oberbürgermeister<br/>
@@ -28,7 +28,7 @@
         19053 Schwerin<br/>
         Telefon: +49-385-545-1000<br/>
         <h3>E-Mail:</h3>
-          <a href="mailto:ob@schwerin.de">ob@schwerin.de</a> (Oberbürgermeisterin)<br/>
+          <a href="mailto:ob@schwerin.de">ob@schwerin.de</a> (Oberbürgermeister)<br/>
           <a href="mailto:pressestelle@schwerin.de">pressestelle@schwerin.de</a> (Pressestelle)<br/>
         <h3>De-Mail:</h3>
           <a href="mailto:poststelle@schwerin.de-mail.de">poststelle@schwerin.de-mail.de</a> (Adresse für die sichere
