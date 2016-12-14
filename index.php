@@ -38,9 +38,9 @@ $config = include 'config/config.php';
           </p>
         </div>
         <div class="overlay news">
-          <span class="bold">Achtung!</span>
+          <span class="bold">Liebe Bürgerinnen und Bürger, liebe Gäste!</span>
           <p>
-            <span class="bold">Klarschiff Greifwald</span> ist seit dem 02.03.2015 in Betrieb.
+            Vielen Dank für Ihre Hinweise, Ideen und Anregungen. Sie erleichtern unsere Arbeit mit einer möglichst präzisen Beschreibung Ihres Anliegens. Die Stadtverwaltung wird sich bemühen, innerhalb von wenigen Tagen darauf zu reagieren.
           </p>
         </div>
         <div id="map" title="Karte aufrufen…"></div>
