@@ -20,6 +20,10 @@
   <h4 style="margin-bottom:8px">weitere Angaben</h4>	
   <label for="beschreibung" style="margin-bottom:3px">Beschreibung</label>
   <textarea name="beschreibung">${beschreibung}</textarea>
+  <p style="font-size:0.8em;margin-bottom:8px;"><b>
+    Bitte laden Sie ein Foto des beschriebenen Sachverhaltes hoch. Es ist hilfreich, wenn das Foto auch die nähere Umgebung zeigt.
+    Dies erleichtert die Auffindbarkeit und ermöglicht den Fachbereich eine erste Einschätzung vorzunehmen.
+  </b></p>
 
   <label for="foto" style="margin-bottom:3px">Foto <span style="font-style:italic;color:#d81920">(Dateigröße maximal 4 MB!)</span></label>
   <input type="file" name="foto"/>
