@@ -23,7 +23,7 @@
   <label for="foto" style="margin-bottom:3px">Foto <span style="font-style:italic;color:#d81920">(Dateigröße maximal 4 MB!)</span></label>
   <p class="help">
     Bitte laden Sie ein Foto des beschriebenen Sachverhaltes hoch. Es ist hilfreich, wenn das Foto auch die nähere Umgebung zeigt.
-    Dies erleichtert die Auffindbarkeit und ermöglicht den Fachbereich eine erste Einschätzung vorzunehmen.
+    Dies erleichtert die Auffindbarkeit und ermöglicht dem Fachbereich eine erste Einschätzung vorzunehmen.
   </p>
   <input type="file" name="foto"/>
   <table id="fotos"></table>
