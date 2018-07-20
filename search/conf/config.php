@@ -1,7 +1,7 @@
 <?php
 # POSTGRESQL DATABASE
 define("HOST","localhost");
-define("PORT",5435);
+define("PORT",5432);
 define("NAME","standortsuche");
 define("USER","standortsuche");
 define("PASS","standortsuche");
@@ -11,10 +11,10 @@ define("URL", "map.php");
 
 # SOLR
 $solrConf = array(
-    'host' => 'klarschiff-test-hgw',
+    'host' => 'localhost',
     'port' => 8080,
     'path' => 'solr',
-    'core' => 'klarschiff_hgw',
+    'core' => 'klarschiff',
     'version' => 4,
     'params' => array(
       'rows' => 5

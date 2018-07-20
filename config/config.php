@@ -13,11 +13,11 @@ return array(
     )
   ),
   'functions' => array(
-    'report_idea' => false,
+    'report_idea' => true,
     'report_problem' => true
   ),
   'thresholds' => array(
-    'supporter' => 20
+    'supporter' => 15
   ),
   'nav' => array(
     array(

@@ -90,7 +90,7 @@ var ol_config = {
     "Stadtplan": {
       type: "TileWMTS",
       title: "Stadtplan",
-      url: "http://www.orka-mv.de/geodienste/orkamv/wmts/orkamv/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
+      url: "https://www.orka-mv.de/geodienste/orkamv/wmts/orkamv/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
       visibility: true,
       layers: "orkamv",
       tileGridOrigin: [-464849.38, 6310160.14],
@@ -106,7 +106,7 @@ var ol_config = {
     Luftbild: {
       type: "TileWMTS",
       title: "Luftbild",
-      url: "http://geo.sv.rostock.de/geodienste/luftbild_mv-40/wmts/hro.luftbild_mv-40.luftbild_mv-40/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
+      url: "https://geo.sv.rostock.de/geodienste/luftbild_mv-40/wmts/hro.luftbild_mv-40.luftbild_mv-40/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
       visibility: true,
       layers: "hro.luftbild_mv-40.luftbild_mv-40",
       tileGridOrigin: [-464849.38, 6310160.14],
