@@ -193,18 +193,27 @@ var mapicons_config = {};
 
 if (problemMeldungenMoeglich) {
   var problem_mapicons_config = {
-    probleme12: {
-      icons: ["problem_1_layer.png", "problem_2_layer.png"],
-      label: "offene Probleme",
+    probleme1: {
+      icons: ["problem_1_layer.png"],
+      label: "gemeldet",
       checked: true,
       filter: {
         vorgangstyp: "problem",
-        status: ["gemeldet", "offen"]
+        status: ["gemeldet"]
+      }
+    },
+    probleme2: {
+      icons: ["problem_2_layer.png"],
+      label: "offen",
+      checked: true,
+      filter: {
+        vorgangstyp: "problem",
+        status: ["offen"]
       }
     },
     probleme3: {
       icons: ["problem_3_layer.png"],
-      label: "Probleme in Bearbeitung",
+      label: "in Bearbeitung",
       checked: true,
       filter: {
         vorgangstyp: "problem",
@@ -213,16 +222,16 @@ if (problemMeldungenMoeglich) {
     },
     probleme4: {
       icons: ["problem_4_layer.png"],
-      label: "nicht lösbare Probleme",
+      label: "Duplikat",
       checked: true,
       filter: {
         vorgangstyp: "problem",
-        status: "wirdNichtBearbeitet"
+        status: "duplikat"
       }
     },
     probleme5: {
       icons: ["problem_5_layer.png"],
-      label: "gelöste Probleme",
+      label: "abgeschlossen",
       checked: true,
       filter: {
         vorgangstyp: "problem",
@@ -234,18 +243,27 @@ if (problemMeldungenMoeglich) {
 }
 if (ideeMeldungenMoeglich) {
   var idee_mapicons_config = {
-    ideen12: {
-      icons: ["idee_1_layer.png", "idee_2_layer.png"],
-      label: "offene Ideen",
+    ideen1: {
+      icons: ["idee_1_layer.png"],
+      label: "gemeldet",
       checked: true,
       filter: {
         vorgangstyp: "idee",
-        status: ["gemeldet", "offen"]
+        status: ["gemeldet"]
+      }
+    },
+    ideen2: {
+      icons: ["idee_2_layer.png"],
+      label: "offen",
+      checked: true,
+      filter: {
+        vorgangstyp: "idee",
+        status: ["offen"]
       }
     },
     ideen3: {
       icons: ["idee_3_layer.png"],
-      label: "Ideen in Bearbeitung",
+      label: "in Bearbeitung",
       checked: true,
       filter: {
         vorgangstyp: "idee",
@@ -254,16 +272,16 @@ if (ideeMeldungenMoeglich) {
     },
     ideen4: {
       icons: ["idee_4_layer.png"],
-      label: "nicht umsetzbare Ideen",
+      label: "Duplikat",
       checked: true,
       filter: {
         vorgangstyp: "idee",
-        status: "wirdNichtBearbeitet"
+        status: "doplikat"
       }
     },
     ideen5: {
       icons: ["idee_5_layer.png"],
-      label: "umgesetzte Ideen",
+      label: "abgeschlossen",
       checked: true,
       filter: {
         vorgangstyp: "idee",
