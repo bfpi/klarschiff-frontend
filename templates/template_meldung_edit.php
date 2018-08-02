@@ -25,6 +25,8 @@
   <input type="file" name="foto"/>
   <table id="fotos"></table>
 
+  <?php include('templates/_datenschutz.php'); ?>
+
   <p class="help"><b>Hinweis:</b> Vor der Veröffentlichung werden eingegebene Texte sowie das Foto redaktionell überprüft.</p>
 
 </form>

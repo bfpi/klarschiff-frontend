@@ -254,7 +254,13 @@ meldungSupportSubmit = function() {
   var dlg = $('#meldung_support');
   var id = $('input[name="id"]').val();
   var email = $('input[name="email"]', dlg).val();
+  var datenschutz = $('input[name="datenschutz"]', dlg).is(':checked')
 
+  if(!datenschutz) {
+    $('input[name="datenschutz"]', dlg).addClass("error");
+    eingabeFehlerPopup("datenschutzUnchecked");
+    return;
+  }
   // clientseitige Validierung
   var filter = /^\S+@\S+\.[A-Za-z]{2,6}$/;
   if (!email || email === placeholder_email) {
@@ -279,7 +285,8 @@ meldungSupportSubmit = function() {
     type: "post",
     data: {
       id: id,
-      email: email
+      email: email,
+      datenschutz: datenschutz
     },
     complete: function(jqXHR, status) {
       dlg.empty();
@@ -307,7 +314,13 @@ function meldungAbuseSubmit() {
   var id = $('input[name="id"]', dlg).val();
   var email = $('input[name="email"]', dlg).val();
   var details = $('textarea[name="details"]', dlg).val();
+  var datenschutz = $('input[name="datenschutz"]', dlg).is(':checked')
 
+  if(!datenschutz) {
+    $('input[name="datenschutz"]', dlg).addClass("error");
+    eingabeFehlerPopup("datenschutzUnchecked");
+    return;
+  }
   // clientseitige Validierung
   var filter = /^\S+@\S+\.[A-Za-z]{2,6}$/;
   if (!email || email === placeholder_email) {
@@ -340,7 +353,8 @@ function meldungAbuseSubmit() {
     data: {
       id: id,
       email: email,
-      details: details
+      details: details,
+      datenschutz: datenschutz
     },
     complete: function(jqXHR, status) {
       dlg.empty();
@@ -368,7 +382,13 @@ meldungLobHinweiseKritikSubmit = function() {
   var id = $('input[name="id"]', dlg).val();
   var email = $('input[name="email"]', dlg).val();
   var freitext = $('textarea[name="freitext"]', dlg).val();
+  var datenschutz = $('input[name="datenschutz"]', dlg).is(':checked')
 
+  if(!datenschutz) {
+    $('input[name="datenschutz"]', dlg).addClass("error");
+    eingabeFehlerPopup("datenschutzUnchecked");
+    return;
+  }
   // clientseitige Validierung
   var filter = /^\S+@\S+\.[A-Za-z]{2,6}$/;
   if (!email || email === placeholder_email) {
@@ -399,7 +419,8 @@ meldungLobHinweiseKritikSubmit = function() {
     data: {
       id: id,
       email: email,
-      freitext: freitext
+      freitext: freitext,
+      datenschutz: datenschutz
     },
     complete: function(jqXHR, status) {
       dlg.empty();

@@ -11,7 +11,8 @@ include_once(dirname(__FILE__) . "/functions.php");
 $data = array(
   "vorgang" => $_REQUEST["id"],
   "text" => $_REQUEST["details"],
-  "email" => $_REQUEST["email"]
+  "email" => $_REQUEST["email"],
+  "datenschutz" => $_REQUEST["datenschutz"]
 );
 
 /* * ************************************************************************** */

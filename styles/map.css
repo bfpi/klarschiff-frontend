@@ -224,6 +224,15 @@ form#meldung label, #meldung_abuse label {
   width: 98%;
 }
 
+#meldung_edit form input[type=checkbox],
+#meldung_support input[type=checkbox],
+#meldung_abuse input[type=checkbox],
+#meldung_lobhinweisekritik input[type=checkbox] {
+  float: left;
+  min-width: auto;
+  width: auto;
+}
+
 #meldung_show #meldung_details_show {
   float: right;
 }
@@ -587,11 +596,28 @@ div.scroll-checkbox {
 
 form#meldung label,
 #meldung_abuse label,
+#meldung_support label,
 #meldung_lobhinweisekritik label {
   display: block;
   font-size: 0.8em;
   font-weight: bold;
   margin-top: 0.3em;
+}
+
+form#meldung label.checkbox-label,
+#meldung_abuse label.checkbox-label,
+#meldung_support label.checkbox-label,
+#meldung_lobhinweisekritik label.checkbox-label {
+  font-weight: normal;
+  margin: 13px 25px;
+  width: auto;
+}
+
+form#meldung label.checkbox-label a,
+#meldung_abuse label.checkbox-label a,
+#meldung_support label.checkbox-label a,
+#meldung_lobhinweisekritik label.checkbox-label a {
+  color: #164194;
 }
 
 #meldung_actions button {

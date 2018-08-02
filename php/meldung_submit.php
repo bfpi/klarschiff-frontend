@@ -10,7 +10,8 @@ $data = array(
   "hauptkategorie" => intval($_REQUEST["hauptkategorie"]),
   "unterkategorie" => intval($_REQUEST["unterkategorie"]),
   "beschreibung" => $_REQUEST["beschreibung"],
-  "email" => $_REQUEST["email"]
+  "email" => $_REQUEST["email"],
+  "datenschutz" => $_REQUEST["datenschutz"]
 );
 
 if (isset($_REQUEST["point"])) {
@@ -48,7 +49,8 @@ switch ($data["task"]) {
         "kategorie" => $data["unterkategorie"] ? $data["unterkategorie"] : $data["hauptkategorie"],
         "oviWkt" => $data["point"],
         "autorEmail" => $data["email"],
-        "beschreibung" => $data["beschreibung"]
+        "beschreibung" => $data["beschreibung"],
+        "datenschutz" => $data["datenschutz"]
       );
 
       if (isset($data["foto"])) {

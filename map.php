@@ -75,7 +75,7 @@
     <div id="tooltip" style="display: none;"></div>
 <?php
     foreach (scandir("templates") as $template) {
-      if ($template != "." && $template != "..") {
+      if ($template != "." && $template != ".." && strpos($template, 'template_') === 0) {
         $file = str_replace(".php", "", $template);
         echo "<script id=\"" . $file . "\" type=\"text/x-jquery-templ\">";
         $filename = "templates/" . $template;

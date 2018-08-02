@@ -6,3 +6,5 @@
 <label for="freitext" style="margin-top:18px;margin-bottom:3px">Freitext <span style="font-style:italic;color:#d81920">(maximal 500 Zeichen!)</span></label>
 <textarea maxlength="500" name="freitext" onKeyPress="if (/msie/.test(navigator.userAgent.toLowerCase()))
       return(this.value.length < 500);" style="width:98.5%"></textarea>
+
+<?php include('templates/_datenschutz.php'); ?>

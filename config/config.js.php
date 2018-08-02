@@ -27,6 +27,7 @@ var emailFalsch = "Die angegebene E-Mail-Adresse ist syntaktisch falsch. Bitte k
 var emailLeer = "Sie müssen Ihre E-Mail-Adresse angeben.";
 var begruendungLeer = "Sie müssen eine Begründung angeben.";
 var freitextLeer = "Sie müssen Ihr Lob, Ihre Hinweise oder Ihre Kritik zur Meldung angeben.";
+var datenschutzUnchecked = "Sie müssen die Datenschutzerklärung akzeptieren.";
 
 var mapUrl = 'map.php';
 

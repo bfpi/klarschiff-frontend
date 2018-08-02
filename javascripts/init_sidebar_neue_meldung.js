@@ -280,9 +280,15 @@ function meldungFormSubmit() {
     unterkategorie: $('select[name="unterkategorie"]', dlg).val(),
     beschreibung: $('textarea[name="beschreibung"]', dlg).val(),
     email: $('input[name="email"]', dlg).val(),
-    foto: null
+    foto: null,
+    datenschutz: $('input[name="datenschutz"]', dlg).is(':checked')
   };
 
+  if(!postData.datenschutz) {
+    $('input[name="datenschutz"]', dlg).addClass("error");
+    eingabeFehlerPopup("datenschutzUnchecked");
+    return;
+  }
   // clientseitige Validierung
   if (postData.hauptkategorie == "0") {
     $('select[name="hauptkategorie"]').addClass("error");
@@ -423,6 +429,9 @@ function eingabeFehlerPopup(eingabeFehlerTyp) {
       break;
     case "beschreibungLeer":
       var eingabeFehlerText = beschreibungLeer;
+      break;
+    case "datenschutzUnchecked":
+      var eingabeFehlerText = datenschutzUnchecked;
       break;
   }
 

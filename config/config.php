@@ -37,7 +37,7 @@ return array(
     ),
     array(
       'label' => 'Datenschutz',
-      'url' => FRONTEND_URL . 'datenschutz.php',
+      'url' => DATENSCHUTZ_URL,
       'sonderseite' => true
     ),
     array(
