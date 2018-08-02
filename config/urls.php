@@ -15,3 +15,5 @@ $wfs_query = $geoserver_base . "ows?service=WFS&version=1.0.0&request=GetFeature
 define("MELDUNGEN_WFS_URL", $wfs_query . "&typeName=klarschiff:vorgaenge");
 define("ORTSTEILE_WFS_URL", $wfs_query . "&typeName=klarschiff:stadtteile");
 define("GEORSS_URL", $geoserver_base . "wms/reflect?layers=klarschiff:klarschiff_wfs_georss&format=rss");
+
+define("DATENSCHUTZ_URL", "https://www.greifswald.de/export/sites/hgw/de/datenschutzerklaerung/Datenschutzinformationen/3010_Datenschutzinformation-Klarschiff-HGW.pdf");
