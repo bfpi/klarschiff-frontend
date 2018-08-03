@@ -2,7 +2,7 @@
 function init_mapicons() {
   // mapicons
   var mapicons = $('#mapicons');
-  var kol = $('<ol></ol>');
+  var wrapper = $('<div></div>');
   for (var id in mapicons_config) {
     var checkbox = $('<input/>')
             .attr('type', 'checkbox')
@@ -14,7 +14,7 @@ function init_mapicons() {
     var title_to_display_before = mapicons_config[id].title_to_display_before;
     if(title_to_display_before !== undefined) {
       var title_div = $('<div></div>').attr('class', 'title').append(title_to_display_before);
-      kol.append(title_div);
+      wrapper.append(title_div);
     }
     var div = $('<div></div>').attr('id', id);
     var label = $('<label></label>')
@@ -23,16 +23,16 @@ function init_mapicons() {
       label.append($("<img/>").attr("src", "images/icons/" + val));
     });
     div.append(label);
-    kol.append(div);
+    wrapper.append(div);
   }
 
-  kol.append($('<div></div>').attr('id', 'generalisiert').append(
+  wrapper.append($('<div></div>').attr('id', 'generalisiert').append(
     $('<label></label>').html('zusammengefasste Meldungen').append(
       $("<img/>").attr("src", "images/icons/generalisiert_layer.png")
     )
   ));
-  $('input', kol).click(reloadMeldungenIcons);
-  mapicons.append(kol);
+  $('input', wrapper).click(reloadMeldungenIcons);
+  mapicons.append(wrapper);
 }
 
 /**
