@@ -11,6 +11,11 @@ function init_mapicons() {
       checkbox.attr('checked', 'checked');
     }
 
+    var title_to_display_before = mapicons_config[id].title_to_display_before;
+    if(title_to_display_before !== undefined) {
+      var title_div = $('<div></div>').attr('class', 'title').append(title_to_display_before);
+      kol.append(title_div);
+    }
     var div = $('<div></div>').attr('id', id);
     var label = $('<label></label>')
       .append(checkbox).append(mapicons_config[id].label);

@@ -272,8 +272,12 @@ form .help {
   width: 22px;
 }
 
-#mapicons #ideen1 {
+#mapicons .title:not(:first-child) {
   margin-top: 1em;
+}
+
+#mapicons .title {
+  font-weight: bold;
 }
 
 #mapicons div {

@@ -195,6 +195,7 @@ var mapicons_config = {};
 if (problemMeldungenMoeglich) {
   var problem_mapicons_config = {
     probleme1: {
+      title_to_display_before: "Probleme",
       icons: ["problem_1_layer.png"],
       label: "gemeldet",
       checked: true,
@@ -245,6 +246,7 @@ if (problemMeldungenMoeglich) {
 if (ideeMeldungenMoeglich) {
   var idee_mapicons_config = {
     ideen1: {
+      title_to_display_before: "Ideen",
       icons: ["idee_1_layer.png"],
       label: "gemeldet",
       checked: true,
