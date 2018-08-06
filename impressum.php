@@ -38,7 +38,7 @@
         Telefax: +49 3834 8536-1126<br/>
         E-Mail: <a href="mailto:stadtverwaltung@greifswald.de">stadtverwaltung@greifswald.de</a><br/>
       </p>
-      <h2>Ansprechpartnerinnen</h2>
+      <h2>Ansprechpartner/in</h2>
       <p>
         <a href="mailto:beschwerdemanagement@greifswald.de">beschwerdemanagement@greifswald.de</a><br/>
         Herr Bernd Kiesendahl: +49 3834 8536-4340<br/>
