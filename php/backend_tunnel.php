@@ -20,6 +20,7 @@ function relay($data, $path) {
     CURLOPT_POSTFIELDS => $post_array,
     CURLOPT_HEADER => true,
     CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_SSL_VERIFYPEER => false,
     CURLOPT_USERAGENT => $_SERVER['HTTP_USER_AGENT']));
 
   // Relay answer
@@ -50,6 +51,7 @@ function returnRelay($data,$path) {
     CURLOPT_POSTFIELDS => $post_array,
     CURLOPT_HEADER => false,
     CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_SSL_VERIFYPEER => false,
     CURLOPT_USERAGENT => $_SERVER['HTTP_USER_AGENT'])
   );
 

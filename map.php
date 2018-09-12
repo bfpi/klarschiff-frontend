@@ -1,6 +1,6 @@
 <?php $config = include(dirname(__FILE__) . "/config/config.php"); ?>
 <!DOCTYPE html>
-<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="de" xmlns="https://www.w3.org/1999/xhtml">
   <head>
     <title>Klarschiff – Portal zur Bürgerbeteiligung</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

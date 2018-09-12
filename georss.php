@@ -84,6 +84,7 @@ if ($id != "" && count($data = $frontend->rss_data($id))) {
     CURLOPT_POSTFIELDS => $curl_filter,
     CURLOPT_HEADER => false,
     CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_SSL_VERIFYPEER => false,
     CURLOPT_USERAGENT => $_SERVER['HTTP_USER_AGENT']));
 
   $xml_out = curl_exec($ch);
