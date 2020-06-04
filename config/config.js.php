@@ -7,7 +7,7 @@ var zoom = 1;
 var lonLat_center = [13.409414, 54.089276];
 var mv_bbox_25833 = [206885, 5890624, 460857, 6060841];
 var extent = [380000, 5980000, 410000, 6010000]
-var resolutions = [27.024570517098006,19.109257071294042,13.512285258549001,9.55462853564702,6.7561426292745,4.77731426782351,3.3780713146372494,2.3886571339117544,1.6890356573186245,1.1943285669558772,0.8445178286593122,0.5971642834779384,0.422258914329656,0.29858214173896913,0.21112945716482798,0.14929107086948457];
+var resolutions = [38.2185141426, 19.1092570713, 9.5546285356, 4.7773142678, 2.3886571339, 1.194328567, 0.5971642835]
 
 var problemMeldungenMoeglich = <?php echo var_export($config['functions']['report_problem'], true); ?>;
 var ideeMeldungenMoeglich = <?php echo var_export($config['functions']['report_idea'], true); ?>;
@@ -91,12 +91,12 @@ var ol_config = {
     "Stadtplan": {
       type: "TileWMTS",
       title: "Stadtplan",
-      url: "https://www.orka-mv.de/geodienste/orkamv/wmts/orkamv/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
+      url: "http://www.geodaten-mv.de/dienste/orka_wmts/wmts/{layer}/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
       visibility: true,
       layers: "orkamv",
       tileGridOrigin: [-464849.38, 6310160.14],
-      matrixSet: "epsg_25833",
-      matrixIds: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+      matrixSet: "epsg_25833_adv",
+      matrixIds: [7, 8, 9, 10, 11, 12, 13],
       requestEncoding: "REST",
       projection: "EPSG:25833",
       format: "image/png",
@@ -104,15 +104,15 @@ var ol_config = {
       default_layer: true,
       displayInLayerSwitcher: true
     },
-    Luftbild: {
+    "Luftbild": {
       type: "TileWMTS",
       title: "Luftbild",
-      url: "https://geo.sv.rostock.de/geodienste/luftbild_mv-40/wmts/hro.luftbild_mv-40.luftbild_mv-40/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
+      url: "http://www.geodaten-mv.de/dienste/dop_wmts/wmts/{layer}/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
       visibility: true,
-      layers: "hro.luftbild_mv-40.luftbild_mv-40",
+      layers: "mv_dop",
       tileGridOrigin: [-464849.38, 6310160.14],
-      matrixSet: "epsg_25833",
-      matrixIds: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+      matrixSet: "ETRS89UTM33",
+      matrixIds: [7, 8, 9, 10, 11, 12, 13],
       requestEncoding: "REST",
       projection: "EPSG:25833",
       format: "image/png",
