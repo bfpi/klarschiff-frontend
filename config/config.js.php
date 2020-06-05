@@ -91,7 +91,7 @@ var ol_config = {
     "Stadtplan": {
       type: "TileWMTS",
       title: "Stadtplan",
-      url: "http://www.geodaten-mv.de/dienste/orka_wmts/wmts/{layer}/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
+      url: "https://www.geodaten-mv.de/dienste/orka_wmts/wmts/{layer}/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
       visibility: true,
       layers: "orkamv",
       tileGridOrigin: [-464849.38, 6310160.14],
@@ -107,7 +107,7 @@ var ol_config = {
     "Luftbild": {
       type: "TileWMTS",
       title: "Luftbild",
-      url: "http://www.geodaten-mv.de/dienste/dop_wmts/wmts/{layer}/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
+      url: "https://www.geodaten-mv.de/dienste/dop_wmts/wmts/{layer}/{TileMatrixSet}/{TileMatrix}/{TileCol}/{TileRow}.png",
       visibility: true,
       layers: "mv_dop",
       tileGridOrigin: [-464849.38, 6310160.14],
